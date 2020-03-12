@@ -88,7 +88,7 @@
     | M-b  | 光标左移一个单词                          |
     | C-d  | 删除光标下的字符                          |
     | M-d  | 删除光标右边的单词                        |
-    | C-w  | 擅长光标左边的单词                        |
+    | C-w  | 删除光标左边的单词                        |
     | C-k  | 删除光标右边的所有内容                    |
     | C-u  | 删除整行内容                              |
     | C-p  | 上一条执行的命令                          |
@@ -155,4 +155,23 @@
     2. 配置ssh-key（github网站操作)
     3. 创建项目（github网站操作）
     4. 项目管理(本机操作)
+       #+begin_src plantuml :file ./img/git_flow.svg
+	 @startuml
+	 start
+	 :git clone(远端到本地);
+	 repeat
+	   :做了一些修改;
+	   :git add;
+	   :git commit(修改保存到本地);
+	   :git push(本地到远端);
+	 @enduml
 
+       #+end_src
+
+       #+RESULTS:
+       [[file:./img/git_flow.svg]]
+
+       1) git clone
+       2) git add
+       3) git commit
+       4) git push
