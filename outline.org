@@ -14,13 +14,87 @@
   [[file:./img/mind-map.svg]]
 
 * 预备课必备知识
+  [[https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612][半圆的wiki参考]]
 ** 命令行操作
+   #+begin_quote
+   *重要* 使用 ~Tab~ 键可以进行补全，加快你的操作。
+   #+end_quote
 *** linux文件和目录
+    
+    [[http://cn.linux.vbird.org/linux_basic/0210filepermission.php][文件权限与目录配置]]
+    
+    [[http://cn.linux.vbird.org/linux_basic/0220filemanager.php][文件与目录管理]]
+
+    1. Home目录是什么？
+    2. ~.~ 和 ~..~ 是什么？
+    
+    | 文件操作命令 | 作用                                     |
+    |--------------+------------------------------------------|
+    | cd 文件夹    | change dir（切换工作目录）               |
+    | cd ..        | 切换到父目录                             |
+    | cd           | 不带参数切换到Home目录                   |
+    | cd -         | 切换到之前的工作目录                     |
+    | pwd          | print work dir（打印当前的工作目录）     |
+    | mkdir        | 创建一个目录                             |
+    | mkdir -p     | 创建多层目录                             |
+    | rm           | remove(删除普通文件）                    |
+    | rm -rf       | 删除文件夹及其下面的所有文件             |
+    | cp           | copy(拷贝文件)                           |
+    | cp -r        | 拷贝文件夹                               |
+    | mv           | move重命名文件/文件夹或是移动文件/文件夹 |
+    
 *** 快捷键
-** 软件安装
+    
+    | 按键 | 作用                                      |
+    |------+-------------------------------------------|
+    | C-a  | 光标移动到行首                            |
+    | C-e  | 光标移动到行尾                            |
+    | C-f  | 光标右移一个字符                          |
+    | C-b  | 光标左移一个字符                          |
+    | M-f  | 光标右移一个单词                          |
+    | M-b  | 光标左移一个单词                          |
+    | C-d  | 删除光标下的字符                          |
+    | M-d  | 删除光标右边的单词                        |
+    | C-w  | 擅长光标左边的单词                        |
+    | C-k  | 删除光标右边的所有内容                    |
+    | C-u  | 删除整行内容                              |
+    | C-p  | 上一条执行的命令                          |
+    | C-n  | 下一条执行的命令（需要先执行C-p才可使用） |
+    | C-r  | 搜索之前执行的命令                        |
+
+*** 其他重要命令
+    1. ~history~
+       查看历史命令记录
+
+** Mac下的软件安装
 *** brew
-**** 国内镜像修改
+**** 安装
+**** 速度慢---国内镜像修改
+    [[https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577][参考]]
+**** 常用命令
+
+    | 命令           | 作用               |
+    |----------------+--------------------|
+    | brew list      | 查看已经安装的软件 |
+    | brew install   | 安装软件           |
+    | brew uninstall | 卸载软件           |
+    | brew search    | 查询可供安装的软件 |
+
+*** 直接下载安装包（dmg文件）
+** 编辑器
+   选择一个适合你的编辑器
+
+   - sublime
+
+     https://www.sublimetext.com/
+
+   - Atom
+
+     https://atom.io/
+   - vim
+   - emacs
+     
 ** 如何做笔记
 *** 有道云笔记
 *** markdown语法
-
+** git

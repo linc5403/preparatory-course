@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="180px" preserveAspectRatio="none" style="width:615px;height:180px;" version="1.1" viewBox="0 0 615 180" width="615px" zoomAndPan="magnify"><defs><filter height="300%" id="fk51stifs9377" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#fk51stifs9377)" height="36.4883" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="314" x="10" y="76.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="294" x="20" y="100.0234">���������������������</text><rect fill="#FEFECE" filter="url(#fk51stifs9377)" height="36.4883" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="230" x="374" y="20"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="210" x="384" y="43.5352">���������������</text><path d="M324,94.7324 L334,94.7324 C349,94.7324 349,38.2441 364,38.2441 L374,38.2441 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fk51stifs9377)" height="36.4883" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="188" x="374" y="76.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="168" x="384" y="100.0234">������������</text><path d="M324,94.7324 L334,94.7324 C349,94.7324 349,94.7324 364,94.7324 L374,94.7324 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fk51stifs9377)" height="36.4883" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="230" x="374" y="132.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="210" x="384" y="156.5117">���������������</text><path d="M324,94.7324 L334,94.7324 C349,94.7324 349,151.2207 364,151.2207 L374,151.2207 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[effe54d8cc210308ddc08292f0ce66f8]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="179px" preserveAspectRatio="none" style="width:279px;height:179px;" version="1.1" viewBox="0 0 279 179" width="279px" zoomAndPan="magnify"><defs><filter height="300%" id="f25i2ybmso7mm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f25i2ybmso7mm)" height="36.2969" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="118" x="10" y="76.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="20" y="99.292">预备课必备知识</text><rect fill="#FEFECE" filter="url(#f25i2ybmso7mm)" height="36.2969" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="90" x="178" y="20"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="188" y="42.9951">命令行操作</text><path d="M128,94.4453 L138,94.4453 C153,94.4453 153,38.1484 168,38.1484 L178,38.1484 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#f25i2ybmso7mm)" height="36.2969" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="76" x="178" y="76.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="188" y="99.292">软件安装</text><path d="M128,94.4453 L138,94.4453 C153,94.4453 153,94.4453 168,94.4453 L178,94.4453 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#f25i2ybmso7mm)" height="36.2969" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="90" x="178" y="132.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="188" y="155.5889">如何做笔记</text><path d="M128,94.4453 L138,94.4453 C153,94.4453 153,150.7422 168,150.7422 L178,150.7422 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[cb87bb7d921c2a70db989e171cd17613]
 @startmindmap
-* ���������������������
-** ���������������
-** ������������
-** ���������������
+* 预备课必备知识
+** 命令行操作
+** 软件安装
+** 如何做笔记
 @endmindmap
 
 PlantUML version 1.2020.00(Sat Jan 11 20:30:53 CST 2020)
 (GPL source distribution)
-Java Runtime: Java(TM) SE Runtime Environment
-JVM: Java HotSpot(TM) 64-Bit Server VM
-Java Version: 1.8.0_231-b11
-Operating System: Mac OS X
-Default Encoding: US-ASCII
-Language: zh
-Country: CN
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
 --></g></svg>
