@@ -1,3 +1,26 @@
+
 * 学习路线
-* 学习方法
-* 知识点
+
+  #+begin_src plantuml :file ./img/mind-map.svg
+    @startmindmap
+    ,* 预备课必备知识
+    ,** 命令行操作
+    ,** 软件安装
+    ,** 如何做笔记
+    @endmindmap
+  #+end_src
+
+  #+RESULTS:
+  [[file:./img/mind-map.svg]]
+
+* 预备课必备知识
+** 命令行操作
+*** linux文件和目录
+*** 快捷键
+** 软件安装
+*** brew
+**** 国内镜像修改
+** 如何做笔记
+*** 有道云笔记
+*** markdown语法
+
