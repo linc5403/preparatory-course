@@ -1,39 +1,39 @@
 
 # Table of Contents
 
-1.  [学习路线](#org51eaa50)
-2.  [预备课必备知识](#org0002435)
-    1.  [命令行操作](#orgacfeea4)
-        1.  [linux文件和目录](#orgabfa35a)
-        2.  [快捷键](#orgf2b94f5)
-        3.  [其他重要命令](#org742a52a)
-    2.  [Mac下的软件管理](#org4f0f160)
-        1.  [brew](#org6a8ca3f)
-        2.  [直接下载安装包（dmg文件）](#orge9c591f)
-    3.  [编辑器](#org097c3c2)
-    4.  [如何做笔记](#orgb0fecba)
-        1.  [有道云笔记](#org7af61cd)
-        2.  [markdown语法](#org734014d)
-    5.  [git](#org95796b2)
-        1.  [安装](#org24d5a93)
-        2.  [github的使用](#org5a84ea2)
+1.  [学习路线](#orgf1c415e)
+2.  [预备课必备知识](#orgc4ab918)
+    1.  [命令行操作](#org1f8d893)
+        1.  [linux文件和目录](#orgd979e72)
+        2.  [快捷键](#org6a0e424)
+        3.  [其他重要命令](#org2c2c52b)
+    2.  [Mac下的软件管理](#org90455d8)
+        1.  [brew](#org31f3241)
+        2.  [直接下载安装包（dmg文件）](#orgc9d5bc0)
+    3.  [编辑器](#org72d259f)
+    4.  [如何做笔记](#orgab9faf4)
+        1.  [有道云笔记](#orgaa58096)
+        2.  [markdown语法](#orgd1d2245)
+    5.  [git](#orgd0b12ca)
+        1.  [安装](#org6c602df)
+        2.  [github的使用](#orgce2a1a9)
 
 
-<a id="org51eaa50"></a>
+<a id="orgf1c415e"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org0002435"></a>
+<a id="orgc4ab918"></a>
 
 # 预备课必备知识
 
 [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
 
 
-<a id="orgacfeea4"></a>
+<a id="org1f8d893"></a>
 
 ## 命令行操作
 
@@ -41,7 +41,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgabfa35a"></a>
+<a id="orgd979e72"></a>
 
 ### linux文件和目录
 
@@ -167,7 +167,7 @@
 </table>
 
 
-<a id="orgf2b94f5"></a>
+<a id="org6a0e424"></a>
 
 ### 快捷键
 
@@ -273,7 +273,7 @@
 </table>
 
 
-<a id="org742a52a"></a>
+<a id="org2c2c52b"></a>
 
 ### 其他重要命令
 
@@ -285,12 +285,12 @@
     过滤内容
 
 
-<a id="org4f0f160"></a>
+<a id="org90455d8"></a>
 
 ## Mac下的软件管理
 
 
-<a id="org6a8ca3f"></a>
+<a id="org31f3241"></a>
 
 ### brew
 
@@ -346,12 +346,12 @@
     </table>
 
 
-<a id="orge9c591f"></a>
+<a id="orgc9d5bc0"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="org097c3c2"></a>
+<a id="org72d259f"></a>
 
 ## 编辑器
 
@@ -375,29 +375,29 @@
 -   emacs
 
 
-<a id="orgb0fecba"></a>
+<a id="orgab9faf4"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="org7af61cd"></a>
+<a id="orgaa58096"></a>
 
 ### 有道云笔记
 
 
-<a id="org734014d"></a>
+<a id="orgd1d2245"></a>
 
 ### markdown语法
 
 
-<a id="org95796b2"></a>
+<a id="orgd0b12ca"></a>
 
 ## git
 
 
-<a id="org24d5a93"></a>
+<a id="org6c602df"></a>
 
 ### 安装
 
@@ -406,7 +406,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org5a84ea2"></a>
+<a id="orgce2a1a9"></a>
 
 ### github的使用
 
