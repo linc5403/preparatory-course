@@ -1,40 +1,40 @@
 
 # Table of Contents
 
-1.  [学习路线](#orge7eea5d)
-2.  [预备课必备知识](#org25bd5d8)
-    1.  [命令行操作](#orgff17d76)
-        1.  [linux文件和目录](#org3d7a11c)
-        2.  [快捷键](#orgfbf986d)
-        3.  [其他重要命令](#org43819ec)
-    2.  [Mac下的软件管理](#orgf419166)
-        1.  [brew](#org913bee3)
-        2.  [直接下载安装包（dmg文件）](#org624b9fc)
-    3.  [编辑器](#orgdbcd4b1)
-    4.  [如何做笔记](#org4ec9b4c)
-        1.  [有道云笔记](#org96126fa)
-        2.  [markdown语法](#org2decadf)
-    5.  [git](#org1a3266f)
-        1.  [安装](#org5afcae1)
-        2.  [github的使用](#org0cb3b00)
-        3.  [注意事项](#org87b9692)
+1.  [学习路线](#org1bfb4c8)
+2.  [预备课必备知识](#orgf0783c6)
+    1.  [命令行操作](#org2faa997)
+        1.  [linux文件和目录](#org355683c)
+        2.  [快捷键](#org3475ee7)
+        3.  [其他重要命令](#org52ef5b8)
+    2.  [Mac下的软件管理](#orgd606499)
+        1.  [brew](#orgc74a5e1)
+        2.  [直接下载安装包（dmg文件）](#org063e96d)
+    3.  [编辑器](#org2b21967)
+    4.  [如何做笔记](#org9222435)
+        1.  [有道云笔记](#orgd13ce90)
+        2.  [markdown语法](#org10216da)
+    5.  [git](#org6bca8a7)
+        1.  [`git` 的安装](#org090abce)
+        2.  [`github` 的使用](#org6d586bd)
+        3.  [注意事项](#org20c635e)
 
 
-<a id="orge7eea5d"></a>
+<a id="org1bfb4c8"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org25bd5d8"></a>
+<a id="orgf0783c6"></a>
 
 # 预备课必备知识
 
 [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
 
 
-<a id="orgff17d76"></a>
+<a id="org2faa997"></a>
 
 ## 命令行操作
 
@@ -42,7 +42,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org3d7a11c"></a>
+<a id="org355683c"></a>
 
 ### linux文件和目录
 
@@ -168,7 +168,7 @@
 </table>
 
 
-<a id="orgfbf986d"></a>
+<a id="org3475ee7"></a>
 
 ### 快捷键
 
@@ -274,7 +274,7 @@
 </table>
 
 
-<a id="org43819ec"></a>
+<a id="org52ef5b8"></a>
 
 ### 其他重要命令
 
@@ -286,12 +286,12 @@
     过滤内容
 
 
-<a id="orgf419166"></a>
+<a id="orgd606499"></a>
 
 ## Mac下的软件管理
 
 
-<a id="org913bee3"></a>
+<a id="orgc74a5e1"></a>
 
 ### brew
 
@@ -347,12 +347,12 @@
     </table>
 
 
-<a id="org624b9fc"></a>
+<a id="org063e96d"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="orgdbcd4b1"></a>
+<a id="org2b21967"></a>
 
 ## 编辑器
 
@@ -376,55 +376,183 @@
 -   emacs
 
 
-<a id="org4ec9b4c"></a>
+<a id="org9222435"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="org96126fa"></a>
+<a id="orgd13ce90"></a>
 
 ### 有道云笔记
 
 
-<a id="org2decadf"></a>
+<a id="org10216da"></a>
 
 ### markdown语法
 
 
-<a id="org1a3266f"></a>
+<a id="org6bca8a7"></a>
 
 ## git
 
 
-<a id="org5afcae1"></a>
+<a id="org090abce"></a>
 
-### 安装
+### `git` 的安装
 
 参看下面的教程：
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org0cb3b00"></a>
+<a id="org6d586bd"></a>
 
-### github的使用
+### `github` 的使用
 
 1.  账号申请(github网站操作)
-2.  配置ssh-key（github网站操作)
+    
+    <https://github.com/join>
+
+2.  配置 `ssh-key` （github网站操作)
+    
+    配置 `ssh-key` 的目的是为了使用 `ssh` 方式和 `github` 服务器建立连接，这样就不用输入用户名和密码。
+    
+    这个步骤的思路是： a. 配置本机的 `ssh-key` ； b. 将本机的 `ssh-key` 的公钥配置在 `github` 上。下面是具体操作：
+    
+    1.  删除别人的 `ssh-key`
+        
+        > **注意**
+        > 
+        > 如果你明白 `ssh-key` 是什么，而且确认这台电脑现在的 `ssh-key` 是你自己生成的，请不做这一步操作。
+        
+            rm -f ~/.ssh/id_rsa*
+    2.  打开终端，输入这条命令：
+        
+            ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+        
+        > **注意**
+        > 
+        > -   命令里面双引号的内容修改成你自己的邮箱
+        > -   该命令会有提示，一路回车就可以了
+    3.  到这里，你本地的 `ssh-key` 就创建好了，需要将它放到 `github` 上
+        
+        终端里通过 `cat` 命令显示 ssh 公钥的内容：
+        
+            cat ~/.ssh/id_rsa.pub
+        
+        将下图中框内的内容都复制出来：
+        
+        ![img](./img/ssh-4.png)
+    
+    4.  使用注册申请好的账号和密码登陆你的 `github`
+    
+    5.  选择你的头像右边的下拉框（在网页的右上方）
+        
+        ![img](./img/ssh-1.png)
+    6.  选择如下的 `SSH and GPG keys`
+        
+        ![img](./img/ssh-2.png)
+    
+    7.  选中右上角的 `New SSH Key`
+        
+        ![img](./img/ssh-3.png)
+    
+    8.  将第3)步你复制的内容粘贴进去，再补充一个标题：
+        
+        ![img](./img/ssh-5.png)
+    
+    9.  最后一步，验证你是否完成了配置
+        
+            ssh -T git@github.com
+        
+        如果看到类似下面的 `successfully` 什么的，而且把你github的账号打印出来，则表示你成功了
+        
+            linc@pop-os:~/agenda$ ssh -T git@github.com
+            Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
+
 3.  创建项目（github网站操作）
+    1.  来到github的首页，并登陆，选择左侧 `Repositories` 右边的那个 `New`:
+        
+        ![img](./img/create-1.png)
+    
+    2.  在创建项目的页面填好 `Repository Name` ，点击 `Create repository` 按钮，项目就创建好了。
+        
+        ![img](./img/create-2.png)
+    
+    3.  在上一步已经在 `github` 服务器上创建好了远程项目，接下来需要将它同步到你的本地。
+        
+        你们需要重点看下面这张图：
+        
+        ![img](./img/create-3.png)
+
 4.  项目管理(本机操作)
+    
+    项目管理的流程如下：
     
     ![img](./img/git_flow.svg)
     
-    1.  git clone
-    2.  git add
-    3.  git commit
-    4.  git push
+    1.  `git clone`
+        `git clone` 命令会在当前目录下下载远端的项目,例如：
+        -   先找到 `git` 仓库的地址，创建项目的最后一步：
+            
+            ![img](./img/clone-1.png)
+        
+        -   使用 `git clone` 将它下载下来：
+            
+                git clone git@github.com:linc5403/for_git_demo.git
+            
+            会将远端 `for_git_demo.git` 仓库下载下来，在当前目录下新创建目录名为 `for_git_demo` 的目录:
+            
+            ![img](./img/clone-2.png)
+            
+            进入 `for_git_demo` 目录后，可以看到其中有 `.git` 的隐藏文件夹；说明 `git` 仓库已经建立好了。
+
+1.  `git add`
+    
+    当你对本地文件作了修改后，应当使用 `git add` 命令将你的变更告知git，此时可以缓存你的变更。
+    
+    让我们在 `for_git_demo` 目录中新建一个README.md文件，并将它添加到git中:
+    
+        linc@pop-os:~/for_git_demo$ echo "#this is my first git repo" >> README.md
+        linc@pop-os:~/for_git_demo$ git status
+        On branch master
+        
+        No commits yet
+        
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+        
+        	README.md
+        
+        nothing added to commit but untracked files present (use "git add" to track)
+        linc@pop-os:~/for_git_demo$ git add README.md
+
+2.  `git commit`
+    当你的变更可以固定下来后，应当使用 `git commit` 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
+    
+    > **重要**
+    > 
+    > 当你还不会使用命令行编辑器的时候，最好使用 `git commit -m “你想说的话"` 这种方式来进行提交
+    
+        linc@pop-os:~/for_git_demo$ git commit -m "init repo"
+        [master (root-commit) 2c902a3] init repo
+         1 file changed, 1 insertion(+)
+         create mode 100644 README.md
+3.  `git push`
+    将你的本地项目同步到服务器，就不怕工作丢失了。
+    
+        linc@pop-os:~/for_git_demo$ git push
+        Enumerating objects: 3, done.
+        Counting objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+        To github.com:linc5403/for_git_demo.git
+         * [new branch]      master -> master
 
 
-<a id="org87b9692"></a>
+<a id="org20c635e"></a>
 
 ### 注意事项
 
@@ -433,5 +561,28 @@
         cd ~
         ls -la | grep "\.git"
     
-    如果这条命令
+    如果上面两条命令执行有类似的回显，说明你的 `home` 目录被上一个同学放到了 `git` 中进行管理，请删除这个文件夹：
+    
+        rm -rf .git
+2.  修改自己提交git的用户名和邮箱
+    
+        git config --list
+    
+    此时会有类似这样的显示：
+    
+        user.name=lin chuan
+        user.email=linch1982@gmail.com
+        core.quotepath=false
+    
+    如果出现的username和email不是你想要的，请使用如下命令进行修改:
+    
+        git config --global user.name "你的名字,最好用英文字母"
+        git config --global user.email "你的邮箱地址"
+    
+    > **注意** 上面两条 `config` 命令中的双引号不要省略
+3.  如果你的git命令回显中出现中文的乱码
+    使用下面这条命令进行修正：
+    
+        git config --global core.quotepath=false
+4.  你可以随时使用 `git status` 命令查看git的状态
 
