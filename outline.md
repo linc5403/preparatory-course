@@ -1,44 +1,47 @@
 
 # Table of Contents
 
-1.  [学习路线](#org62e79c9)
-2.  [预备课必备知识](#orgc6b23dc)
-    1.  [命令行操作](#orgd3853e6)
-        1.  [linux文件和目录](#orgc93bb50)
-        2.  [快捷键](#org6862775)
-        3.  [其他重要命令](#org4fa774f)
-    2.  [Mac下的软件安装](#org559d22e)
-        1.  [brew](#org395d5f7)
-        2.  [直接下载安装包（dmg文件）](#org6d60342)
-    3.  [编辑器](#orgf588faf)
-    4.  [如何做笔记](#org1ee42db)
-        1.  [有道云笔记](#org25ad339)
-        2.  [markdown语法](#orgff8e0ea)
-    5.  [git](#org07d28db)
+1.  [学习路线](#org51eaa50)
+2.  [预备课必备知识](#org0002435)
+    1.  [命令行操作](#orgacfeea4)
+        1.  [linux文件和目录](#orgabfa35a)
+        2.  [快捷键](#orgf2b94f5)
+        3.  [其他重要命令](#org742a52a)
+    2.  [Mac下的软件管理](#org4f0f160)
+        1.  [brew](#org6a8ca3f)
+        2.  [直接下载安装包（dmg文件）](#orge9c591f)
+    3.  [编辑器](#org097c3c2)
+    4.  [如何做笔记](#orgb0fecba)
+        1.  [有道云笔记](#org7af61cd)
+        2.  [markdown语法](#org734014d)
+    5.  [git](#org95796b2)
+        1.  [安装](#org24d5a93)
+        2.  [github的使用](#org5a84ea2)
 
 
-<a id="org62e79c9"></a>
+<a id="org51eaa50"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orgc6b23dc"></a>
+<a id="org0002435"></a>
 
 # 预备课必备知识
 
 [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
 
 
-<a id="orgd3853e6"></a>
+<a id="orgacfeea4"></a>
 
 ## 命令行操作
 
-> **重要** 使用 `Tab` 键可以进行补全，加快你的操作。
+> **重要**
+> 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgc93bb50"></a>
+<a id="orgabfa35a"></a>
 
 ### linux文件和目录
 
@@ -48,6 +51,7 @@
 
 1.  Home目录是什么？
 2.  `.` 和 `..` 是什么？
+3.  什么是隐藏文件
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -65,6 +69,24 @@
 </thead>
 
 <tbody>
+<tr>
+<td class="org-left">ls</td>
+<td class="org-left">查看目录下的文件和文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -l</td>
+<td class="org-left">long选项，显示更多的信息</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -a</td>
+<td class="org-left">显示隐藏文件和文件夹</td>
+</tr>
+
+
 <tr>
 <td class="org-left">cd 文件夹</td>
 <td class="org-left">change dir（切换工作目录）</td>
@@ -135,11 +157,17 @@
 <td class="org-left">mv</td>
 <td class="org-left">move重命名文件/文件夹或是移动文件/文件夹</td>
 </tr>
+
+
+<tr>
+<td class="org-left">touch</td>
+<td class="org-left">创建一个空文件</td>
+</tr>
 </tbody>
 </table>
 
 
-<a id="org6862775"></a>
+<a id="orgf2b94f5"></a>
 
 ### 快捷键
 
@@ -245,24 +273,30 @@
 </table>
 
 
-<a id="org4fa774f"></a>
+<a id="org742a52a"></a>
 
 ### 其他重要命令
 
 1.  `history`
     查看历史命令记录
+2.  `cat`
+    查看文本文件内容
+3.  `grep`
+    过滤内容
 
 
-<a id="org559d22e"></a>
+<a id="org4f0f160"></a>
 
-## Mac下的软件安装
+## Mac下的软件管理
 
 
-<a id="org395d5f7"></a>
+<a id="org6a8ca3f"></a>
 
 ### brew
 
 1.  安装
+
+    [参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577)
 
 2.  速度慢&#x2014;国内镜像修改
 
@@ -312,16 +346,18 @@
     </table>
 
 
-<a id="org6d60342"></a>
+<a id="orge9c591f"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="orgf588faf"></a>
+<a id="org097c3c2"></a>
 
 ## 编辑器
 
 选择一个适合你的编辑器
+
+所有编辑相关的操作都尽量只在编辑器中完成，不需要鼠标和触摸板的操作
 
 -   sublime
     
@@ -330,26 +366,52 @@
 -   Atom
     
     <https://atom.io/>
+
+-   Visual Studio Code （VS-Code）
+    
+    <https://code.visualstudio.com/>
+
 -   vim
 -   emacs
 
 
-<a id="org1ee42db"></a>
+<a id="orgb0fecba"></a>
 
 ## 如何做笔记
 
+<https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
-<a id="org25ad339"></a>
+
+<a id="org7af61cd"></a>
 
 ### 有道云笔记
 
 
-<a id="orgff8e0ea"></a>
+<a id="org734014d"></a>
 
 ### markdown语法
 
 
-<a id="org07d28db"></a>
+<a id="org95796b2"></a>
 
 ## git
+
+
+<a id="org24d5a93"></a>
+
+### 安装
+
+参看下面的教程：
+
+<https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
+
+
+<a id="org5a84ea2"></a>
+
+### github的使用
+
+1.  账号申请(github网站操作)
+2.  配置ssh-key（github网站操作)
+3.  创建项目（github网站操作）
+4.  项目管理(本机操作)
 
