@@ -1,39 +1,40 @@
 
 # Table of Contents
 
-1.  [学习路线](#orga3ac335)
-2.  [预备课必备知识](#orgfc07bb2)
-    1.  [命令行操作](#orgabd0282)
-        1.  [linux文件和目录](#org7aa091f)
-        2.  [快捷键](#org03e1bd0)
-        3.  [其他重要命令](#org6c21c85)
-    2.  [Mac下的软件管理](#org86d2b97)
-        1.  [brew](#org3b91e99)
-        2.  [直接下载安装包（dmg文件）](#org7b8bacd)
-    3.  [编辑器](#orgcadfd1f)
-    4.  [如何做笔记](#org9339713)
-        1.  [有道云笔记](#orgeacd062)
-        2.  [markdown语法](#org974ba3d)
-    5.  [git](#orge2e219a)
-        1.  [安装](#orgfd53a11)
-        2.  [github的使用](#org9b5a182)
+1.  [学习路线](#orge7eea5d)
+2.  [预备课必备知识](#org25bd5d8)
+    1.  [命令行操作](#orgff17d76)
+        1.  [linux文件和目录](#org3d7a11c)
+        2.  [快捷键](#orgfbf986d)
+        3.  [其他重要命令](#org43819ec)
+    2.  [Mac下的软件管理](#orgf419166)
+        1.  [brew](#org913bee3)
+        2.  [直接下载安装包（dmg文件）](#org624b9fc)
+    3.  [编辑器](#orgdbcd4b1)
+    4.  [如何做笔记](#org4ec9b4c)
+        1.  [有道云笔记](#org96126fa)
+        2.  [markdown语法](#org2decadf)
+    5.  [git](#org1a3266f)
+        1.  [安装](#org5afcae1)
+        2.  [github的使用](#org0cb3b00)
+        3.  [注意事项](#org87b9692)
 
 
-<a id="orga3ac335"></a>
+<a id="orge7eea5d"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orgfc07bb2"></a>
+<a id="org25bd5d8"></a>
 
 # 预备课必备知识
 
 [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
 
 
-<a id="orgabd0282"></a>
+<a id="orgff17d76"></a>
 
 ## 命令行操作
 
@@ -41,7 +42,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org7aa091f"></a>
+<a id="org3d7a11c"></a>
 
 ### linux文件和目录
 
@@ -50,7 +51,7 @@
 [文件与目录管理](http://cn.linux.vbird.org/linux_basic/0220filemanager.php)
 
 1.  Home目录是什么？
-2.  `.` 和 `..` 是什么？
+2.  `.` 和 `..` 以及 ~ 是什么？
 3.  什么是隐藏文件
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -167,7 +168,7 @@
 </table>
 
 
-<a id="org03e1bd0"></a>
+<a id="orgfbf986d"></a>
 
 ### 快捷键
 
@@ -273,7 +274,7 @@
 </table>
 
 
-<a id="org6c21c85"></a>
+<a id="org43819ec"></a>
 
 ### 其他重要命令
 
@@ -285,12 +286,12 @@
     过滤内容
 
 
-<a id="org86d2b97"></a>
+<a id="orgf419166"></a>
 
 ## Mac下的软件管理
 
 
-<a id="org3b91e99"></a>
+<a id="org913bee3"></a>
 
 ### brew
 
@@ -346,12 +347,12 @@
     </table>
 
 
-<a id="org7b8bacd"></a>
+<a id="org624b9fc"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="orgcadfd1f"></a>
+<a id="orgdbcd4b1"></a>
 
 ## 编辑器
 
@@ -375,29 +376,29 @@
 -   emacs
 
 
-<a id="org9339713"></a>
+<a id="org4ec9b4c"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgeacd062"></a>
+<a id="org96126fa"></a>
 
 ### 有道云笔记
 
 
-<a id="org974ba3d"></a>
+<a id="org2decadf"></a>
 
 ### markdown语法
 
 
-<a id="orge2e219a"></a>
+<a id="org1a3266f"></a>
 
 ## git
 
 
-<a id="orgfd53a11"></a>
+<a id="org5afcae1"></a>
 
 ### 安装
 
@@ -406,7 +407,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org9b5a182"></a>
+<a id="org0cb3b00"></a>
 
 ### github的使用
 
@@ -421,4 +422,16 @@
     2.  git add
     3.  git commit
     4.  git push
+
+
+<a id="org87b9692"></a>
+
+### 注意事项
+
+1.  确认你的 `home` 目录下没有 `.git` 文件夹
+    
+        cd ~
+        ls -la | grep "\.git"
+    
+    如果这条命令
 
