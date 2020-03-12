@@ -1,40 +1,40 @@
 
 # Table of Contents
 
-1.  [学习路线](#org1bfb4c8)
-2.  [预备课必备知识](#orgf0783c6)
-    1.  [命令行操作](#org2faa997)
-        1.  [linux文件和目录](#org355683c)
-        2.  [快捷键](#org3475ee7)
-        3.  [其他重要命令](#org52ef5b8)
-    2.  [Mac下的软件管理](#orgd606499)
-        1.  [brew](#orgc74a5e1)
-        2.  [直接下载安装包（dmg文件）](#org063e96d)
-    3.  [编辑器](#org2b21967)
-    4.  [如何做笔记](#org9222435)
-        1.  [有道云笔记](#orgd13ce90)
-        2.  [markdown语法](#org10216da)
-    5.  [git](#org6bca8a7)
-        1.  [`git` 的安装](#org090abce)
-        2.  [`github` 的使用](#org6d586bd)
-        3.  [注意事项](#org20c635e)
+1.  [学习路线](#org7c04cdc)
+2.  [预备课必备知识](#org1232dc9)
+    1.  [命令行操作](#orgc61bf41)
+        1.  [linux文件和目录](#orge08e582)
+        2.  [快捷键](#orgf32c8f7)
+        3.  [其他重要命令](#org89e5c9c)
+    2.  [Mac下的软件管理](#orgfe58d61)
+        1.  [brew](#org2294109)
+        2.  [直接下载安装包（dmg文件）](#org26c0a9d)
+    3.  [编辑器](#orga5e4caf)
+    4.  [如何做笔记](#org5bef833)
+        1.  [有道云笔记](#org4d5ac64)
+        2.  [markdown语法](#orgcef5774)
+    5.  [git](#org97185a4)
+        1.  [`git` 的安装](#orge9e41b4)
+        2.  [`github` 的使用](#org94361f9)
+        3.  [注意事项](#orge5af717)
 
 
-<a id="org1bfb4c8"></a>
+<a id="org7c04cdc"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orgf0783c6"></a>
+<a id="org1232dc9"></a>
 
 # 预备课必备知识
 
 [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
 
 
-<a id="org2faa997"></a>
+<a id="orgc61bf41"></a>
 
 ## 命令行操作
 
@@ -42,7 +42,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org355683c"></a>
+<a id="orge08e582"></a>
 
 ### linux文件和目录
 
@@ -168,7 +168,7 @@
 </table>
 
 
-<a id="org3475ee7"></a>
+<a id="orgf32c8f7"></a>
 
 ### 快捷键
 
@@ -274,7 +274,7 @@
 </table>
 
 
-<a id="org52ef5b8"></a>
+<a id="org89e5c9c"></a>
 
 ### 其他重要命令
 
@@ -286,12 +286,12 @@
     过滤内容
 
 
-<a id="orgd606499"></a>
+<a id="orgfe58d61"></a>
 
 ## Mac下的软件管理
 
 
-<a id="orgc74a5e1"></a>
+<a id="org2294109"></a>
 
 ### brew
 
@@ -347,12 +347,12 @@
     </table>
 
 
-<a id="org063e96d"></a>
+<a id="org26c0a9d"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="org2b21967"></a>
+<a id="orga5e4caf"></a>
 
 ## 编辑器
 
@@ -376,29 +376,29 @@
 -   emacs
 
 
-<a id="org9222435"></a>
+<a id="org5bef833"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgd13ce90"></a>
+<a id="org4d5ac64"></a>
 
 ### 有道云笔记
 
 
-<a id="org10216da"></a>
+<a id="orgcef5774"></a>
 
 ### markdown语法
 
 
-<a id="org6bca8a7"></a>
+<a id="org97185a4"></a>
 
 ## git
 
 
-<a id="org090abce"></a>
+<a id="orge9e41b4"></a>
 
 ### `git` 的安装
 
@@ -407,16 +407,16 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org6d586bd"></a>
+<a id="org94361f9"></a>
 
 ### `github` 的使用
 
 1.  账号申请(github网站操作)
-    
+
     <https://github.com/join>
 
 2.  配置 `ssh-key` （github网站操作)
-    
+
     配置 `ssh-key` 的目的是为了使用 `ssh` 方式和 `github` 服务器建立连接，这样就不用输入用户名和密码。
     
     这个步骤的思路是： a. 配置本机的 `ssh-key` ； b. 将本机的 `ssh-key` 的公钥配置在 `github` 上。下面是具体操作：
@@ -473,6 +473,7 @@
             Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
 
 3.  创建项目（github网站操作）
+
     1.  来到github的首页，并登陆，选择左侧 `Repositories` 右边的那个 `New`:
         
         ![img](./img/create-1.png)
@@ -488,7 +489,7 @@
         ![img](./img/create-3.png)
 
 4.  项目管理(本机操作)
-    
+
     项目管理的流程如下：
     
     ![img](./img/git_flow.svg)
@@ -508,51 +509,51 @@
             ![img](./img/clone-2.png)
             
             进入 `for_git_demo` 目录后，可以看到其中有 `.git` 的隐藏文件夹；说明 `git` 仓库已经建立好了。
-
-1.  `git add`
     
-    当你对本地文件作了修改后，应当使用 `git add` 命令将你的变更告知git，此时可以缓存你的变更。
-    
-    让我们在 `for_git_demo` 目录中新建一个README.md文件，并将它添加到git中:
-    
-        linc@pop-os:~/for_git_demo$ echo "#this is my first git repo" >> README.md
-        linc@pop-os:~/for_git_demo$ git status
-        On branch master
+    2.  `git add`
         
-        No commits yet
+        当你对本地文件作了修改后，应当使用 `git add` 命令将你的变更告知git，此时可以缓存你的变更。
         
-        Untracked files:
-          (use "git add <file>..." to include in what will be committed)
+        让我们在 `for_git_demo` 目录中新建一个README.md文件，并将它添加到git中:
         
-        	README.md
+            linc@pop-os:~/for_git_demo$ echo "#this is my first git repo" >> README.md
+            linc@pop-os:~/for_git_demo$ git status
+            On branch master
+            
+            No commits yet
+            
+            Untracked files:
+              (use "git add <file>..." to include in what will be committed)
+            
+            	README.md
+            
+            nothing added to commit but untracked files present (use "git add" to track)
+            linc@pop-os:~/for_git_demo$ git add README.md
+    
+    3.  `git commit`
+        当你的变更可以固定下来后，应当使用 `git commit` 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
         
-        nothing added to commit but untracked files present (use "git add" to track)
-        linc@pop-os:~/for_git_demo$ git add README.md
-
-2.  `git commit`
-    当你的变更可以固定下来后，应当使用 `git commit` 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
-    
-    > **重要**
-    > 
-    > 当你还不会使用命令行编辑器的时候，最好使用 `git commit -m “你想说的话"` 这种方式来进行提交
-    
-        linc@pop-os:~/for_git_demo$ git commit -m "init repo"
-        [master (root-commit) 2c902a3] init repo
-         1 file changed, 1 insertion(+)
-         create mode 100644 README.md
-3.  `git push`
-    将你的本地项目同步到服务器，就不怕工作丢失了。
-    
-        linc@pop-os:~/for_git_demo$ git push
-        Enumerating objects: 3, done.
-        Counting objects: 100% (3/3), done.
-        Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
-        Total 3 (delta 0), reused 0 (delta 0)
-        To github.com:linc5403/for_git_demo.git
-         * [new branch]      master -> master
+        > **重要**
+        > 
+        > 当你还不会使用命令行编辑器的时候，最好使用 `git commit -m “你想说的话"` 这种方式来进行提交
+        
+            linc@pop-os:~/for_git_demo$ git commit -m "init repo"
+            [master (root-commit) 2c902a3] init repo
+             1 file changed, 1 insertion(+)
+             create mode 100644 README.md
+    4.  `git push`
+        将你的本地项目同步到服务器，就不怕工作丢失了。
+        
+            linc@pop-os:~/for_git_demo$ git push
+            Enumerating objects: 3, done.
+            Counting objects: 100% (3/3), done.
+            Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+            Total 3 (delta 0), reused 0 (delta 0)
+            To github.com:linc5403/for_git_demo.git
+             * [new branch]      master -> master
 
 
-<a id="org20c635e"></a>
+<a id="orge5af717"></a>
 
 ### 注意事项
 

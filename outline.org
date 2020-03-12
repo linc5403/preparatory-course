@@ -151,17 +151,17 @@
 
 *** ~github~ 的使用
     
-    1. 账号申请(github网站操作)
+**** 账号申请(github网站操作)
 
-       https://github.com/join
+     https://github.com/join
 
-    2. 配置 ~ssh-key~ （github网站操作)
+**** 配置 ~ssh-key~ （github网站操作)
        
-       配置 ~ssh-key~ 的目的是为了使用 ~ssh~ 方式和 ~github~ 服务器建立连接，这样就不用输入用户名和密码。
+     配置 ~ssh-key~ 的目的是为了使用 ~ssh~ 方式和 ~github~ 服务器建立连接，这样就不用输入用户名和密码。
 
-       这个步骤的思路是： a. 配置本机的 ~ssh-key~ ； b. 将本机的 ~ssh-key~ 的公钥配置在 ~github~ 上。下面是具体操作：
+     这个步骤的思路是： a. 配置本机的 ~ssh-key~ ； b. 将本机的 ~ssh-key~ 的公钥配置在 ~github~ 上。下面是具体操作：
        
-       1) 删除别人的 ~ssh-key~
+       1. 删除别人的 ~ssh-key~
   	  #+begin_quote	  
 	    *注意*
 
@@ -170,7 +170,7 @@
 	  #+begin_example
             rm -f ~/.ssh/id_rsa*
 	  #+end_example
-       2) 打开终端，输入这条命令：
+       2. 打开终端，输入这条命令：
 	  #+begin_example
             ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 	  #+end_example
@@ -179,7 +179,7 @@
 	    - 命令里面双引号的内容修改成你自己的邮箱
 	    - 该命令会有提示，一路回车就可以了
 	  #+end_quote
-       3) 到这里，你本地的 ~ssh-key~ 就创建好了，需要将它放到 ~github~ 上
+       3. 到这里，你本地的 ~ssh-key~ 就创建好了，需要将它放到 ~github~ 上
 
 	  终端里通过 ~cat~ 命令显示 ssh 公钥的内容：
 
@@ -191,24 +191,24 @@
 
 	  [[./img/ssh-4.png]]
 
-       4) 使用注册申请好的账号和密码登陆你的 ~github~
+       4. 使用注册申请好的账号和密码登陆你的 ~github~
 
-       5) 选择你的头像右边的下拉框（在网页的右上方）
+       5. 选择你的头像右边的下拉框（在网页的右上方）
 
 	  [[./img/ssh-1.png]]
-       6) 选择如下的 ~SSH and GPG keys~
+       6. 选择如下的 ~SSH and GPG keys~
 
 	  [[./img/ssh-2.png]]
 	  
-       7) 选中右上角的 ~New SSH Key~
+       7. 选中右上角的 ~New SSH Key~
 
 	  [[./img/ssh-3.png]]
 
-       8) 将第3)步你复制的内容粘贴进去，再补充一个标题：
+       8. 将第3)步你复制的内容粘贴进去，再补充一个标题：
 
 	  [[./img/ssh-5.png]]
 
-       9) 最后一步，验证你是否完成了配置
+       9. 最后一步，验证你是否完成了配置
 	  #+begin_example
 	    ssh -T git@github.com
 	  #+end_example
@@ -218,25 +218,25 @@
 	    Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
 	  #+end_example
 
-    3. 创建项目（github网站操作）
+**** 创建项目（github网站操作）
+     
+     1. 来到github的首页，并登陆，选择左侧 ~Repositories~ 右边的那个 ~New~:
+	
+	[[./img/create-1.png]]
 
-       1) 来到github的首页，并登陆，选择左侧 ~Repositories~ 右边的那个 ~New~:
+     2. 在创建项目的页面填好 ~Repository Name~ ，点击 ~Create repository~ 按钮，项目就创建好了。
 
-	  [[./img/create-1.png]]
+	[[./img/create-2.png]]
 
-       2) 在创建项目的页面填好 ~Repository Name~ ，点击 ~Create repository~ 按钮，项目就创建好了。
+     3. 在上一步已经在 ~github~ 服务器上创建好了远程项目，接下来需要将它同步到你的本地。
 
-	  [[./img/create-2.png]]
+	你们需要重点看下面这张图：
 
-       3) 在上一步已经在 ~github~ 服务器上创建好了远程项目，接下来需要将它同步到你的本地。
+	[[./img/create-3.png]]
 
-	  你们需要重点看下面这张图：
+**** 项目管理(本机操作)
 
-	  [[./img/create-3.png]]
-
-    4. 项目管理(本机操作)
-
-       项目管理的流程如下：
+     项目管理的流程如下：
        #+begin_src plantuml :file ./img/git_flow.svg
 	 @startuml
 	 start
@@ -253,7 +253,7 @@
        #+RESULTS:
        [[file:./img/git_flow.svg]]
 
-       1) ~git clone~
+       1. ~git clone~
 	  ~git clone~ 命令会在当前目录下下载远端的项目,例如：
 	  
 	  - 先找到 ~git~ 仓库的地址，创建项目的最后一步：
@@ -272,8 +272,7 @@
 	    
 	    进入 ~for_git_demo~ 目录后，可以看到其中有 ~.git~ 的隐藏文件夹；说明 ~git~ 仓库已经建立好了。
 	  
-	  
-       2) ~git add~
+       2. ~git add~
 
 	  当你对本地文件作了修改后，应当使用 ~git add~ 命令将你的变更告知git，此时可以缓存你的变更。
 
@@ -294,7 +293,7 @@
 	    linc@pop-os:~/for_git_demo$ git add README.md
           #+end_example
 
-       3) ~git commit~
+       3. ~git commit~
 	  当你的变更可以固定下来后，应当使用 ~git commit~ 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
 	  #+begin_quote
 	  *重要*
@@ -307,7 +306,7 @@
 	     1 file changed, 1 insertion(+)
 	     create mode 100644 README.md
 	  #+end_example
-       4) ~git push~
+       4. ~git push~
 	  将你的本地项目同步到服务器，就不怕工作丢失了。
 	  #+begin_example
 	    linc@pop-os:~/for_git_demo$ git push
