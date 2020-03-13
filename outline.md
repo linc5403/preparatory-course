@@ -1,36 +1,36 @@
 
 # Table of Contents
 
-1.  [学习路线](#org179f169)
-2.  [预备课必备知识](#org6cdc395)
-    1.  [命令行操作](#orgf944a14)
-        1.  [linux文件和目录](#orgaa45db7)
-        2.  [其他重要命令](#org4e6f6dc)
-        3.  [命令行快捷键](#org7934471)
-    2.  [Mac下的软件管理-`brew`](#orgf690785)
-        1.  [install](#org4e086d4)
-        2.  [修改源变快一点](#org81cf96b)
-        3.  [brew常用命令](#orgebb3ceb)
-    3.  [编辑器](#org5ee079a)
-    4.  [如何做笔记](#org6040315)
-        1.  [有道云笔记](#orgff7228c)
-        2.  [markdown语法](#orga2257e4)
-    5.  [`git`](#org2a4ec2b)
-        1.  [git和github的关系说明](#org48c663d)
-        2.  [`git` 的安装](#org007dac8)
-        3.  [`github` 的使用](#org39fbf4e)
-        4.  [注意事项](#org4a74d51)
+1.  [学习路线](#org5b7c93f)
+2.  [预备课必备知识](#orgce51b2e)
+    1.  [命令行操作](#org63c9af9)
+        1.  [linux文件和目录](#orgd5c620c)
+        2.  [其他重要命令](#orgd309d0d)
+        3.  [命令行快捷键](#orge30ccbf)
+    2.  [Mac下的软件管理-`brew`](#org4e3d485)
+        1.  [install](#orgf3f0d81)
+        2.  [修改源变快一点](#org7a542ee)
+        3.  [brew常用命令](#org28cbe93)
+    3.  [编辑器](#orgab6487b)
+    4.  [如何做笔记](#orgc245f3d)
+        1.  [有道云笔记](#org78337da)
+        2.  [markdown语法](#orgdac883a)
+    5.  [`git`](#org08c25ba)
+        1.  [git和github的关系说明](#orgfe36648)
+        2.  [`git` 的安装](#orgfc87227)
+        3.  [`github` 的使用](#org84bb651)
+        4.  [注意事项](#orge91ad43)
 
 
 
-<a id="org179f169"></a>
+<a id="org5b7c93f"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org6cdc395"></a>
+<a id="orgce51b2e"></a>
 
 # 预备课必备知识
 
@@ -43,7 +43,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="orgf944a14"></a>
+<a id="org63c9af9"></a>
 
 ## 命令行操作
 
@@ -52,7 +52,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgaa45db7"></a>
+<a id="orgd5c620c"></a>
 
 ### linux文件和目录
 
@@ -361,7 +361,7 @@
     </table>
 
 
-<a id="org4e6f6dc"></a>
+<a id="orgd309d0d"></a>
 
 ### 其他重要命令
 
@@ -373,7 +373,7 @@
     过滤内容
 
 
-<a id="org7934471"></a>
+<a id="orge30ccbf"></a>
 
 ### 命令行快捷键
 
@@ -479,21 +479,21 @@
 </table>
 
 
-<a id="orgf690785"></a>
+<a id="org4e3d485"></a>
 
 ## Mac下的软件管理-`brew`
 
 [官网](https://brew.sh/)
 
 
-<a id="org4e086d4"></a>
+<a id="orgf3f0d81"></a>
 
 ### install
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
-<a id="org81cf96b"></a>
+<a id="org7a542ee"></a>
 
 ### 修改源变快一点
 
@@ -510,7 +510,7 @@
     git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="orgebb3ceb"></a>
+<a id="org28cbe93"></a>
 
 ### brew常用命令
 
@@ -556,13 +556,13 @@
 </table>
 
 
-<a id="org5ee079a"></a>
+<a id="orgab6487b"></a>
 
 ## 编辑器
 
 所有编辑相关的操作都尽量只在编辑器中完成，不需要鼠标和触摸板的操作
 
-不管使用什么编辑器，必须熟悉的快捷键操作包括：
+不管你使用什么编辑器，必须熟悉的快捷键操作包括：
 
 1.  打开文件，关闭文件
 2.  光标移动
@@ -587,38 +587,38 @@
 -   emacs
 
 
-<a id="org6040315"></a>
+<a id="orgc245f3d"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgff7228c"></a>
+<a id="org78337da"></a>
 
 ### 有道云笔记
 
 
-<a id="orga2257e4"></a>
+<a id="orgdac883a"></a>
 
 ### markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="org2a4ec2b"></a>
+<a id="org08c25ba"></a>
 
 ## `git`
 
 
-<a id="org48c663d"></a>
+<a id="orgfe36648"></a>
 
 ### git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="org007dac8"></a>
+<a id="orgfc87227"></a>
 
 ### `git` 的安装
 
@@ -627,11 +627,11 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org39fbf4e"></a>
+<a id="org84bb651"></a>
 
 ### `github` 的使用
 
-1.  创建申请(github网站操作)
+1.  创建账号(github网站操作)
 
     <https://github.com/join>
 
@@ -777,7 +777,7 @@
              * [new branch]      master -> master
 
 
-<a id="org4a74d51"></a>
+<a id="orge91ad43"></a>
 
 ### 注意事项
 
@@ -793,7 +793,7 @@
     
     说明你的 `home` 目录被上一个同学放到了 `git` 中进行管理，请删除这个文件夹：
     
-        rm -rf .git
+        rm -rf ~/.git
 2.  修改自己提交git的用户名和邮箱
     
         git config --list
