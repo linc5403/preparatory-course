@@ -1,33 +1,33 @@
 
 # Table of Contents
 
-1.  [学习路线](#org65e818a)
-2.  [预备课必备知识](#orgd49d425)
-    1.  [命令行操作](#org9e3ea94)
-        1.  [linux文件和目录](#orgd7a0b27)
-        2.  [快捷键](#org486a9d7)
-        3.  [其他重要命令](#orgb591b79)
-    2.  [Mac下的软件管理](#org57c0945)
-        1.  [brew](#orgbc71f84)
-        2.  [直接下载安装包（dmg文件）](#org2f5194c)
-    3.  [编辑器](#org6ba7593)
-    4.  [如何做笔记](#org632cb04)
-        1.  [有道云笔记](#org04eb1f5)
-        2.  [markdown语法](#orgfc65dba)
-    5.  [`git`](#orgc93ed62)
-        1.  [`git` 的安装](#orgf4431b2)
-        2.  [`github` 的使用](#orgbb95bed)
-        3.  [注意事项](#orgfe36858)
+1.  [学习路线](#org6ce6a55)
+2.  [预备课必备知识](#org62fbec4)
+    1.  [命令行操作](#orga01ccda)
+        1.  [linux文件和目录](#org8a92e92)
+        2.  [快捷键](#org5675005)
+        3.  [其他重要命令](#orgcacb444)
+    2.  [Mac下的软件管理](#org7adccd6)
+        1.  [brew](#org819910f)
+        2.  [直接下载安装包（dmg文件）](#org1a979f9)
+    3.  [编辑器](#org66f0c74)
+    4.  [如何做笔记](#org0fbab31)
+        1.  [有道云笔记](#orgf1d5ec8)
+        2.  [markdown语法](#org966255a)
+    5.  [`git`](#org891f0a7)
+        1.  [`git` 的安装](#org0e58d7c)
+        2.  [`github` 的使用](#orge19d77c)
+        3.  [注意事项](#orgbc72fae)
 
 
-<a id="org65e818a"></a>
+<a id="org6ce6a55"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orgd49d425"></a>
+<a id="org62fbec4"></a>
 
 # 预备课必备知识
 
@@ -40,7 +40,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="org9e3ea94"></a>
+<a id="orga01ccda"></a>
 
 ## 命令行操作
 
@@ -49,7 +49,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgd7a0b27"></a>
+<a id="org8a92e92"></a>
 
 ### linux文件和目录
 
@@ -176,7 +176,7 @@
 </table>
 
 
-<a id="org486a9d7"></a>
+<a id="org5675005"></a>
 
 ### 快捷键
 
@@ -282,7 +282,7 @@
 </table>
 
 
-<a id="orgb591b79"></a>
+<a id="orgcacb444"></a>
 
 ### 其他重要命令
 
@@ -294,12 +294,12 @@
     过滤内容
 
 
-<a id="org57c0945"></a>
+<a id="org7adccd6"></a>
 
 ## Mac下的软件管理
 
 
-<a id="orgbc71f84"></a>
+<a id="org819910f"></a>
 
 ### brew
 
@@ -362,12 +362,12 @@
     </table>
 
 
-<a id="org2f5194c"></a>
+<a id="org1a979f9"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="org6ba7593"></a>
+<a id="org66f0c74"></a>
 
 ## 编辑器
 
@@ -391,29 +391,29 @@
 -   emacs
 
 
-<a id="org632cb04"></a>
+<a id="org0fbab31"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="org04eb1f5"></a>
+<a id="orgf1d5ec8"></a>
 
 ### 有道云笔记
 
 
-<a id="orgfc65dba"></a>
+<a id="org966255a"></a>
 
 ### markdown语法
 
 
-<a id="orgc93ed62"></a>
+<a id="org891f0a7"></a>
 
 ## `git`
 
 
-<a id="orgf4431b2"></a>
+<a id="org0e58d7c"></a>
 
 ### `git` 的安装
 
@@ -422,7 +422,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="orgbb95bed"></a>
+<a id="orge19d77c"></a>
 
 ### `github` 的使用
 
@@ -510,7 +510,9 @@
     ![img](./img/git_flow.svg)
     
     1.  `git clone`
+        
         `git clone` 命令会在当前目录下下载远端的项目,例如：
+        
         -   先找到 `git` 仓库的地址，创建项目的最后一步：
             
             ![img](./img/clone-1.png)
@@ -546,6 +548,7 @@
             linc@pop-os:~/for_git_demo$ git add README.md
     
     3.  `git commit`
+        
         当你的变更可以固定下来后，应当使用 `git commit` 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
         
         > **重要**
@@ -557,6 +560,7 @@
              1 file changed, 1 insertion(+)
              create mode 100644 README.md
     4.  `git push`
+        
         将你的本地项目同步到服务器，就不怕工作丢失了。
         
             linc@pop-os:~/for_git_demo$ git push
@@ -568,7 +572,7 @@
              * [new branch]      master -> master
 
 
-<a id="orgfe36858"></a>
+<a id="orgbc72fae"></a>
 
 ### 注意事项
 

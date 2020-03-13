@@ -274,6 +274,7 @@
        [[file:./img/git_flow.svg]]
 
        1. ~git clone~
+
 	  ~git clone~ 命令会在当前目录下下载远端的项目,例如：
 	  
 	  - 先找到 ~git~ 仓库的地址，创建项目的最后一步：
@@ -314,6 +315,7 @@
           #+end_example
 
        3. ~git commit~
+
 	  当你的变更可以固定下来后，应当使用 ~git commit~ 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
 	  #+begin_quote
 	  *重要*
@@ -327,6 +329,7 @@
 	     create mode 100644 README.md
 	  #+end_example
        4. ~git push~
+
 	  将你的本地项目同步到服务器，就不怕工作丢失了。
 	  #+begin_example
 	    linc@pop-os:~/for_git_demo$ git push
