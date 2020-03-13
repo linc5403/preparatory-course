@@ -163,7 +163,7 @@
    https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629
 *** 有道云笔记
 *** markdown语法
-** git
+** ~git~
 *** ~git~ 的安装
     参看下面的教程：
 
