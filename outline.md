@@ -1,33 +1,33 @@
 
 # Table of Contents
 
-1.  [学习路线](#org99fa207)
-2.  [预备课必备知识](#orgdccb669)
-    1.  [命令行操作](#org1f8ffdb)
-        1.  [linux文件和目录](#org1754d91)
-        2.  [快捷键](#orgbac8259)
-        3.  [其他重要命令](#org271da3c)
-    2.  [Mac下的软件管理](#org078fcaa)
-        1.  [brew](#org023f960)
-        2.  [直接下载安装包（dmg文件）](#org5bfeedf)
-    3.  [编辑器](#org4c9c390)
-    4.  [如何做笔记](#org67effb5)
-        1.  [有道云笔记](#orgfb4286a)
-        2.  [markdown语法](#org0c0e97c)
-    5.  [git](#org62689dd)
-        1.  [`git` 的安装](#org1ef3bfa)
-        2.  [`github` 的使用](#orgfa6875a)
-        3.  [注意事项](#orge702bc4)
+1.  [学习路线](#org8281212)
+2.  [预备课必备知识](#orgde1bd58)
+    1.  [命令行操作](#org92331cd)
+        1.  [linux文件和目录](#org9be86a8)
+        2.  [快捷键](#org031c094)
+        3.  [其他重要命令](#org13cc165)
+    2.  [Mac下的软件管理](#orga313791)
+        1.  [brew](#org02fb89b)
+        2.  [直接下载安装包（dmg文件）](#org67e5528)
+    3.  [编辑器](#org422d109)
+    4.  [如何做笔记](#orgf437637)
+        1.  [有道云笔记](#org2ae69fa)
+        2.  [markdown语法](#org8d32298)
+    5.  [git](#org343d189)
+        1.  [`git` 的安装](#orgce52386)
+        2.  [`github` 的使用](#org6dc98dc)
+        3.  [注意事项](#orgb564a19)
 
 
-<a id="org99fa207"></a>
+<a id="org8281212"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orgdccb669"></a>
+<a id="orgde1bd58"></a>
 
 # 预备课必备知识
 
@@ -40,7 +40,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="org1f8ffdb"></a>
+<a id="org92331cd"></a>
 
 ## 命令行操作
 
@@ -49,7 +49,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org1754d91"></a>
+<a id="org9be86a8"></a>
 
 ### linux文件和目录
 
@@ -176,7 +176,7 @@
 </table>
 
 
-<a id="orgbac8259"></a>
+<a id="org031c094"></a>
 
 ### 快捷键
 
@@ -282,7 +282,7 @@
 </table>
 
 
-<a id="org271da3c"></a>
+<a id="org13cc165"></a>
 
 ### 其他重要命令
 
@@ -294,22 +294,29 @@
     过滤内容
 
 
-<a id="org078fcaa"></a>
+<a id="orga313791"></a>
 
 ## Mac下的软件管理
 
 
-<a id="org023f960"></a>
+<a id="org02fb89b"></a>
 
 ### brew
 
 1.  安装
 
     [参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577)
+    
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 2.  速度慢&#x2014;国内镜像修改
 
     [参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577)
+    
+        cd $(brew --repo)
+        git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+        cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+        git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
 
 3.  常用命令
 
@@ -355,12 +362,12 @@
     </table>
 
 
-<a id="org5bfeedf"></a>
+<a id="org67e5528"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="org4c9c390"></a>
+<a id="org422d109"></a>
 
 ## 编辑器
 
@@ -384,29 +391,29 @@
 -   emacs
 
 
-<a id="org67effb5"></a>
+<a id="orgf437637"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgfb4286a"></a>
+<a id="org2ae69fa"></a>
 
 ### 有道云笔记
 
 
-<a id="org0c0e97c"></a>
+<a id="org8d32298"></a>
 
 ### markdown语法
 
 
-<a id="org62689dd"></a>
+<a id="org343d189"></a>
 
 ## git
 
 
-<a id="org1ef3bfa"></a>
+<a id="orgce52386"></a>
 
 ### `git` 的安装
 
@@ -415,7 +422,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="orgfa6875a"></a>
+<a id="org6dc98dc"></a>
 
 ### `github` 的使用
 
@@ -561,7 +568,7 @@
              * [new branch]      master -> master
 
 
-<a id="orge702bc4"></a>
+<a id="orgb564a19"></a>
 
 ### 注意事项
 
