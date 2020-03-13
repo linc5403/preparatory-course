@@ -1,36 +1,36 @@
 
 # Table of Contents
 
-1.  [学习路线](#org5b7c93f)
-2.  [预备课必备知识](#orgce51b2e)
-    1.  [命令行操作](#org63c9af9)
-        1.  [linux文件和目录](#orgd5c620c)
-        2.  [其他重要命令](#orgd309d0d)
-        3.  [命令行快捷键](#orge30ccbf)
-    2.  [Mac下的软件管理-`brew`](#org4e3d485)
-        1.  [install](#orgf3f0d81)
-        2.  [修改源变快一点](#org7a542ee)
-        3.  [brew常用命令](#org28cbe93)
-    3.  [编辑器](#orgab6487b)
-    4.  [如何做笔记](#orgc245f3d)
-        1.  [有道云笔记](#org78337da)
-        2.  [markdown语法](#orgdac883a)
-    5.  [`git`](#org08c25ba)
-        1.  [git和github的关系说明](#orgfe36648)
-        2.  [`git` 的安装](#orgfc87227)
-        3.  [`github` 的使用](#org84bb651)
-        4.  [注意事项](#orge91ad43)
+1.  [学习路线](#orgc0d1834)
+2.  [预备课必备知识](#org6cfb1c0)
+    1.  [命令行操作](#org31c7d39)
+        1.  [linux文件和目录](#org57971de)
+        2.  [其他重要命令](#orgc666cbd)
+        3.  [命令行快捷键](#org86d9f9e)
+    2.  [Mac下的软件管理-`brew`](#org2e64d01)
+        1.  [install](#orgfd009cd)
+        2.  [修改源变快一点](#org261e45c)
+        3.  [brew常用命令](#org53a6ec3)
+    3.  [编辑器](#orgb279616)
+    4.  [如何做笔记](#org760f655)
+        1.  [有道云笔记](#orge35128e)
+        2.  [markdown语法](#org983e398)
+    5.  [`git`](#orgbe5c7ea)
+        1.  [git和github的关系说明](#orgc5bc119)
+        2.  [`git` 的安装](#orga89da68)
+        3.  [`github` 的使用](#org2c6e316)
+        4.  [注意事项](#orgda2499f)
 
 
 
-<a id="org5b7c93f"></a>
+<a id="orgc0d1834"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orgce51b2e"></a>
+<a id="org6cfb1c0"></a>
 
 # 预备课必备知识
 
@@ -43,7 +43,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="org63c9af9"></a>
+<a id="org31c7d39"></a>
 
 ## 命令行操作
 
@@ -52,7 +52,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgd5c620c"></a>
+<a id="org57971de"></a>
 
 ### linux文件和目录
 
@@ -63,7 +63,7 @@
 带着问题学习：
 
 > 1.  Home目录是什么？
-> 2.  `.` 和 `..` 以及 ~ 是什么？
+> 2.  `.` 和 `..` 以及 `~` 是什么？
 > 3.  什么是隐藏文件
 > 4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
 
@@ -361,7 +361,7 @@
     </table>
 
 
-<a id="orgd309d0d"></a>
+<a id="orgc666cbd"></a>
 
 ### 其他重要命令
 
@@ -373,7 +373,7 @@
     过滤内容
 
 
-<a id="orge30ccbf"></a>
+<a id="org86d9f9e"></a>
 
 ### 命令行快捷键
 
@@ -479,21 +479,21 @@
 </table>
 
 
-<a id="org4e3d485"></a>
+<a id="org2e64d01"></a>
 
 ## Mac下的软件管理-`brew`
 
 [官网](https://brew.sh/)
 
 
-<a id="orgf3f0d81"></a>
+<a id="orgfd009cd"></a>
 
 ### install
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
-<a id="org7a542ee"></a>
+<a id="org261e45c"></a>
 
 ### 修改源变快一点
 
@@ -510,7 +510,7 @@
     git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org28cbe93"></a>
+<a id="org53a6ec3"></a>
 
 ### brew常用命令
 
@@ -556,7 +556,7 @@
 </table>
 
 
-<a id="orgab6487b"></a>
+<a id="orgb279616"></a>
 
 ## 编辑器
 
@@ -587,38 +587,38 @@
 -   emacs
 
 
-<a id="orgc245f3d"></a>
+<a id="org760f655"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="org78337da"></a>
+<a id="orge35128e"></a>
 
 ### 有道云笔记
 
 
-<a id="orgdac883a"></a>
+<a id="org983e398"></a>
 
 ### markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="org08c25ba"></a>
+<a id="orgbe5c7ea"></a>
 
 ## `git`
 
 
-<a id="orgfe36648"></a>
+<a id="orgc5bc119"></a>
 
 ### git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="orgfc87227"></a>
+<a id="orga89da68"></a>
 
 ### `git` 的安装
 
@@ -627,7 +627,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org84bb651"></a>
+<a id="org2c6e316"></a>
 
 ### `github` 的使用
 
@@ -777,7 +777,7 @@
              * [new branch]      master -> master
 
 
-<a id="orge91ad43"></a>
+<a id="orgda2499f"></a>
 
 ### 注意事项
 
