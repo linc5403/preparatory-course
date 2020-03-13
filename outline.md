@@ -1,33 +1,33 @@
 
 # Table of Contents
 
-1.  [学习路线](#orgc481008)
-2.  [预备课必备知识](#orge29de2d)
-    1.  [命令行操作](#orgd237b07)
-        1.  [linux文件和目录](#orgfc56465)
-        2.  [快捷键](#org193a490)
-        3.  [其他重要命令](#org509f188)
-    2.  [Mac下的软件管理](#org5e73f0a)
-        1.  [brew](#org00ed970)
-        2.  [直接下载安装包（dmg文件）](#orgeb53045)
-    3.  [编辑器](#org6fdc812)
-    4.  [如何做笔记](#org0d260df)
-        1.  [有道云笔记](#orgf27730d)
-        2.  [markdown语法](#orgbc101bd)
-    5.  [git](#orga805401)
-        1.  [`git` 的安装](#orgfcdaa64)
-        2.  [`github` 的使用](#org3cbb94f)
-        3.  [注意事项](#orga4d5413)
+1.  [学习路线](#org99fa207)
+2.  [预备课必备知识](#orgdccb669)
+    1.  [命令行操作](#org1f8ffdb)
+        1.  [linux文件和目录](#org1754d91)
+        2.  [快捷键](#orgbac8259)
+        3.  [其他重要命令](#org271da3c)
+    2.  [Mac下的软件管理](#org078fcaa)
+        1.  [brew](#org023f960)
+        2.  [直接下载安装包（dmg文件）](#org5bfeedf)
+    3.  [编辑器](#org4c9c390)
+    4.  [如何做笔记](#org67effb5)
+        1.  [有道云笔记](#orgfb4286a)
+        2.  [markdown语法](#org0c0e97c)
+    5.  [git](#org62689dd)
+        1.  [`git` 的安装](#org1ef3bfa)
+        2.  [`github` 的使用](#orgfa6875a)
+        3.  [注意事项](#orge702bc4)
 
 
-<a id="orgc481008"></a>
+<a id="org99fa207"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orge29de2d"></a>
+<a id="orgdccb669"></a>
 
 # 预备课必备知识
 
@@ -40,7 +40,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="orgd237b07"></a>
+<a id="org1f8ffdb"></a>
 
 ## 命令行操作
 
@@ -49,7 +49,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgfc56465"></a>
+<a id="org1754d91"></a>
 
 ### linux文件和目录
 
@@ -176,7 +176,7 @@
 </table>
 
 
-<a id="org193a490"></a>
+<a id="orgbac8259"></a>
 
 ### 快捷键
 
@@ -282,7 +282,7 @@
 </table>
 
 
-<a id="org509f188"></a>
+<a id="org271da3c"></a>
 
 ### 其他重要命令
 
@@ -294,12 +294,12 @@
     过滤内容
 
 
-<a id="org5e73f0a"></a>
+<a id="org078fcaa"></a>
 
 ## Mac下的软件管理
 
 
-<a id="org00ed970"></a>
+<a id="org023f960"></a>
 
 ### brew
 
@@ -355,12 +355,12 @@
     </table>
 
 
-<a id="orgeb53045"></a>
+<a id="org5bfeedf"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="org6fdc812"></a>
+<a id="org4c9c390"></a>
 
 ## 编辑器
 
@@ -384,29 +384,29 @@
 -   emacs
 
 
-<a id="org0d260df"></a>
+<a id="org67effb5"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgf27730d"></a>
+<a id="orgfb4286a"></a>
 
 ### 有道云笔记
 
 
-<a id="orgbc101bd"></a>
+<a id="org0c0e97c"></a>
 
 ### markdown语法
 
 
-<a id="orga805401"></a>
+<a id="org62689dd"></a>
 
 ## git
 
 
-<a id="orgfcdaa64"></a>
+<a id="org1ef3bfa"></a>
 
 ### `git` 的安装
 
@@ -415,7 +415,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org3cbb94f"></a>
+<a id="orgfa6875a"></a>
 
 ### `github` 的使用
 
@@ -561,7 +561,7 @@
              * [new branch]      master -> master
 
 
-<a id="orga4d5413"></a>
+<a id="orge702bc4"></a>
 
 ### 注意事项
 
