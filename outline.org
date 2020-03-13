@@ -41,10 +41,18 @@
 
 * 预备课必备知识
   [[https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612][半圆的wiki参考]]
+
+  对同学们的要求：
+  #+begin_quote
+  *1. 不懂就问*
+
+  *2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果*
+  #+end_quote
   
 ** 命令行操作
    #+begin_quote
    *重要*
+
    使用 ~Tab~ 键可以进行补全，加快你的操作。
    #+end_quote
 *** linux文件和目录
@@ -56,6 +64,7 @@
     1. Home目录是什么？
     2. ~.~ 和 ~..~ 以及 \tilde 是什么？
     3. 什么是隐藏文件
+    4. 如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
     
     | 文件操作命令 | 作用                                     |
     |--------------+------------------------------------------|
@@ -319,12 +328,17 @@
 	  #+end_example
 
 *** 注意事项
-    1. 确认你的 ~home~ 目录下没有 ~.git~ 文件夹
+    1. 确认你的 ~home~ 目录下没有 ~.git~ 文件夹:
+       在终端上运行这两条命令：
        #+begin_example
 	 cd ~
 	 ls -la | grep "\.git"
        #+end_example
-       如果上面两条命令执行有类似的回显，说明你的 ~home~ 目录被上一个同学放到了 ~git~ 中进行管理，请删除这个文件夹：
+       如果有类似下面的回显：
+       #+begin_example
+	 drwxr-xr-x  8 linc linc  4096 Mar 13 08:29 .git
+       #+end_example
+       说明你的 ~home~ 目录被上一个同学放到了 ~git~ 中进行管理，请删除这个文件夹：
        #+begin_example
 	 rm -rf .git
        #+end_example

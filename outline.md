@@ -1,48 +1,55 @@
 
 # Table of Contents
 
-1.  [学习路线](#org7c04cdc)
-2.  [预备课必备知识](#org1232dc9)
-    1.  [命令行操作](#orgc61bf41)
-        1.  [linux文件和目录](#orge08e582)
-        2.  [快捷键](#orgf32c8f7)
-        3.  [其他重要命令](#org89e5c9c)
-    2.  [Mac下的软件管理](#orgfe58d61)
-        1.  [brew](#org2294109)
-        2.  [直接下载安装包（dmg文件）](#org26c0a9d)
-    3.  [编辑器](#orga5e4caf)
-    4.  [如何做笔记](#org5bef833)
-        1.  [有道云笔记](#org4d5ac64)
-        2.  [markdown语法](#orgcef5774)
-    5.  [git](#org97185a4)
-        1.  [`git` 的安装](#orge9e41b4)
-        2.  [`github` 的使用](#org94361f9)
-        3.  [注意事项](#orge5af717)
+1.  [学习路线](#orgc481008)
+2.  [预备课必备知识](#orge29de2d)
+    1.  [命令行操作](#orgd237b07)
+        1.  [linux文件和目录](#orgfc56465)
+        2.  [快捷键](#org193a490)
+        3.  [其他重要命令](#org509f188)
+    2.  [Mac下的软件管理](#org5e73f0a)
+        1.  [brew](#org00ed970)
+        2.  [直接下载安装包（dmg文件）](#orgeb53045)
+    3.  [编辑器](#org6fdc812)
+    4.  [如何做笔记](#org0d260df)
+        1.  [有道云笔记](#orgf27730d)
+        2.  [markdown语法](#orgbc101bd)
+    5.  [git](#orga805401)
+        1.  [`git` 的安装](#orgfcdaa64)
+        2.  [`github` 的使用](#org3cbb94f)
+        3.  [注意事项](#orga4d5413)
 
 
-<a id="org7c04cdc"></a>
+<a id="orgc481008"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org1232dc9"></a>
+<a id="orge29de2d"></a>
 
 # 预备课必备知识
 
 [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
 
+对同学们的要求：
 
-<a id="orgc61bf41"></a>
+> **1. 不懂就问**
+> 
+> **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
+
+
+<a id="orgd237b07"></a>
 
 ## 命令行操作
 
 > **重要**
+> 
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orge08e582"></a>
+<a id="orgfc56465"></a>
 
 ### linux文件和目录
 
@@ -53,6 +60,7 @@
 1.  Home目录是什么？
 2.  `.` 和 `..` 以及 ~ 是什么？
 3.  什么是隐藏文件
+4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -168,7 +176,7 @@
 </table>
 
 
-<a id="orgf32c8f7"></a>
+<a id="org193a490"></a>
 
 ### 快捷键
 
@@ -274,7 +282,7 @@
 </table>
 
 
-<a id="org89e5c9c"></a>
+<a id="org509f188"></a>
 
 ### 其他重要命令
 
@@ -286,12 +294,12 @@
     过滤内容
 
 
-<a id="orgfe58d61"></a>
+<a id="org5e73f0a"></a>
 
 ## Mac下的软件管理
 
 
-<a id="org2294109"></a>
+<a id="org00ed970"></a>
 
 ### brew
 
@@ -347,12 +355,12 @@
     </table>
 
 
-<a id="org26c0a9d"></a>
+<a id="orgeb53045"></a>
 
 ### 直接下载安装包（dmg文件）
 
 
-<a id="orga5e4caf"></a>
+<a id="org6fdc812"></a>
 
 ## 编辑器
 
@@ -376,29 +384,29 @@
 -   emacs
 
 
-<a id="org5bef833"></a>
+<a id="org0d260df"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="org4d5ac64"></a>
+<a id="orgf27730d"></a>
 
 ### 有道云笔记
 
 
-<a id="orgcef5774"></a>
+<a id="orgbc101bd"></a>
 
 ### markdown语法
 
 
-<a id="org97185a4"></a>
+<a id="orga805401"></a>
 
 ## git
 
 
-<a id="orge9e41b4"></a>
+<a id="orgfcdaa64"></a>
 
 ### `git` 的安装
 
@@ -407,7 +415,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org94361f9"></a>
+<a id="org3cbb94f"></a>
 
 ### `github` 的使用
 
@@ -553,16 +561,21 @@
              * [new branch]      master -> master
 
 
-<a id="orge5af717"></a>
+<a id="orga4d5413"></a>
 
 ### 注意事项
 
-1.  确认你的 `home` 目录下没有 `.git` 文件夹
+1.  确认你的 `home` 目录下没有 `.git` 文件夹:
+    在终端上运行这两条命令：
     
         cd ~
         ls -la | grep "\.git"
     
-    如果上面两条命令执行有类似的回显，说明你的 `home` 目录被上一个同学放到了 `git` 中进行管理，请删除这个文件夹：
+    如果有类似下面的回显：
+    
+        drwxr-xr-x  8 linc linc  4096 Mar 13 08:29 .git
+    
+    说明你的 `home` 目录被上一个同学放到了 `git` 中进行管理，请删除这个文件夹：
     
         rm -rf .git
 2.  修改自己提交git的用户名和邮箱
