@@ -1,3 +1,4 @@
+#+LATEX_HEADER: \usepackage {ctex}
 * 学习路线
 
   #+begin_src plantuml :file ./img/mind-map.svg
@@ -242,6 +243,24 @@
     [[https://wizardforcel.gitbooks.io/markdown-simple-world/2.html][参考]]
 
 ** ~git~
+*** git和github的关系说明
+    #+begin_src plantuml :file ./img/git_overview.svg
+      @startuml
+      github->github: 创建账号
+      local->local: 创建ssh-key
+      local->github:保存ssh公钥到github上
+      github->github: 创建项目
+      github->local: git clone(克隆项目到本地)
+      local->local: 修改本地项目
+      local->local: git add(将修改内容纳入git管理)
+      local->local: git commit(将修改固化到版本)
+      local->github: git push(版本推送到远端)
+      @enduml
+    #+end_src
+
+    #+RESULTS:
+    [[file:./img/git_overview.svg]]
+
 *** ~git~ 的安装
 
     参看下面的教程：
@@ -250,7 +269,7 @@
 
 *** ~github~ 的使用
     
-**** 账号申请(github网站操作)
+**** 创建申请(github网站操作)
 
      https://github.com/join
 
