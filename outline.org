@@ -39,6 +39,7 @@
   [[file:./img/mind-map.svg]]
 
 * 预备课必备知识
+
   [[https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612][半圆的wiki参考]]
 
   对同学们的要求：
@@ -49,42 +50,106 @@
   #+end_quote
   
 ** 命令行操作
+
    #+begin_quote
    *重要*
 
    使用 ~Tab~ 键可以进行补全，加快你的操作。
    #+end_quote
+
 *** linux文件和目录
     
     [[http://cn.linux.vbird.org/linux_basic/0210filepermission.php][文件权限与目录配置]]
     
     [[http://cn.linux.vbird.org/linux_basic/0220filemanager.php][文件与目录管理]]
+    
+    带着问题学习：
 
+    #+begin_quote
     1. Home目录是什么？
     2. ~.~ 和 ~..~ 以及 \tilde 是什么？
     3. 什么是隐藏文件
     4. 如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
+    #+end_quote
+
+**** ~pwd~
+
+     知道你现在的工作目录
+
+     #+begin_example
+       /Users/banyuan/preparatory-course
+       /->Users->banyuan->preparatory-course
+     #+end_example
+
+**** ~cd~
+
+     (change directory)切换工作目录
+
+     不加参数 表示切换到home目录
+     带1个参数 切换到你制定的参数目录
+     
+     | 符号 | 含义           |
+     |------+----------------|
+     | .    | 当前目录       |
+     | ..   | 上一级目录     |
+     | -    | 之前的工作目录 |
+     | ～   | home目录       |
+
+**** ~ls~
+     (list)查看指定目录下的文件和文件夹
+     
+     | 命令  | 作用                                              |
+     |-------+---------------------------------------------------|
+     | ls -a | all, 查看所有文件和文件夹（包含隐藏文件和文件夹） |
+     | ls -l | long, 查看详细属性                                |
+     | ls -h | humanity, 友好方式显示                            |
+
+**** 文件操作
+
+     | 命令  | 作用                  |
+     | touch | 新创建一个文件        |
+     | rm    | (remove) 删除一个文件 |
+     | cp    | (copy) 复制一个文件   |
+     | mv    | (move) 移动一个文件   |
+
+**** 目录操作
+
+     | 命令  | 作用                  |
+     | mkdir | 新创建一个文件夹       |
+     | rm -r | (remove) 删除一个文件夹 |
+     | cp -r | (copy) 复制一个文件夹  |
+     | mv    | (move) 移动一个文件夹  |
+
+**** 文件操作命令汇总
     
-    | 文件操作命令 | 作用                                     |
-    |--------------+------------------------------------------|
-    | ls           | 查看目录下的文件和文件夹                 |
-    | ls -l        | long选项，显示更多的信息                 |
-    | ls -a        | 显示隐藏文件和文件夹                     |
-    | cd 文件夹    | change dir（切换工作目录）               |
-    | cd ..        | 切换到父目录                             |
-    | cd           | 不带参数切换到Home目录                   |
-    | cd -         | 切换到之前的工作目录                     |
-    | pwd          | print work dir（打印当前的工作目录）     |
-    | mkdir        | 创建一个目录                             |
-    | mkdir -p     | 创建多层目录                             |
-    | rm           | remove(删除普通文件）                    |
-    | rm -rf       | 删除文件夹及其下面的所有文件             |
-    | cp           | copy(拷贝文件)                           |
-    | cp -r        | 拷贝文件夹                               |
-    | mv           | move重命名文件/文件夹或是移动文件/文件夹 |
-    | touch        | 创建一个空文件                           |
+     | 文件操作命令 | 作用                                     |
+     |--------------+------------------------------------------|
+     | ls           | 查看目录下的文件和文件夹                 |
+     | ls -l        | long选项，显示更多的信息                 |
+     | ls -a        | 显示隐藏文件和文件夹                     |
+     | cd 文件夹    | change dir（切换工作目录）               |
+     | cd ..        | 切换到父目录                             |
+     | cd           | 不带参数切换到Home目录                   |
+     | cd -         | 切换到之前的工作目录                     |
+     | pwd          | print work dir（打印当前的工作目录）     |
+     | mkdir        | 创建一个目录                             |
+     | mkdir -p     | 创建多层目录                             |
+     | rm           | remove(删除普通文件）                    |
+     | rm -rf       | 删除文件夹及其下面的所有文件             |
+     | cp           | copy(拷贝文件)                           |
+     | cp -r        | 拷贝文件夹                               |
+     | mv           | move重命名文件/文件夹或是移动文件/文件夹 |
+     | touch        | 创建一个空文件                           |
     
-*** 快捷键
+*** 其他重要命令
+    1. ~history~
+       查看历史命令记录
+    2. ~cat~
+       查看文本文件内容
+    3. ~grep~
+       过滤内容
+
+*** 命令行快捷键
     
     | 按键 | 作用                                      |
     |------+-------------------------------------------|
@@ -103,33 +168,35 @@
     | C-n  | 下一条执行的命令（需要先执行C-p才可使用） |
     | C-r  | 搜索之前执行的命令                        |
 
-*** 其他重要命令
-    1. ~history~
-       查看历史命令记录
-    2. ~cat~
-       查看文本文件内容
-    3. ~grep~
-       过滤内容
+** Mac下的软件管理-~brew~
 
-** Mac下的软件管理
-*** brew
-**** 安装
-     [[https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577][参考]]
-     
-     #+begin_src sh
-       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-     #+end_src
-**** 速度慢---国内镜像修改
-     [[https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577][参考]]
+   [[https://brew.sh/][官网]]
 
-     #+begin_src sh
-       cd $(brew --repo)
-       git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
-       cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-       git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
-     #+end_src
+*** install
+    
+    #+begin_example
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    #+end_example
 
-**** 常用命令
+*** 修改源变快一点
+
+    [[https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git][参考1]]
+
+    [[https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles][参考2]]
+
+    #+begin_example
+      # 替换brew.git:
+      cd "$(brew --repo)"
+      git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+      # 替换homebrew-core.git:
+      cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+      git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+    #+end_example
+
+*** brew常用命令
+
+
 
     | 命令           | 作用               |
     |----------------+--------------------|
@@ -138,11 +205,19 @@
     | brew uninstall | 卸载软件           |
     | brew search    | 查询可供安装的软件 |
 
-*** 直接下载安装包（dmg文件）
 ** 编辑器
-   选择一个适合你的编辑器
+
 
    所有编辑相关的操作都尽量只在编辑器中完成，不需要鼠标和触摸板的操作
+
+   不管使用什么编辑器，必须熟悉的快捷键操作包括：
+
+   1. 打开文件，关闭文件
+   2. 光标移动
+   3. 删除一行，删除一个词
+   4. 复制粘贴
+
+   选择一个适合你的编辑器:
 
    - sublime
 
@@ -163,8 +238,12 @@
    https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629
 *** 有道云笔记
 *** markdown语法
+
+    [[https://wizardforcel.gitbooks.io/markdown-simple-world/2.html][参考]]
+
 ** ~git~
 *** ~git~ 的安装
+
     参看下面的教程：
 
     https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569

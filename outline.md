@@ -1,33 +1,34 @@
 
 # Table of Contents
 
-1.  [学习路线](#org6ce6a55)
-2.  [预备课必备知识](#org62fbec4)
-    1.  [命令行操作](#orga01ccda)
-        1.  [linux文件和目录](#org8a92e92)
-        2.  [快捷键](#org5675005)
-        3.  [其他重要命令](#orgcacb444)
-    2.  [Mac下的软件管理](#org7adccd6)
-        1.  [brew](#org819910f)
-        2.  [直接下载安装包（dmg文件）](#org1a979f9)
-    3.  [编辑器](#org66f0c74)
-    4.  [如何做笔记](#org0fbab31)
-        1.  [有道云笔记](#orgf1d5ec8)
-        2.  [markdown语法](#org966255a)
-    5.  [`git`](#org891f0a7)
-        1.  [`git` 的安装](#org0e58d7c)
-        2.  [`github` 的使用](#orge19d77c)
-        3.  [注意事项](#orgbc72fae)
+1.  [学习路线](#org7827624)
+2.  [预备课必备知识](#org68ddce3)
+    1.  [命令行操作](#org52b08d2)
+        1.  [linux文件和目录](#orgd5c8b22)
+        2.  [其他重要命令](#org221546e)
+        3.  [命令行快捷键](#orgc39887a)
+    2.  [Mac下的软件管理-`brew`](#org072ff77)
+        1.  [install](#orge20c731)
+        2.  [修改源变快一点](#org701fff8)
+        3.  [brew常用命令](#orgdcb00ac)
+    3.  [编辑器](#org8eec3de)
+    4.  [如何做笔记](#orgcf634ee)
+        1.  [有道云笔记](#org69c5a62)
+        2.  [markdown语法](#org25886dc)
+    5.  [`git`](#orgc6798c0)
+        1.  [`git` 的安装](#org43a28e9)
+        2.  [`github` 的使用](#orgaa67810)
+        3.  [注意事项](#org5a46cb2)
 
 
-<a id="org6ce6a55"></a>
+<a id="org7827624"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org62fbec4"></a>
+<a id="org68ddce3"></a>
 
 # 预备课必备知识
 
@@ -40,7 +41,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="orga01ccda"></a>
+<a id="org52b08d2"></a>
 
 ## 命令行操作
 
@@ -49,7 +50,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org8a92e92"></a>
+<a id="orgd5c8b22"></a>
 
 ### linux文件和目录
 
@@ -57,128 +58,322 @@
 
 [文件与目录管理](http://cn.linux.vbird.org/linux_basic/0220filemanager.php)
 
-1.  Home目录是什么？
-2.  `.` 和 `..` 以及 ~ 是什么？
-3.  什么是隐藏文件
-4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
+带着问题学习：
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+> 1.  Home目录是什么？
+> 2.  `.` 和 `..` 以及 ~ 是什么？
+> 3.  什么是隐藏文件
+> 4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
+
+1.  `pwd`
+
+    知道你现在的工作目录
+    
+        /Users/banyuan/preparatory-course
+        /->Users->banyuan->preparatory-course
+
+2.  `cd`
+
+    (change directory)切换工作目录
+    
+    不加参数 表示切换到home目录
+    带1个参数 切换到你制定的参数目录
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th scope="col" class="org-left">符号</th>
+    <th scope="col" class="org-left">含义</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+    <td class="org-left">.</td>
+    <td class="org-left">当前目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">..</td>
+    <td class="org-left">上一级目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">-</td>
+    <td class="org-left">之前的工作目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">～</td>
+    <td class="org-left">home目录</td>
+    </tr>
+    </tbody>
+    </table>
+
+3.  `ls`
+
+    (list)查看指定目录下的文件和文件夹
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th scope="col" class="org-left">命令</th>
+    <th scope="col" class="org-left">作用</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+    <td class="org-left">ls -a</td>
+    <td class="org-left">all, 查看所有文件和文件夹（包含隐藏文件和文件夹）</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">ls -l</td>
+    <td class="org-left">long, 查看详细属性</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">ls -h</td>
+    <td class="org-left">humanity, 友好方式显示</td>
+    </tr>
+    </tbody>
+    </table>
+
+4.  文件操作
+
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">命令</td>
+    <td class="org-left">作用</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">touch</td>
+    <td class="org-left">新创建一个文件</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">rm</td>
+    <td class="org-left">(remove) 删除一个文件</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cp</td>
+    <td class="org-left">(copy) 复制一个文件</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">mv</td>
+    <td class="org-left">(move) 移动一个文件</td>
+    </tr>
+    </tbody>
+    </table>
+
+5.  目录操作
+
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">命令</td>
+    <td class="org-left">作用</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">mkdir</td>
+    <td class="org-left">新创建一个文件夹</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">rm -r</td>
+    <td class="org-left">(remove) 删除一个文件夹</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cp -r</td>
+    <td class="org-left">(copy) 复制一个文件夹</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">mv</td>
+    <td class="org-left">(move) 移动一个文件夹</td>
+    </tr>
+    </tbody>
+    </table>
+
+6.  文件操作命令汇总
+
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th scope="col" class="org-left">文件操作命令</th>
+    <th scope="col" class="org-left">作用</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+    <td class="org-left">ls</td>
+    <td class="org-left">查看目录下的文件和文件夹</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">ls -l</td>
+    <td class="org-left">long选项，显示更多的信息</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">ls -a</td>
+    <td class="org-left">显示隐藏文件和文件夹</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cd 文件夹</td>
+    <td class="org-left">change dir（切换工作目录）</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cd ..</td>
+    <td class="org-left">切换到父目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cd</td>
+    <td class="org-left">不带参数切换到Home目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cd -</td>
+    <td class="org-left">切换到之前的工作目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">pwd</td>
+    <td class="org-left">print work dir（打印当前的工作目录）</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">mkdir</td>
+    <td class="org-left">创建一个目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">mkdir -p</td>
+    <td class="org-left">创建多层目录</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">rm</td>
+    <td class="org-left">remove(删除普通文件）</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">rm -rf</td>
+    <td class="org-left">删除文件夹及其下面的所有文件</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cp</td>
+    <td class="org-left">copy(拷贝文件)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">cp -r</td>
+    <td class="org-left">拷贝文件夹</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">mv</td>
+    <td class="org-left">move重命名文件/文件夹或是移动文件/文件夹</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">touch</td>
+    <td class="org-left">创建一个空文件</td>
+    </tr>
+    </tbody>
+    </table>
 
 
-<colgroup>
-<col  class="org-left" />
+<a id="org221546e"></a>
 
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">文件操作命令</th>
-<th scope="col" class="org-left">作用</th>
-</tr>
-</thead>
+### 其他重要命令
 
-<tbody>
-<tr>
-<td class="org-left">ls</td>
-<td class="org-left">查看目录下的文件和文件夹</td>
-</tr>
+1.  `history`
+    查看历史命令记录
+2.  `cat`
+    查看文本文件内容
+3.  `grep`
+    过滤内容
 
 
-<tr>
-<td class="org-left">ls -l</td>
-<td class="org-left">long选项，显示更多的信息</td>
-</tr>
+<a id="orgc39887a"></a>
 
-
-<tr>
-<td class="org-left">ls -a</td>
-<td class="org-left">显示隐藏文件和文件夹</td>
-</tr>
-
-
-<tr>
-<td class="org-left">cd 文件夹</td>
-<td class="org-left">change dir（切换工作目录）</td>
-</tr>
-
-
-<tr>
-<td class="org-left">cd ..</td>
-<td class="org-left">切换到父目录</td>
-</tr>
-
-
-<tr>
-<td class="org-left">cd</td>
-<td class="org-left">不带参数切换到Home目录</td>
-</tr>
-
-
-<tr>
-<td class="org-left">cd -</td>
-<td class="org-left">切换到之前的工作目录</td>
-</tr>
-
-
-<tr>
-<td class="org-left">pwd</td>
-<td class="org-left">print work dir（打印当前的工作目录）</td>
-</tr>
-
-
-<tr>
-<td class="org-left">mkdir</td>
-<td class="org-left">创建一个目录</td>
-</tr>
-
-
-<tr>
-<td class="org-left">mkdir -p</td>
-<td class="org-left">创建多层目录</td>
-</tr>
-
-
-<tr>
-<td class="org-left">rm</td>
-<td class="org-left">remove(删除普通文件）</td>
-</tr>
-
-
-<tr>
-<td class="org-left">rm -rf</td>
-<td class="org-left">删除文件夹及其下面的所有文件</td>
-</tr>
-
-
-<tr>
-<td class="org-left">cp</td>
-<td class="org-left">copy(拷贝文件)</td>
-</tr>
-
-
-<tr>
-<td class="org-left">cp -r</td>
-<td class="org-left">拷贝文件夹</td>
-</tr>
-
-
-<tr>
-<td class="org-left">mv</td>
-<td class="org-left">move重命名文件/文件夹或是移动文件/文件夹</td>
-</tr>
-
-
-<tr>
-<td class="org-left">touch</td>
-<td class="org-left">创建一个空文件</td>
-</tr>
-</tbody>
-</table>
-
-
-<a id="org5675005"></a>
-
-### 快捷键
+### 命令行快捷键
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -282,98 +477,97 @@
 </table>
 
 
-<a id="orgcacb444"></a>
+<a id="org072ff77"></a>
 
-### 其他重要命令
+## Mac下的软件管理-`brew`
 
-1.  `history`
-    查看历史命令记录
-2.  `cat`
-    查看文本文件内容
-3.  `grep`
-    过滤内容
+[官网](https://brew.sh/)
 
 
-<a id="org7adccd6"></a>
+<a id="orge20c731"></a>
 
-## Mac下的软件管理
+### install
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
-<a id="org819910f"></a>
+<a id="org701fff8"></a>
 
-### brew
+### 修改源变快一点
 
-1.  安装
+[参考1](https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git)
 
-    [参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577)
+[参考2](https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles)
+
+    # 替换brew.git:
+    cd "$(brew --repo)"
+    git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
     
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-2.  速度慢&#x2014;国内镜像修改
-
-    [参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=13700577)
-    
-        cd $(brew --repo)
-        git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
-        cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-        git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
-
-3.  常用命令
-
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">命令</th>
-    <th scope="col" class="org-left">作用</th>
-    </tr>
-    </thead>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">brew list</td>
-    <td class="org-left">查看已经安装的软件</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">brew install</td>
-    <td class="org-left">安装软件</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">brew uninstall</td>
-    <td class="org-left">卸载软件</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">brew search</td>
-    <td class="org-left">查询可供安装的软件</td>
-    </tr>
-    </tbody>
-    </table>
+    # 替换homebrew-core.git:
+    cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+    git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org1a979f9"></a>
+<a id="orgdcb00ac"></a>
 
-### 直接下载安装包（dmg文件）
+### brew常用命令
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<a id="org66f0c74"></a>
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">命令</th>
+<th scope="col" class="org-left">作用</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">brew list</td>
+<td class="org-left">查看已经安装的软件</td>
+</tr>
+
+
+<tr>
+<td class="org-left">brew install</td>
+<td class="org-left">安装软件</td>
+</tr>
+
+
+<tr>
+<td class="org-left">brew uninstall</td>
+<td class="org-left">卸载软件</td>
+</tr>
+
+
+<tr>
+<td class="org-left">brew search</td>
+<td class="org-left">查询可供安装的软件</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="org8eec3de"></a>
 
 ## 编辑器
 
-选择一个适合你的编辑器
-
 所有编辑相关的操作都尽量只在编辑器中完成，不需要鼠标和触摸板的操作
+
+不管使用什么编辑器，必须熟悉的快捷键操作包括：
+
+1.  打开文件，关闭文件
+2.  光标移动
+3.  删除一行，删除一个词
+4.  复制粘贴
+
+选择一个适合你的编辑器:
 
 -   sublime
     
@@ -391,29 +585,31 @@
 -   emacs
 
 
-<a id="org0fbab31"></a>
+<a id="orgcf634ee"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgf1d5ec8"></a>
+<a id="org69c5a62"></a>
 
 ### 有道云笔记
 
 
-<a id="org966255a"></a>
+<a id="org25886dc"></a>
 
 ### markdown语法
 
+[参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
-<a id="org891f0a7"></a>
+
+<a id="orgc6798c0"></a>
 
 ## `git`
 
 
-<a id="org0e58d7c"></a>
+<a id="org43a28e9"></a>
 
 ### `git` 的安装
 
@@ -422,7 +618,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="orge19d77c"></a>
+<a id="orgaa67810"></a>
 
 ### `github` 的使用
 
@@ -572,7 +768,7 @@
              * [new branch]      master -> master
 
 
-<a id="orgbc72fae"></a>
+<a id="org5a46cb2"></a>
 
 ### 注意事项
 

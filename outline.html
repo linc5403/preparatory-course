@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-13 Fri 19:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="lin chuan" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org27cc8a7">1. 学习路线</a></li>
+<li><a href="#orge9a9ac8">2. 预备课必备知识</a>
+<ul>
+<li><a href="#org7d3327c">2.1. 命令行操作</a>
+<ul>
+<li><a href="#org02ee5d8">2.1.1. linux文件和目录</a></li>
+<li><a href="#org897f7e0">2.1.2. 其他重要命令</a></li>
+<li><a href="#org88fa84d">2.1.3. 命令行快捷键</a></li>
+</ul>
+</li>
+<li><a href="#org456b42b">2.2. Mac下的软件管理-<code>brew</code></a>
+<ul>
+<li><a href="#org620cbb1">2.2.1. install</a></li>
+<li><a href="#orgdabc08d">2.2.2. 修改源变快一点</a></li>
+<li><a href="#org3606b12">2.2.3. brew常用命令</a></li>
+</ul>
+</li>
+<li><a href="#org20610d8">2.3. 编辑器</a></li>
+<li><a href="#orgbcea60a">2.4. 如何做笔记</a>
+<ul>
+<li><a href="#org7745833">2.4.1. 有道云笔记</a></li>
+<li><a href="#org62e678c">2.4.2. markdown语法</a></li>
+</ul>
+</li>
+<li><a href="#orgfa769d1">2.5. <code>git</code></a>
+<ul>
+<li><a href="#org8e98cb3">2.5.1. <code>git</code> 的安装</a></li>
+<li><a href="#org02b50b7">2.5.2. <code>github</code> 的使用</a></li>
+<li><a href="#orgaae43cd">2.5.3. 注意事项</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org27cc8a7" class="outline-2">
+<h2 id="org27cc8a7"><span class="section-number-2">1</span> 学习路线</h2>
+<div class="outline-text-2" id="text-1">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./img/mind-map.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge9a9ac8" class="outline-2">
+<h2 id="orge9a9ac8"><span class="section-number-2">2</span> 预备课必备知识</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<a href="https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612">半圆的wiki参考</a>
+</p>
+
+<p>
+对同学们的要求：
+</p>
+<blockquote>
+<p>
+<b>1. 不懂就问</b>
+</p>
+
+<p>
+<b>2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果</b>
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org7d3327c" class="outline-3">
+<h3 id="org7d3327c"><span class="section-number-3">2.1</span> 命令行操作</h3>
+<div class="outline-text-3" id="text-2-1">
+<blockquote>
+<p>
+<b>重要</b>
+</p>
+
+<p>
+使用 <code>Tab</code> 键可以进行补全，加快你的操作。
+</p>
+</blockquote>
+</div>
+<div id="outline-container-org02ee5d8" class="outline-4">
+<h4 id="org02ee5d8"><span class="section-number-4">2.1.1</span> linux文件和目录</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+<a href="http://cn.linux.vbird.org/linux_basic/0210filepermission.php">文件权限与目录配置</a>
+</p>
+
+<p>
+<a href="http://cn.linux.vbird.org/linux_basic/0220filemanager.php">文件与目录管理</a>
+</p>
+
+<ol class="org-ol">
+<li>Home目录是什么？</li>
+<li><code>.</code> 和 <code>..</code> 以及 ~ 是什么？</li>
+<li>什么是隐藏文件</li>
+<li>如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件</li>
+</ol>
+</div>
+
+<ol class="org-ol">
+<li><a id="org64d5ff4"></a><code>pwd</code><br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<p>
+知道你现在的工作目录
+</p>
+
+<pre class="example">
+/Users/banyuan/preparatory-course
+/-&gt;Users-&gt;banyuan-&gt;preparatory-course
+</pre>
+</div>
+</li>
+
+<li><a id="org9ddacb6"></a><code>cd</code><br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<p>
+(change directory)切换工作目录
+</p>
+
+<p>
+不加参数 表示切换到home目录
+带1个参数 切换到你制定的参数目录
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">符号</th>
+<th scope="col" class="org-left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">.</td>
+<td class="org-left">当前目录</td>
+</tr>
+
+<tr>
+<td class="org-left">..</td>
+<td class="org-left">上一级目录</td>
+</tr>
+
+<tr>
+<td class="org-left">-</td>
+<td class="org-left">之前的工作目录</td>
+</tr>
+
+<tr>
+<td class="org-left">～</td>
+<td class="org-left">home目录</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org0d4056f"></a><code>ls</code><br />
+<div class="outline-text-5" id="text-2-1-1-3">
+<p>
+(list)查看指定目录下的文件和文件夹
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">命令</th>
+<th scope="col" class="org-left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ls -a</td>
+<td class="org-left">all, 查看所有文件和文件夹（包含隐藏文件和文件夹）</td>
+</tr>
+
+<tr>
+<td class="org-left">ls -l</td>
+<td class="org-left">long, 查看详细属性</td>
+</tr>
+
+<tr>
+<td class="org-left">ls -h</td>
+<td class="org-left">humanity, 友好方式显示</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org9131fc0"></a>文件操作<br />
+<div class="outline-text-5" id="text-2-1-1-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">命令</td>
+<td class="org-left">作用</td>
+</tr>
+
+<tr>
+<td class="org-left">touch</td>
+<td class="org-left">新创建一个文件</td>
+</tr>
+
+<tr>
+<td class="org-left">rm</td>
+<td class="org-left">(remove) 删除一个文件</td>
+</tr>
+
+<tr>
+<td class="org-left">cp</td>
+<td class="org-left">(copy) 复制一个文件</td>
+</tr>
+
+<tr>
+<td class="org-left">mv</td>
+<td class="org-left">(move) 移动一个文件</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="orgdddc4f2"></a>目录操作<br />
+<div class="outline-text-5" id="text-2-1-1-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">命令</td>
+<td class="org-left">作用</td>
+</tr>
+
+<tr>
+<td class="org-left">mkdir</td>
+<td class="org-left">新创建一个文件夹</td>
+</tr>
+
+<tr>
+<td class="org-left">rm -r</td>
+<td class="org-left">(remove) 删除一个文件夹</td>
+</tr>
+
+<tr>
+<td class="org-left">cp -r</td>
+<td class="org-left">(copy) 复制一个文件夹</td>
+</tr>
+
+<tr>
+<td class="org-left">mv</td>
+<td class="org-left">(move) 移动一个文件夹</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="orgad0f5df"></a>文件操作命令汇总<br />
+<div class="outline-text-5" id="text-2-1-1-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">文件操作命令</th>
+<th scope="col" class="org-left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ls</td>
+<td class="org-left">查看目录下的文件和文件夹</td>
+</tr>
+
+<tr>
+<td class="org-left">ls -l</td>
+<td class="org-left">long选项，显示更多的信息</td>
+</tr>
+
+<tr>
+<td class="org-left">ls -a</td>
+<td class="org-left">显示隐藏文件和文件夹</td>
+</tr>
+
+<tr>
+<td class="org-left">cd 文件夹</td>
+<td class="org-left">change dir（切换工作目录）</td>
+</tr>
+
+<tr>
+<td class="org-left">cd ..</td>
+<td class="org-left">切换到父目录</td>
+</tr>
+
+<tr>
+<td class="org-left">cd</td>
+<td class="org-left">不带参数切换到Home目录</td>
+</tr>
+
+<tr>
+<td class="org-left">cd -</td>
+<td class="org-left">切换到之前的工作目录</td>
+</tr>
+
+<tr>
+<td class="org-left">pwd</td>
+<td class="org-left">print work dir（打印当前的工作目录）</td>
+</tr>
+
+<tr>
+<td class="org-left">mkdir</td>
+<td class="org-left">创建一个目录</td>
+</tr>
+
+<tr>
+<td class="org-left">mkdir -p</td>
+<td class="org-left">创建多层目录</td>
+</tr>
+
+<tr>
+<td class="org-left">rm</td>
+<td class="org-left">remove(删除普通文件）</td>
+</tr>
+
+<tr>
+<td class="org-left">rm -rf</td>
+<td class="org-left">删除文件夹及其下面的所有文件</td>
+</tr>
+
+<tr>
+<td class="org-left">cp</td>
+<td class="org-left">copy(拷贝文件)</td>
+</tr>
+
+<tr>
+<td class="org-left">cp -r</td>
+<td class="org-left">拷贝文件夹</td>
+</tr>
+
+<tr>
+<td class="org-left">mv</td>
+<td class="org-left">move重命名文件/文件夹或是移动文件/文件夹</td>
+</tr>
+
+<tr>
+<td class="org-left">touch</td>
+<td class="org-left">创建一个空文件</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org897f7e0" class="outline-4">
+<h4 id="org897f7e0"><span class="section-number-4">2.1.2</span> 其他重要命令</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ol class="org-ol">
+<li><code>history</code>
+查看历史命令记录</li>
+<li><code>cat</code>
+查看文本文件内容</li>
+<li><code>grep</code>
+过滤内容</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org88fa84d" class="outline-4">
+<h4 id="org88fa84d"><span class="section-number-4">2.1.3</span> 命令行快捷键</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">按键</th>
+<th scope="col" class="org-left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">C-a</td>
+<td class="org-left">光标移动到行首</td>
+</tr>
+
+<tr>
+<td class="org-left">C-e</td>
+<td class="org-left">光标移动到行尾</td>
+</tr>
+
+<tr>
+<td class="org-left">C-f</td>
+<td class="org-left">光标右移一个字符</td>
+</tr>
+
+<tr>
+<td class="org-left">C-b</td>
+<td class="org-left">光标左移一个字符</td>
+</tr>
+
+<tr>
+<td class="org-left">M-f</td>
+<td class="org-left">光标右移一个单词</td>
+</tr>
+
+<tr>
+<td class="org-left">M-b</td>
+<td class="org-left">光标左移一个单词</td>
+</tr>
+
+<tr>
+<td class="org-left">C-d</td>
+<td class="org-left">删除光标下的字符</td>
+</tr>
+
+<tr>
+<td class="org-left">M-d</td>
+<td class="org-left">删除光标右边的单词</td>
+</tr>
+
+<tr>
+<td class="org-left">C-w</td>
+<td class="org-left">删除光标左边的单词</td>
+</tr>
+
+<tr>
+<td class="org-left">C-k</td>
+<td class="org-left">删除光标右边的所有内容</td>
+</tr>
+
+<tr>
+<td class="org-left">C-u</td>
+<td class="org-left">删除整行内容</td>
+</tr>
+
+<tr>
+<td class="org-left">C-p</td>
+<td class="org-left">上一条执行的命令</td>
+</tr>
+
+<tr>
+<td class="org-left">C-n</td>
+<td class="org-left">下一条执行的命令（需要先执行C-p才可使用）</td>
+</tr>
+
+<tr>
+<td class="org-left">C-r</td>
+<td class="org-left">搜索之前执行的命令</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org456b42b" class="outline-3">
+<h3 id="org456b42b"><span class="section-number-3">2.2</span> Mac下的软件管理-<code>brew</code></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<a href="https://brew.sh/">官网</a>
+</p>
+</div>
+
+<div id="outline-container-org620cbb1" class="outline-4">
+<h4 id="org620cbb1"><span class="section-number-4">2.2.1</span> install</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<pre class="example">
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgdabc08d" class="outline-4">
+<h4 id="orgdabc08d"><span class="section-number-4">2.2.2</span> 修改源变快一点</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+<a href="https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git">参考1</a>
+</p>
+
+<p>
+<a href="https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles">参考2</a>
+</p>
+
+<pre class="example">
+# 替换brew.git:
+cd "$(brew --repo)"
+git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+# 替换homebrew-core.git:
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org3606b12" class="outline-4">
+<h4 id="org3606b12"><span class="section-number-4">2.2.3</span> brew常用命令</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">命令</th>
+<th scope="col" class="org-left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">brew list</td>
+<td class="org-left">查看已经安装的软件</td>
+</tr>
+
+<tr>
+<td class="org-left">brew install</td>
+<td class="org-left">安装软件</td>
+</tr>
+
+<tr>
+<td class="org-left">brew uninstall</td>
+<td class="org-left">卸载软件</td>
+</tr>
+
+<tr>
+<td class="org-left">brew search</td>
+<td class="org-left">查询可供安装的软件</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org20610d8" class="outline-3">
+<h3 id="org20610d8"><span class="section-number-3">2.3</span> 编辑器</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+所有编辑相关的操作都尽量只在编辑器中完成，不需要鼠标和触摸板的操作
+</p>
+
+<p>
+不管使用什么编辑器，必须熟悉的快捷键操作包括：
+</p>
+
+<ol class="org-ol">
+<li>打开文件，关闭文件</li>
+<li>光标移动</li>
+<li>删除一行，删除一个词</li>
+<li>复制粘贴</li>
+</ol>
+
+<p>
+选择一个适合你的编辑器:
+</p>
+
+<ul class="org-ul">
+<li><p>
+sublime
+</p>
+
+<p>
+<a href="https://www.sublimetext.com/">https://www.sublimetext.com/</a>
+</p></li>
+
+<li><p>
+Atom
+</p>
+
+<p>
+<a href="https://atom.io/">https://atom.io/</a>
+</p></li>
+
+<li><p>
+Visual Studio Code （VS-Code）
+</p>
+
+<p>
+<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+</p></li>
+
+<li>vim</li>
+<li>emacs</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbcea60a" class="outline-3">
+<h3 id="orgbcea60a"><span class="section-number-3">2.4</span> 如何做笔记</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+<a href="https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629">https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629</a>
+</p>
+</div>
+<div id="outline-container-org7745833" class="outline-4">
+<h4 id="org7745833"><span class="section-number-4">2.4.1</span> 有道云笔记</h4>
+</div>
+<div id="outline-container-org62e678c" class="outline-4">
+<h4 id="org62e678c"><span class="section-number-4">2.4.2</span> markdown语法</h4>
+</div>
+</div>
+<div id="outline-container-orgfa769d1" class="outline-3">
+<h3 id="orgfa769d1"><span class="section-number-3">2.5</span> <code>git</code></h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-org8e98cb3" class="outline-4">
+<h4 id="org8e98cb3"><span class="section-number-4">2.5.1</span> <code>git</code> 的安装</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<p>
+参看下面的教程：
+</p>
+
+<p>
+<a href="https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569">https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org02b50b7" class="outline-4">
+<h4 id="org02b50b7"><span class="section-number-4">2.5.2</span> <code>github</code> 的使用</h4>
+<div class="outline-text-4" id="text-2-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="org065d9ab"></a>账号申请(github网站操作)<br />
+<div class="outline-text-5" id="text-2-5-2-1">
+<p>
+<a href="https://github.com/join">https://github.com/join</a>
+</p>
+</div>
+</li>
+
+<li><a id="org4fd3ed3"></a>配置 <code>ssh-key</code> （github网站操作)<br />
+<div class="outline-text-5" id="text-2-5-2-2">
+<p>
+配置 <code>ssh-key</code> 的目的是为了使用 <code>ssh</code> 方式和 <code>github</code> 服务器建立连接，这样就不用输入用户名和密码。
+</p>
+
+<p>
+这个步骤的思路是： a. 配置本机的 <code>ssh-key</code> ； b. 将本机的 <code>ssh-key</code> 的公钥配置在 <code>github</code> 上。下面是具体操作：
+</p>
+
+<ol class="org-ol">
+<li><p>
+删除别人的 <code>ssh-key</code>
+</p>
+<blockquote>
+<p>
+<b>注意</b>
+</p>
+
+<p>
+如果你明白 <code>ssh-key</code> 是什么，而且确认这台电脑现在的 <code>ssh-key</code> 是你自己生成的，请不做这一步操作。
+</p>
+</blockquote>
+<pre class="example">
+rm -f ~/.ssh/id_rsa*
+</pre></li>
+<li><p>
+打开终端，输入这条命令：
+</p>
+<pre class="example">
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+</pre>
+<blockquote>
+<p>
+<b>注意</b>
+</p>
+<ul class="org-ul">
+<li>命令里面双引号的内容修改成你自己的邮箱</li>
+<li>该命令会有提示，一路回车就可以了</li>
+</ul>
+</blockquote></li>
+<li><p>
+到这里，你本地的 <code>ssh-key</code> 就创建好了，需要将它放到 <code>github</code> 上
+</p>
+
+<p>
+终端里通过 <code>cat</code> 命令显示 ssh 公钥的内容：
+</p>
+
+<pre class="example">
+cat ~/.ssh/id_rsa.pub
+</pre>
+
+<p>
+将下图中框内的内容都复制出来：
+</p>
+
+
+<div class="figure">
+<p><img src="./img/ssh-4.png" alt="ssh-4.png" />
+</p>
+</div></li>
+
+<li>使用注册申请好的账号和密码登陆你的 <code>github</code></li>
+
+<li><p>
+选择你的头像右边的下拉框（在网页的右上方）
+</p>
+
+
+<div class="figure">
+<p><img src="./img/ssh-1.png" alt="ssh-1.png" />
+</p>
+</div></li>
+<li><p>
+选择如下的 <code>SSH and GPG keys</code>
+</p>
+
+
+<div class="figure">
+<p><img src="./img/ssh-2.png" alt="ssh-2.png" />
+</p>
+</div></li>
+
+<li><p>
+选中右上角的 <code>New SSH Key</code>
+</p>
+
+
+<div class="figure">
+<p><img src="./img/ssh-3.png" alt="ssh-3.png" />
+</p>
+</div></li>
+
+<li><p>
+将第3)步你复制的内容粘贴进去，再补充一个标题：
+</p>
+
+
+<div class="figure">
+<p><img src="./img/ssh-5.png" alt="ssh-5.png" />
+</p>
+</div></li>
+
+<li><p>
+最后一步，验证你是否完成了配置
+</p>
+<pre class="example">
+ssh -T git@github.com
+</pre>
+<p>
+如果看到类似下面的 <code>successfully</code> 什么的，而且把你github的账号打印出来，则表示你成功了
+</p>
+<pre class="example">
+linc@pop-os:~/agenda$ ssh -T git@github.com
+Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
+</pre></li>
+</ol>
+</div>
+</li>
+
+<li><a id="org3a774aa"></a>创建项目（github网站操作）<br />
+<div class="outline-text-5" id="text-2-5-2-3">
+<ol class="org-ol">
+<li><p>
+来到github的首页，并登陆，选择左侧 <code>Repositories</code> 右边的那个 <code>New</code>:
+</p>
+
+
+<div class="figure">
+<p><img src="./img/create-1.png" alt="create-1.png" />
+</p>
+</div></li>
+
+<li><p>
+在创建项目的页面填好 <code>Repository Name</code> ，点击 <code>Create repository</code> 按钮，项目就创建好了。
+</p>
+
+
+<div class="figure">
+<p><img src="./img/create-2.png" alt="create-2.png" />
+</p>
+</div></li>
+
+<li><p>
+在上一步已经在 <code>github</code> 服务器上创建好了远程项目，接下来需要将它同步到你的本地。
+</p>
+
+<p>
+你们需要重点看下面这张图：
+</p>
+
+
+<div class="figure">
+<p><img src="./img/create-3.png" alt="create-3.png" />
+</p>
+</div></li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgcc1538d"></a>项目管理(本机操作)<br />
+<div class="outline-text-5" id="text-2-5-2-4">
+<p>
+项目管理的流程如下：
+</p>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./img/git_flow.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+<ol class="org-ol">
+<li><p>
+<code>git clone</code>
+</p>
+
+<p>
+<code>git clone</code> 命令会在当前目录下下载远端的项目,例如：
+</p>
+
+<ul class="org-ul">
+<li><p>
+先找到 <code>git</code> 仓库的地址，创建项目的最后一步：
+</p>
+
+
+<div class="figure">
+<p><img src="./img/clone-1.png" alt="clone-1.png" />
+</p>
+</div></li>
+
+<li><p>
+使用 <code>git clone</code> 将它下载下来：
+</p>
+
+<pre class="example">
+git clone git@github.com:linc5403/for_git_demo.git
+</pre>
+
+<p>
+会将远端 <code>for_git_demo.git</code> 仓库下载下来，在当前目录下新创建目录名为 <code>for_git_demo</code> 的目录:
+</p>
+
+
+<div class="figure">
+<p><img src="./img/clone-2.png" alt="clone-2.png" />
+</p>
+</div>
+
+<p>
+进入 <code>for_git_demo</code> 目录后，可以看到其中有 <code>.git</code> 的隐藏文件夹；说明 <code>git</code> 仓库已经建立好了。
+</p></li>
+</ul></li>
+
+<li><p>
+<code>git add</code>
+</p>
+
+<p>
+当你对本地文件作了修改后，应当使用 <code>git add</code> 命令将你的变更告知git，此时可以缓存你的变更。
+</p>
+
+<p>
+让我们在 <code>for_git_demo</code> 目录中新建一个README.md文件，并将它添加到git中:
+</p>
+<pre class="example">
+linc@pop-os:~/for_git_demo$ echo "#this is my first git repo" &gt;&gt; README.md
+linc@pop-os:~/for_git_demo$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+linc@pop-os:~/for_git_demo$ git add README.md
+</pre></li>
+
+<li><p>
+<code>git commit</code>
+</p>
+
+<p>
+当你的变更可以固定下来后，应当使用 <code>git commit</code> 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
+</p>
+<blockquote>
+<p>
+<b>重要</b>
+</p>
+
+<p>
+当你还不会使用命令行编辑器的时候，最好使用 <code>git commit -m “你想说的话"</code> 这种方式来进行提交
+</p>
+</blockquote>
+<pre class="example">
+linc@pop-os:~/for_git_demo$ git commit -m "init repo"
+[master (root-commit) 2c902a3] init repo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+</pre></li>
+<li><p>
+<code>git push</code>
+</p>
+
+<p>
+将你的本地项目同步到服务器，就不怕工作丢失了。
+</p>
+<pre class="example">
+linc@pop-os:~/for_git_demo$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:linc5403/for_git_demo.git
+ * [new branch]      master -&gt; master
+</pre></li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgaae43cd" class="outline-4">
+<h4 id="orgaae43cd"><span class="section-number-4">2.5.3</span> 注意事项</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<ol class="org-ol">
+<li><p>
+确认你的 <code>home</code> 目录下没有 <code>.git</code> 文件夹:
+在终端上运行这两条命令：
+</p>
+<pre class="example">
+cd ~
+ls -la | grep "\.git"
+</pre>
+<p>
+如果有类似下面的回显：
+</p>
+<pre class="example">
+drwxr-xr-x  8 linc linc  4096 Mar 13 08:29 .git
+</pre>
+<p>
+说明你的 <code>home</code> 目录被上一个同学放到了 <code>git</code> 中进行管理，请删除这个文件夹：
+</p>
+<pre class="example">
+rm -rf .git
+</pre></li>
+<li><p>
+修改自己提交git的用户名和邮箱
+</p>
+<pre class="example">
+git config --list
+</pre>
+<p>
+此时会有类似这样的显示：
+</p>
+<pre class="example">
+user.name=lin chuan
+user.email=linch1982@gmail.com
+core.quotepath=false
+</pre>
+<p>
+如果出现的username和email不是你想要的，请使用如下命令进行修改:
+</p>
+<pre class="example">
+git config --global user.name "你的名字,最好用英文字母"
+git config --global user.email "你的邮箱地址"
+</pre>
+<blockquote>
+<p>
+<b>注意</b> 上面两条 <code>config</code> 命令中的双引号不要省略
+</p>
+</blockquote></li>
+<li><p>
+如果你的git命令回显中出现中文的乱码
+使用下面这条命令进行修正：
+</p>
+<pre class="example">
+git config --global core.quotepath=false
+</pre></li>
+<li>你可以随时使用 <code>git status</code> 命令查看git的状态</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lin chuan</p>
+<p class="date">Created: 2020-03-13 Fri 19:32</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
