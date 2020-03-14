@@ -159,7 +159,6 @@
     https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569
 
 *** ~github~ 的使用
-    
 **** 账号申请(github网站操作)
 
      https://github.com/join
@@ -326,6 +325,8 @@
 	    To github.com:linc5403/for_git_demo.git
 	     ,* [new branch]      master -> master
 	  #+end_example
+
+**** 使用 ~.gitignore~ 来管理哪些文件/文件夹进入 ~git~
 
 *** 注意事项
     1. 确认你的 ~home~ 目录下没有 ~.git~ 文件夹:
