@@ -518,7 +518,7 @@
 
        使用下面这条命令进行修正：
        #+begin_example
-         git config --global core.quotepath=false
+         git config --global core.quotepath false
        #+end_example
 
     4. 你可以随时使用 ~git status~ 命令查看git的状态
