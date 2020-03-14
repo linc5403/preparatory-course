@@ -1,10 +1,10 @@
 
 # Table of Contents
 
-1.  [3-13](#org8e2faf4)
+1.  [3-13](#orgc2ca274)
 
 
-<a id="org8e2faf4"></a>
+<a id="orgc2ca274"></a>
 
 # 3-13
 
@@ -25,7 +25,7 @@
 
 <tr>
 <td class="org-left">[李海洋](https://github.com/lioil9/note-book/blob/master/3.13课堂笔记(半圆).md)</td>
-<td class="org-left">使用了表格样式，很不错。2.1中brew的安装方法更新了，参考[链接](https://gitlab.com/linc5403/preparatory-course/-/blob/master/outline.md)</td>
+<td class="org-left">使用了表格样式，很不错。2.1中brew的安装方法更新了，参考[链接](https://gitlab.com/linc5403/preparatory-course/-/blob/master/outline.md) 。另外文件名尽量不要包含特殊字符，比如括号什么的</td>
 </tr>
 
 
