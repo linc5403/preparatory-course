@@ -1,36 +1,36 @@
 
 # Table of Contents
 
-1.  [学习路线](#orgc0d1834)
-2.  [预备课必备知识](#org6cfb1c0)
-    1.  [命令行操作](#org31c7d39)
-        1.  [linux文件和目录](#org57971de)
-        2.  [其他重要命令](#orgc666cbd)
-        3.  [命令行快捷键](#org86d9f9e)
-    2.  [Mac下的软件管理-`brew`](#org2e64d01)
-        1.  [install](#orgfd009cd)
-        2.  [修改源变快一点](#org261e45c)
-        3.  [brew常用命令](#org53a6ec3)
-    3.  [编辑器](#orgb279616)
-    4.  [如何做笔记](#org760f655)
-        1.  [有道云笔记](#orge35128e)
-        2.  [markdown语法](#org983e398)
-    5.  [`git`](#orgbe5c7ea)
-        1.  [git和github的关系说明](#orgc5bc119)
-        2.  [`git` 的安装](#orga89da68)
-        3.  [`github` 的使用](#org2c6e316)
-        4.  [注意事项](#orgda2499f)
+1.  [学习路线](#orgf5cf16b)
+2.  [预备课必备知识](#orgcd28109)
+    1.  [命令行操作](#org956639f)
+        1.  [linux文件和目录](#orgcf70731)
+        2.  [其他重要命令](#orgc1706b3)
+        3.  [命令行快捷键](#org5a9ce3b)
+    2.  [Mac下的软件管理-`brew`](#orge8d9809)
+        1.  [install](#orge9a01bb)
+        2.  [修改源变快一点](#org68fcde1)
+        3.  [brew常用命令](#org9e079d4)
+    3.  [编辑器](#orgbc73f33)
+    4.  [如何做笔记](#org220472b)
+        1.  [有道云笔记](#org8fe7de5)
+        2.  [markdown语法](#org94f2fb9)
+    5.  [`git`](#org5918668)
+        1.  [git和github的关系说明](#org9f35962)
+        2.  [`git` 的安装](#org5a3b411)
+        3.  [`github` 的使用](#org057b830)
+        4.  [注意事项](#org83ab46e)
 
 
 
-<a id="orgc0d1834"></a>
+<a id="orgf5cf16b"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org6cfb1c0"></a>
+<a id="orgcd28109"></a>
 
 # 预备课必备知识
 
@@ -43,7 +43,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="org31c7d39"></a>
+<a id="org956639f"></a>
 
 ## 命令行操作
 
@@ -52,7 +52,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org57971de"></a>
+<a id="orgcf70731"></a>
 
 ### linux文件和目录
 
@@ -361,7 +361,7 @@
     </table>
 
 
-<a id="orgc666cbd"></a>
+<a id="orgc1706b3"></a>
 
 ### 其他重要命令
 
@@ -373,7 +373,7 @@
     过滤内容
 
 
-<a id="org86d9f9e"></a>
+<a id="org5a9ce3b"></a>
 
 ### 命令行快捷键
 
@@ -479,21 +479,21 @@
 </table>
 
 
-<a id="org2e64d01"></a>
+<a id="orge8d9809"></a>
 
 ## Mac下的软件管理-`brew`
 
 [官网](https://brew.sh/)
 
 
-<a id="orgfd009cd"></a>
+<a id="orge9a01bb"></a>
 
 ### install
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
-<a id="org261e45c"></a>
+<a id="org68fcde1"></a>
 
 ### 修改源变快一点
 
@@ -510,7 +510,7 @@
     git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org53a6ec3"></a>
+<a id="org9e079d4"></a>
 
 ### brew常用命令
 
@@ -556,7 +556,7 @@
 </table>
 
 
-<a id="orgb279616"></a>
+<a id="orgbc73f33"></a>
 
 ## 编辑器
 
@@ -587,38 +587,38 @@
 -   emacs
 
 
-<a id="org760f655"></a>
+<a id="org220472b"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orge35128e"></a>
+<a id="org8fe7de5"></a>
 
 ### 有道云笔记
 
 
-<a id="org983e398"></a>
+<a id="org94f2fb9"></a>
 
 ### markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="orgbe5c7ea"></a>
+<a id="org5918668"></a>
 
 ## `git`
 
 
-<a id="orgc5bc119"></a>
+<a id="org9f35962"></a>
 
 ### git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="orga89da68"></a>
+<a id="org5a3b411"></a>
 
 ### `git` 的安装
 
@@ -627,7 +627,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org2c6e316"></a>
+<a id="org057b830"></a>
 
 ### `github` 的使用
 
@@ -764,6 +764,7 @@
             [master (root-commit) 2c902a3] init repo
              1 file changed, 1 insertion(+)
              create mode 100644 README.md
+    
     4.  `git push`
         
         将你的本地项目同步到服务器，就不怕工作丢失了。
@@ -777,11 +778,12 @@
              * [new branch]      master -> master
 
 
-<a id="orgda2499f"></a>
+<a id="org83ab46e"></a>
 
 ### 注意事项
 
 1.  确认你的 `home` 目录下没有 `.git` 文件夹:
+    
     在终端上运行这两条命令：
     
         cd ~
@@ -794,6 +796,7 @@
     说明你的 `home` 目录被上一个同学放到了 `git` 中进行管理，请删除这个文件夹：
     
         rm -rf ~/.git
+
 2.  修改自己提交git的用户名和邮箱
     
         git config --list
@@ -810,9 +813,14 @@
         git config --global user.email "你的邮箱地址"
     
     > **注意** 上面两条 `config` 命令中的双引号不要省略
+
 3.  如果你的git命令回显中出现中文的乱码
+    
     使用下面这条命令进行修正：
     
         git config --global core.quotepath=false
+
 4.  你可以随时使用 `git status` 命令查看git的状态
+
+5.  使用 `.gitignore` 来管理哪些文件/文件夹进入 `git`
 

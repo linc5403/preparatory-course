@@ -424,6 +424,7 @@
 	  当你对本地文件作了修改后，应当使用 ~git add~ 命令将你的变更告知git，此时可以缓存你的变更。
 
 	  让我们在 ~for_git_demo~ 目录中新建一个README.md文件，并将它添加到git中:
+
 	  #+begin_example
 	    linc@pop-os:~/for_git_demo$ echo "#this is my first git repo" >> README.md
 	    linc@pop-os:~/for_git_demo$ git status
@@ -443,17 +444,20 @@
        3. ~git commit~
 
 	  当你的变更可以固定下来后，应当使用 ~git commit~ 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
+
 	  #+begin_quote
 	  *重要*
 
 	    当你还不会使用命令行编辑器的时候，最好使用 ~git commit -m “你想说的话"~ 这种方式来进行提交
 	  #+end_quote
+
 	  #+begin_example
 	    linc@pop-os:~/for_git_demo$ git commit -m "init repo"
 	    [master (root-commit) 2c902a3] init repo
 	     1 file changed, 1 insertion(+)
 	     create mode 100644 README.md
 	  #+end_example
+
        4. ~git push~
 
 	  将你的本地项目同步到服务器，就不怕工作丢失了。
@@ -467,45 +471,56 @@
 	     ,* [new branch]      master -> master
 	  #+end_example
 
-**** 使用 ~.gitignore~ 来管理哪些文件/文件夹进入 ~git~
-
 *** 注意事项
     1. 确认你的 ~home~ 目录下没有 ~.git~ 文件夹:
+
        在终端上运行这两条命令：
        #+begin_example
          cd ~
          ls -la | grep "\.git"
        #+end_example
+
        如果有类似下面的回显：
        #+begin_example
          drwxr-xr-x  8 linc linc  4096 Mar 13 08:29 .git
        #+end_example
+
        说明你的 ~home~ 目录被上一个同学放到了 ~git~ 中进行管理，请删除这个文件夹：
        #+begin_example
          rm -rf ~/.git
        #+end_example
+
     2. 修改自己提交git的用户名和邮箱
+
        #+begin_example
          git config --list
        #+end_example
+
        此时会有类似这样的显示：
        #+begin_example
          user.name=lin chuan
          user.email=linch1982@gmail.com
          core.quotepath=false
        #+end_example
+
        如果出现的username和email不是你想要的，请使用如下命令进行修改:
+
        #+begin_example
          git config --global user.name "你的名字,最好用英文字母"
          git config --global user.email "你的邮箱地址"
        #+end_example
+
        #+begin_quote
        *注意* 上面两条 ~config~ 命令中的双引号不要省略
        #+end_quote
+
     3. 如果你的git命令回显中出现中文的乱码
+
        使用下面这条命令进行修正：
        #+begin_example
          git config --global core.quotepath=false
        #+end_example
+
     4. 你可以随时使用 ~git status~ 命令查看git的状态
        
+    5. 使用 ~.gitignore~ 来管理哪些文件/文件夹进入 ~git~
