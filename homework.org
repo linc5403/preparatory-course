@@ -27,8 +27,9 @@
 
 | 作业   | 点评                                                                                                         |
 | [[https://github.com/fangqihao/note-book/blob/master/3.15%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md][方启豪]] | ~将practice下的new开头的文件夹都删除掉~ 可使用 find prepare/practice -type d -name "new*" \vert xargs rm -rf |
-| [[https://github.com/yangxingchen886/giao/blob/master/3.13%2C14%E6%97%A5%E7%AC%94%E8%AE%B0.md][杨星辰]] | 笔记做的不错，继续加油                                                                                                  |
+| [[https://github.com/yangxingchen886/giao/blob/master/3.13%2C14%E6%97%A5%E7%AC%94%E8%AE%B0.md][杨星辰]] | 笔记做的不错，继续加油                                                                                       |
 | [[https://github.com/Cp1132344476/Note-book/blob/master/README.md][陈鹏]]   | 把之前的内容复习的很好，删除文件夹的疑问我们统一讲解，参照上面给方启豪同学的那个答案                         |
 | [[https://github.com/LXX3123/c-projects/blob/master/markdown/%E9%A2%84%E5%A4%87%E8%AF%BE%E7%BB%83%E4%B9%A0%E4%B8%80.md][李星星]] | 学习了不少shell的知识，做的不错                                                                              |
 | [[https://github.com/wangjinjin-banyuan/note-book/blob/master/README.md][王进进]] | 补充了前两天的知识，跟上节奏了哈                                                                             |
-|        |                                                                                                              |
+| [[https://github.com/athos9494/note-book/blob/master/%E7%AC%94%E8%AE%B03.md][张志]]   | 文件属性，权限的知识记录的很详细；多加练习，继续努力                                                         |
+
