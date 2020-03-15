@@ -9,7 +9,7 @@
 | [[https://github.com/LXX3123/c-projects/blob/master/markdown/%E7%AC%94%E8%AE%B03.13.md][李星星]] | 没什么问题 ~==git commit -m "description"==~ 除了这个样式没有搞得太好                                        |
 | [[https://github.com/yuchao-zero/work-3m/blob/master/3.13.md][俞超]]   | 做的不错哈，格式可以再丰富些                                                                                 |
 
-* 3-13
+* 3-14
 
 | 作业   | 点评                                                                                                                                                                                |
 | [[https://github.com/athos9494/note-book/blob/master/%E7%AC%94%E8%AE%B02.md][张志]]   | 已经开始在学习linux文件和目录属性的知识了。练习的截图我看不到哈，应该没有把那个图片上传到gitgub                                                                                     |
