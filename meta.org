@@ -1,0 +1,86 @@
+* 文件重定向
+** 标准输入，标准输出和错误输出
+   - 标准输入 0
+   - 标准输出 1
+   - 错误输出 2
+   
+   上面的0，1，2是文件描述符的ID
+  
+** ~>~ ， ~>>~ ， ~2 >~ ， ~2>&1~
+   | 符号   | 含义                     | 示例                                       |
+   | ~>~    | 标准输出重定向到文件     | ~echo "ABCD" > 1.txt~                      |
+   | ~>>~   | 标准输出追加到文件       | ~echo "EFGH" >> 1.txt~                     |
+   | ~2 >~  | 错误输出重定向到文件     | ~cat not-exist-file 2 > 1.txt~             |
+   | ~2>&1~ | 错误输出重定向到标准输出 | ~ls -la not-exist-file 1.txt > 1.txt 2>&1~ |
+
+* find
+  - ~-exec 'command' {} \;~
+    #+begin_src sh
+      find -name "*.md" -exec more {} \;
+    #+end_src
+
+    注意 ~{}~ 与 ~\;~ 之间的空格
+  - ~-mtime(modify) -ctime(create) -atime(access)~
+    - 参数 ~+~ 表示在此内， ~-~ 表示在此之外
+      | ~-mtime +3~ | 3天内 |
+      | ~-mtime -1~ | 1天前 |
+  - ~-newer~
+
+    比哪个文件新
+
+    用 ~!~ 来表示逻辑非
+    #+begin_src sh
+      find ./ ! -newer html学习.md
+    #+end_src
+      
+  - ~-depth~
+
+    先查找当前目录，再查找子目录
+
+  - ~-mount~
+
+    只查找当前文件系统，不进去其他文件系统
+
+  - ~-ok~
+
+    用法同-exec，但是会提示是否执行该命令
+
+  - ~-type~
+
+    选项见上面，常用的是
+    - ~-f~ :普通文件
+    - ~-d~ :目录
+
+  - ~-max-depth 1~
+      
+    *应该放在其他选项之前*
+
+    只搜索当前目录
+
+* xargs
+  #+begin_src sh
+    ls -tr1 | tail -5 | xargs -i cp {} dest/folder/
+    xargs -n1 -i cp {} dest/folder
+  #+end_src
+    
+  - 文件名包含空格
+
+    - 仅仅使用find
+      #+begin_src sh
+	find ./ -print0 |xargs -0 cp '{}' /data
+      #+end_src
+
+      文件名中包含空格的情况下使用， ~-print0~ 和 ~-0~ 配合使用，能够将带空格的文件找出来。
+
+    - 带grep的情况
+      #+begin_src sh
+	find ./ -type f | grep -v "\.git" |grep -v "code" | grep "02" | xargs -d '\n' file
+      #+end_src
+      使用 ~-d '\n'~ 选项指定使用回车作为参数的分割符
+
+  - 参数在中间的情况
+    #+begin_src sh
+      find ./ -name "*.mp4" | xargs -i cp '{}' /data
+    #+end_src
+
+
