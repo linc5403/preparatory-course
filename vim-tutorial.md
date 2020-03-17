@@ -1,15 +1,15 @@
 
 # Table of Contents
 
-1.  [VIM的三种模式](#org542d2c9)
-2.  [打开文件](#orgf78bc15)
-3.  [保存并退出](#orgfa3d99c)
-4.  [编辑](#orgaa1e2cf)
-5.  [其他](#org14fb443)
-6.  [练习](#orgd42bd1c)
+1.  [VIM的三种模式](#org95dcdad)
+2.  [打开文件](#orgffc3e6f)
+3.  [保存并退出](#orgd0d38e8)
+4.  [编辑](#org038968f)
+5.  [其他](#org6dfd8f1)
+6.  [练习](#orgac63ba4)
 
 
-<a id="org542d2c9"></a>
+<a id="org95dcdad"></a>
 
 # VIM的三种模式
 
@@ -26,7 +26,7 @@
     可视化模式，选择区域
 
 
-<a id="orgf78bc15"></a>
+<a id="orgffc3e6f"></a>
 
 # 打开文件
 
@@ -43,7 +43,7 @@
 -   使用 `i` 或者 `a` 从 `normal` 进入到 `insert` 模式
 
 
-<a id="orgfa3d99c"></a>
+<a id="orgd0d38e8"></a>
 
 # 保存并退出
 
@@ -54,7 +54,7 @@
 -   保存并退出：在 `normal` 模式下输入 `:wq`
 
 
-<a id="orgaa1e2cf"></a>
+<a id="org038968f"></a>
 
 # 编辑
 
@@ -63,14 +63,14 @@
         -   可以使用上下左右箭头
         -   也可以使用 `h`, `j`, `k`, `l` 来进行移动
     -   移动一个word
-        -   w->后移
-        -   b->前移
+        -   `w` 后移一个词
+        -   `b` 前移一个词
 
 -   复制粘贴
 -   搜索
 
 
-<a id="org14fb443"></a>
+<a id="org6dfd8f1"></a>
 
 # 其他
 
@@ -81,7 +81,7 @@
     或者 `:set nu`
 
 
-<a id="orgd42bd1c"></a>
+<a id="orgac63ba4"></a>
 
 # 练习
 
