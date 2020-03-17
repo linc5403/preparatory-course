@@ -53,5 +53,7 @@
   | [[https://github.com/yangxingchen886/giao/blob/master/3.16%E4%BD%9C%E4%B8%9A.md][杨星辰]] | 需要多加练习哈，现在你们是刚开始，好多不熟悉的地方，多用用就好了 |
   | [[https://github.com/Sunxiao1995/learn/blob/master/sx-2020.03.16.md][孙孝]]   | 笔记做的很全，多花时间练习哈                                     |
   | [[https://github.com/smy-l/note-book/blob/master/shell%E6%96%87%E4%BB%B6%E7%9B%B8%E5%85%B3.md][孙明羽]] | 自己理解做的笔记，不错，多思考多动手                             |
+  | [[https://github.com/yuchao-zero/work-3m/blob/master/3.16.md][俞超]]   | 笔记做的不错，而且不懂的地方就问问题，值得表扬                   |
+
 
 
