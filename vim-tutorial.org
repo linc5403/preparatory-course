@@ -1,14 +1,14 @@
 * VIM的三种模式
 
-  1. normal
+  1. ~normal~
      
      移动光标，执行命令
 
-  2. insert
+  2. ~insert~
 
      输入文本
 
-  3. visual
+  3. ~visual~
 
      可视化模式，选择区域
 
@@ -18,7 +18,7 @@
      
   2. 在vim中执行 ~:e filename~
 
-  进入vim时初始状态是normal模式
+  进入vim时初始状态是 ~normal~ 模式
   
   - 使用 ~:set showmode~ 打开状态栏用以显示当前的模式（注意：normal模式不会被显示出来）
 
@@ -29,20 +29,20 @@
 
 * 保存并退出
 
-  - 保存：在normal状态下 输入 ~:w~
+  - 保存：在 ~normal~ 状态下 输入 ~:w~
 
-  - 退出：在normal模式下输入 ~:q~
+  - 退出：在 ~normal~ 模式下输入 ~:q~
 
-  - 保存并退出：在normal模式下输入 ~:wq~
+  - 保存并退出：在 ~normal~ 模式下输入 ~:wq~
    
 
 * 编辑
 
-  - 移动光标 **必须在normal模式下**
+  - 移动光标 **必须在 ~normal~ 模式下**
     
     - 移动一个字符
       + 可以使用上下左右箭头
-      + 也可以使用h,j,k,l来进行移动
+      + 也可以使用 ~h~, ~j~, ~k~, ~l~ 来进行移动
     - 移动一个word
       +	w->后移
       + b->前移
@@ -58,4 +58,4 @@
     或者 ~:set nu~
 
 * 练习
-  - vimtutor
+  - ~vimtutor~
