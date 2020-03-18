@@ -75,7 +75,7 @@
   | 作业   | 点评                                                                                     |
   | [[https://github.com/tangdian0925/note-book1/blob/master/tangdian4.md][汤典]]   | 坚持学习哈，多看看视频回放，不清楚的就问                                                 |
   | [[https://github.com/Sunxiao1995/learn/blob/master/sx-2020.03.17.md][孙孝]]   | 每个知识点在笔记上都体现的很深刻，多加练习，现在学习的知识在今后的工作中会一直陪伴着你们 |
-  | [[https://github.com/TWH199602/hw5-2020-3-17][田文镐]] | 有个多余的文件可以删掉哈；在本地删掉，然后用git提交和推送，不要再web上删除               |
+  | [[https://github.com/TWH199602/hw5-2020-3-17][田文镐]] | 有个多余的文件可以删掉哈；在本地删掉，然后用git提交和推送，不要在web上直接删除             |
   | [[https://github.com/lioil9/note-book/blob/master/3.17%E6%AF%8F%E6%97%A5%E7%AC%94%E8%AE%B0.md][李海洋]] | 自己主动查看了more，less等命令的用法，vim的其他知识也在学习中；做的很不错                |
   | [[https://github.com/wangjinjin-banyuan/note-book/blob/master/3.17note.md][王进进]] | 学习了路径，目录和文件相关知识，还需要应用到自己的实际工作，把这个知识转化为自己的本能   |
   | [[https://github.com/yuchao-zero/work-3m/blob/master/3.17.md][俞超]]   | 认真学习了shell脚本的相关知识，并自己进行了练习；你的这个md文件中有个图片看不到呢        |
