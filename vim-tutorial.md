@@ -1,15 +1,15 @@
 
 # Table of Contents
 
-1.  [VIM的三种模式](#org95dcdad)
-2.  [打开文件](#orgffc3e6f)
-3.  [保存并退出](#orgd0d38e8)
-4.  [编辑](#org038968f)
-5.  [其他](#org6dfd8f1)
-6.  [练习](#orgac63ba4)
+1.  [VIM的三种模式](#org27a2b4b)
+2.  [打开文件](#orgbc96aa3)
+3.  [保存并退出](#org439d888)
+4.  [编辑](#org0d86613)
+5.  [其他](#org84d31e7)
+6.  [练习](#orgb34b66b)
 
 
-<a id="org95dcdad"></a>
+<a id="org27a2b4b"></a>
 
 # VIM的三种模式
 
@@ -26,7 +26,7 @@
     可视化模式，选择区域
 
 
-<a id="orgffc3e6f"></a>
+<a id="orgbc96aa3"></a>
 
 # 打开文件
 
@@ -43,7 +43,7 @@
 -   使用 `i` 或者 `a` 从 `normal` 进入到 `insert` 模式
 
 
-<a id="orgd0d38e8"></a>
+<a id="org439d888"></a>
 
 # 保存并退出
 
@@ -54,7 +54,7 @@
 -   保存并退出：在 `normal` 模式下输入 `:wq`
 
 
-<a id="org038968f"></a>
+<a id="org0d86613"></a>
 
 # 编辑
 
@@ -66,11 +66,38 @@
         -   `w` 后移一个词
         -   `b` 前移一个词
 
--   复制粘贴
--   搜索
+-   删除 **在 `normal` 模式下**
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">删除一个字符</td>
+    <td class="org-left">`x`</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">删除一个word</td>
+    <td class="org-left">`dw`</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">删除一行</td>
+    <td class="org-left">`dd`</td>
+    </tr>
+    </tbody>
+    </table>
 
 
-<a id="org6dfd8f1"></a>
+<a id="org84d31e7"></a>
 
 # 其他
 
@@ -81,7 +108,7 @@
     或者 `:set nu`
 
 
-<a id="orgac63ba4"></a>
+<a id="orgb34b66b"></a>
 
 # 练习
 

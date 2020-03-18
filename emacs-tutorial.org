@@ -1,0 +1,48 @@
+* Emacs是无模式的编辑器
+
+  光标的移动，命令的执行都是通过辅助按键来实现的
+
+* 打开文件
+
+  1. ~emacs filename~
+     
+  2. 在emacs中输入 ~C-x C-f~ ，再输入你要打开的文件名
+
+* 保存并退出
+
+  - 保存： ~C-x C-s~
+
+  - 退出： ~C-x C-c~
+
+* 编辑
+
+  - 移动光标
+    
+    - 移动一个字符
+      + 可以使用上下左右箭头
+      + 使用 ~Ctrl~
+
+	| 上(previous) | ~C-p~ |
+	| 下(next)     | ~C-n~ |
+	| 左(backward) | ~C-b~ |
+	| 右(forward)  | ~C-f~ |
+
+    - 移动一个word
+
+      | 左(backward) | ~M-b~ |
+      | 右(forward)  | ~M-f~ |
+
+
+  - 删除
+    
+    | 删除一个字符 | ~C-d~ |
+    | 删除一个word | ~M-d~ |
+
+
+* 其他
+  - 显示行号
+    
+    ~M-x linum-mode~
+
+* 练习
+  - 不要用 ~emacs~ 的 ~tutorial~
