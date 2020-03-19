@@ -1,0 +1,152 @@
+* 预备课测试
+
+** 下载文件[[file:test.sh][test.sh]]到本地并运行
+   
+   新建目录 ~practice~, 将 ~test.sh~ 移动到该目录，并执行。
+
+   ~practice~ 目录应该会生成一个 ~test~ 的文件夹和一个名字为 ~test123.txt~ 的文件:
+   #+begin_example
+     .
+     ├── test
+     │   ├── test1
+     │   │   ├── test1.doc
+     │   │   ├── test1.txt
+     │   │   ├── test1txt
+     │   │   ├── test2.doc
+     │   │   ├── test2.txt
+     │   │   ├── test2txt
+     │   │   ├── test3.doc
+     │   │   ├── test3.txt
+     │   │   ├── test3txt
+     │   │   ├── test4.doc
+     │   │   ├── test4.txt
+     │   │   └── test4txt
+     │   ├── test2
+     │   │   ├── test1.doc
+     │   │   ├── test1.txt
+     │   │   ├── test1txt
+     │   │   ├── test2.doc
+     │   │   ├── test2.txt
+     │   │   ├── test2txt
+     │   │   ├── test3.doc
+     │   │   ├── test3.txt
+     │   │   ├── test3txt
+     │   │   ├── test4.doc
+     │   │   ├── test4.txt
+     │   │   └── test4txt
+     │   ├── test3
+     │   │   ├── test1.doc
+     │   │   ├── test1.txt
+     │   │   ├── test1txt
+     │   │   ├── test2.doc
+     │   │   ├── test2.txt
+     │   │   ├── test2txt
+     │   │   ├── test3.doc
+     │   │   ├── test3.txt
+     │   │   ├── test3txt
+     │   │   ├── test4.doc
+     │   │   ├── test4.txt
+     │   │   └── test4txt
+     │   └── test4
+     │       ├── test1.doc
+     │       ├── test1.txt
+     │       ├── test1txt
+     │       ├── test2.doc
+     │       ├── test2.txt
+     │       ├── test2txt
+     │       ├── test3.doc
+     │       ├── test3.txt
+     │       ├── test3txt
+     │       ├── test4.doc
+     │       ├── test4.txt
+     │       └── test4txt
+     ├── test123.txt
+     └── test.sh
+   #+end_example
+
+** 测试要求
+   1. *基础题* 一条命令删除test文件夹下所有以 ~.txt~ 结束的文件
+      
+      成功后 ~practice~ 目录应该如下：
+      #+begin_example
+	.
+	├── test
+	│   ├── test1
+	│   │   ├── test1.doc
+	│   │   ├── test1txt
+	│   │   ├── test2.doc
+	│   │   ├── test2txt
+	│   │   ├── test3.doc
+	│   │   ├── test3txt
+	│   │   ├── test4.doc
+	│   │   └── test4txt
+	│   ├── test2
+	│   │   ├── test1.doc
+	│   │   ├── test1txt
+	│   │   ├── test2.doc
+	│   │   ├── test2txt
+	│   │   ├── test3.doc
+	│   │   ├── test3txt
+	│   │   ├── test4.doc
+	│   │   └── test4txt
+	│   ├── test3
+	│   │   ├── test1.doc
+	│   │   ├── test1txt
+	│   │   ├── test2.doc
+	│   │   ├── test2txt
+	│   │   ├── test3.doc
+	│   │   ├── test3txt
+	│   │   ├── test4.doc
+	│   │   └── test4txt
+	│   └── test4
+	│       ├── test1.doc
+	│       ├── test1txt
+	│       ├── test2.doc
+	│       ├── test2txt
+	│       ├── test3.doc
+	│       ├── test3txt
+	│       ├── test4.doc
+	│       └── test4txt
+	├── test123.txt
+	└── test.sh
+      #+end_example
+
+   2. *挑战题* 再使用一条命令删除test1和test2目录下以 ~.doc~ 结束的文件
+      #+begin_quote
+      *提示：你可能需要使用到 ~grep~ 的正则表达式*
+      #+end_quote
+      成功后 ~practice~ 目录应该如下：
+      #+begin_example
+	.
+	├── test
+	│   ├── test1
+	│   │   ├── test1txt
+	│   │   ├── test2txt
+	│   │   ├── test3txt
+	│   │   └── test4txt
+	│   ├── test2
+	│   │   ├── test1txt
+	│   │   ├── test2txt
+	│   │   ├── test3txt
+	│   │   └── test4txt
+	│   ├── test3
+	│   │   ├── test1.doc
+	│   │   ├── test1txt
+	│   │   ├── test2.doc
+	│   │   ├── test2txt
+	│   │   ├── test3.doc
+	│   │   ├── test3txt
+	│   │   ├── test4.doc
+	│   │   └── test4txt
+	│   └── test4
+	│       ├── test1.doc
+	│       ├── test1txt
+	│       ├── test2.doc
+	│       ├── test2txt
+	│       ├── test3.doc
+	│       ├── test3txt
+	│       ├── test4.doc
+	│       └── test4txt
+	├── test123.txt
+	└── test.sh
+      #+end_example
