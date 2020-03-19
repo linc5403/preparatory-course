@@ -113,7 +113,7 @@
 
    2. *挑战题* 再使用一条命令删除test1和test2目录下以 ~.doc~ 结束的文件
       #+begin_quote
-      *提示：你可能需要使用到 ~grep~ 的正则表达式*
+      *提示：你可能需要使用到grep命令的正则表达式*
       #+end_quote
       成功后 ~practice~ 目录应该如下：
       #+begin_example
