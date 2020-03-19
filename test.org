@@ -65,7 +65,7 @@
    #+end_example
 
 ** 测试要求
-   1. *基础题* 一条命令删除test文件夹下所有以 ~.txt~ 结束的文件
+   1. *基础题* 在 ~practice~ 目录下一行命令删除test文件夹下所有以 ~.txt~ 结束的文件
       
       成功后 ~practice~ 目录应该如下：
       #+begin_example
@@ -111,9 +111,9 @@
 	└── test.sh
       #+end_example
 
-   2. *挑战题* 再使用一条命令删除test1和test2目录下以 ~.doc~ 结束的文件
+   2. *挑战题* 再使用一行命令删除test1和test2目录下以 ~.doc~ 结束的文件
       #+begin_quote
-      *提示：你可能需要使用到grep命令的正则表达式*
+      *提示：你可能需要使用到grep的正则表达式*
       #+end_quote
       成功后 ~practice~ 目录应该如下：
       #+begin_example
