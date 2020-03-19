@@ -5,6 +5,7 @@ echo "mkdir test"
 [ -d "./test" ] && echo "Directory ./test exists, please rename or delete it." && exit
 
 mkdir test
+touch test123.txt
 
 for i in {1..4}; do
     mkdir test/test$i;
