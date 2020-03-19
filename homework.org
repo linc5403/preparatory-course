@@ -110,4 +110,6 @@
 | [[https://github.com/athos9494/note-book/blob/master/19%E6%97%A5%E7%AC%94%E8%AE%B0.md][张志]]   | 笔记做的不错，Xcode的任务需要抓紧哈                   |
 | [[https://github.com/wangjinjin-banyuan/note-book/blob/master/3.19note.md][王进进]] | Xcode的任务完成，目录和文件的笔记也做的不错           |
 | [[https://github.com/fangqihao/note-book/blob/master/3.19%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md][方启豪]] | 笔记做的不错，可以把以后的课程预习起来了哈            |
-| [[https://github.com/yangxingchen886/giao/blob/master/xcode%E6%88%AA%E5%9B%BE.jpg][杨星辰]] | Xcode的任务完成                                                 |
+| [[https://github.com/yangxingchen886/giao/blob/master/xcode%E6%88%AA%E5%9B%BE.jpg][杨星辰]] | Xcode的任务完成                                       |
+| [[https://github.com/LXX3123/c-projects/blob/master/markdown/%E6%95%B0%E5%AD%97%E7%B3%BB%E7%BB%9F%E9%A2%84%E4%B9%A03.19.md][李星星]] | 预习也完成的不错哦，很利害嘛                          |
+| [[https://github.com/yuchao-zero/work-3m/blob/master/3.19.md][俞超]]   | Xcode搞定了，还能提出自己的想法，很不错               |
