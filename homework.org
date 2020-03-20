@@ -116,3 +116,5 @@
   | [[https://github.com/LXX3123/c-projects/blob/master/markdown/%E6%95%B0%E5%AD%97%E7%B3%BB%E7%BB%9F%E9%A2%84%E4%B9%A03.19.md][李星星]] | 预习也完成的不错哦，很利害嘛                          |
   | [[https://github.com/yuchao-zero/work-3m/blob/master/3.19.md][俞超]]   | Xcode搞定了，还能提出自己的想法，很不错               |
   | [[https://github.com/TWH199602/hw7-20-3-19/blob/master/homework7.md][田文镐]] | Xcode搞定                                             |
+  | [[https://github.com/Sunxiao1995/learn/blob/master/sx-2020.03.19.md][孙孝]]   | Xcode完成，笔记也做的很好                             |
+
