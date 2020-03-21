@@ -147,5 +147,7 @@
   | [[https://github.com/LXX3123/c-projects/blob/master/markdown/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%26%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%973.21.md][李星星]] | 预习了数据存储和数学运算             |
   | [[https://github.com/smy-l/note-book/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA/%E6%95%B0%E5%AD%97%E7%B3%BB%E7%BB%9F.md][孙明羽]] | 预习了数字系统                       |
   | [[https://github.com/athos9494/note-book/blob/master/21%E6%97%A5%E7%AC%94%E8%AE%B0.md][张志]]   | 完成了预习课的测试，并预习了数字系统 |
+  | [[https://github.com/lioil9/note-book/blob/master/3.21%E6%AF%8F%E6%97%A5%E7%AC%94%E8%AE%B0.md][李海洋]] | 预习了数字系统和存储                 |
+
 
 
