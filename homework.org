@@ -118,7 +118,7 @@
   | [[https://github.com/TWH199602/hw7-20-3-19/blob/master/homework7.md][田文镐]] | Xcode搞定                                             |
   | [[https://github.com/Sunxiao1995/learn/blob/master/sx-2020.03.19.md][孙孝]]   | Xcode完成，笔记也做的很好                             |
   | [[https://github.com/lioil9/note-book/blob/master/3.19%E6%AF%8F%E6%97%A5%E7%AC%94%E8%AE%B0.md][李海洋]] | 笔记做的很认真，Xcode也完成了，多加练习哦             |
-  | 汤典   | 生病                                                  |
+  | [[https://github.com/tangdian0925/note-book1/blob/master/tangdian5.md][汤典]]   | Xcode搞定了哈，先休息好身体                           |
 
 * 3-20
 
