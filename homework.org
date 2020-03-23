@@ -164,4 +164,5 @@
   | [[https://github.com/fangqihao/note-book/blob/master/3.22%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md][方启豪]] | 预习了数据存储                   |
   | [[https://github.com/athos9494/note-book/blob/master/22%E6%97%A5%E7%AC%94%E8%AE%B0.md][张志]]   | 预习了数据存储                   |
   | [[https://github.com/tangdian0925/note-book3/blob/master/tangdian1.md][汤典]]   | 完成了预备课测试，预习了数字系统 |
+  | [[https://github.com/Sunxiao1995/learn/blob/master/sx-2020.03.22.md][孙孝]]   | 预习了数学运算                   |
 
