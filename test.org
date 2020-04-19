@@ -1,5 +1,4 @@
 * 预备课测试
-
 ** 下载文件[[file:test.sh][test.sh]]到本地并运行
    
    新建目录 ~practice~, 将 ~test.sh~ 移动到该目录，并执行。
