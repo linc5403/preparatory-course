@@ -17,6 +17,7 @@
     ,*** 修改文件的权限
     ,****_ chmod
     ,****_ chgrp
+    ,****_ chown
     ,** 命令行快捷键
     ,***_ 移动光标
     ,***_ 删除
@@ -27,6 +28,8 @@
     ,**** 有道云
     ,**** 直接用github
     ,*** markdown语法
+    ,*** markdown编辑器
+    ,****_ Typora
     ,** 软件管理
     ,*** brew
     ,****_ list
@@ -116,7 +119,8 @@
      (change directory)切换工作目录
 
      不加参数 表示切换到home目录
-     带1个参数 切换到你制定的参数目录
+
+     带1个参数 切换到你指定的参数目录
      
      | 符号 | 含义           |
      |------+----------------|
@@ -270,7 +274,7 @@
 *** markdown语法
 
     [[https://wizardforcel.gitbooks.io/markdown-simple-world/2.html][参考]]
-
+*** markdown编辑器-Typora
 ** ~git~
 *** git和github的关系说明
     #+begin_src plantuml :file ./img/git_overview.svg
