@@ -528,3 +528,20 @@
     4. 你可以随时使用 ~git status~ 命令查看git的状态
        
     5. 使用 ~.gitignore~ 来管理哪些文件/文件夹进入 ~git~
+       - 列出不关心的文件类型或文件名
+       - 列出需要关心的内容(~!~)
+       - 文件夹(~/~)
+
+       示例:  
+       #+begin_example
+         # Blacklist everything
+         *
+         # Whitelist all directories
+         !*/
+         # Whitelist the file you're interested in.
+         !*.c
+         !*.h
+         !Makefile
+         !*.dat
+         !.gitignore
+       #+end_example
