@@ -1,37 +1,37 @@
 
 # Table of Contents
 
-1.  [学习路线](#orge951f70)
-2.  [预备课必备知识](#org70f6250)
-    1.  [命令行操作](#org18d9e2e)
-        1.  [linux文件和目录](#org8ca5e0c)
-        2.  [其他重要命令](#org925790e)
-        3.  [命令行快捷键](#orgac80382)
-    2.  [Mac下的软件管理-`brew`](#orgd3e2e6d)
-        1.  [install](#org8207c6b)
-        2.  [修改源变快一点](#orgb1049cf)
-        3.  [brew常用命令](#org1e2a1ec)
-    3.  [编辑器](#orgc79f662)
-    4.  [如何做笔记](#orgc22de01)
-        1.  [有道云笔记](#orgff728a6)
-        2.  [markdown语法](#org2d38a25)
-        3.  [markdown编辑器-Typora](#orge5c164f)
-    5.  [`git`](#org8b59a7d)
-        1.  [git和github的关系说明](#orgb3ff6e4)
-        2.  [`git` 的安装](#org72e99db)
-        3.  [`github` 的使用](#org76fe16e)
-        4.  [注意事项](#orgf26c653)
+1.  [学习路线](#org5958ecb)
+2.  [预备课必备知识](#org4426c73)
+    1.  [命令行操作](#orgba60cbc)
+        1.  [linux文件和目录](#org076f5f6)
+        2.  [其他重要命令](#orgf702933)
+        3.  [命令行快捷键](#org97830db)
+    2.  [Mac下的软件管理-`brew`](#org8d62b0f)
+        1.  [install](#org84a0158)
+        2.  [修改源变快一点](#org07ccd07)
+        3.  [brew常用命令](#org7e0f852)
+    3.  [编辑器](#org6ad7a3f)
+    4.  [如何做笔记](#orga12ab3c)
+        1.  [有道云笔记](#orgf3487a1)
+        2.  [markdown语法](#org3a93468)
+        3.  [markdown编辑器-Typora](#org3415f1d)
+    5.  [`git`](#orgd5047de)
+        1.  [git和github的关系说明](#org542e162)
+        2.  [`git` 的安装](#org471295e)
+        3.  [`github` 的使用](#org20e5d3f)
+        4.  [注意事项](#org9a89223)
 
 
 
-<a id="orge951f70"></a>
+<a id="org5958ecb"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org70f6250"></a>
+<a id="org4426c73"></a>
 
 # 预备课必备知识
 
@@ -44,7 +44,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="org18d9e2e"></a>
+<a id="orgba60cbc"></a>
 
 ## 命令行操作
 
@@ -53,7 +53,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org8ca5e0c"></a>
+<a id="org076f5f6"></a>
 
 ### linux文件和目录
 
@@ -363,7 +363,7 @@
     </table>
 
 
-<a id="org925790e"></a>
+<a id="orgf702933"></a>
 
 ### 其他重要命令
 
@@ -375,7 +375,7 @@
     过滤内容
 
 
-<a id="orgac80382"></a>
+<a id="org97830db"></a>
 
 ### 命令行快捷键
 
@@ -481,21 +481,21 @@
 </table>
 
 
-<a id="orgd3e2e6d"></a>
+<a id="org8d62b0f"></a>
 
 ## Mac下的软件管理-`brew`
 
 [官网](https://brew.sh/)
 
 
-<a id="org8207c6b"></a>
+<a id="org84a0158"></a>
 
 ### install
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
-<a id="orgb1049cf"></a>
+<a id="org07ccd07"></a>
 
 ### 修改源变快一点
 
@@ -512,7 +512,7 @@
     git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org1e2a1ec"></a>
+<a id="org7e0f852"></a>
 
 ### brew常用命令
 
@@ -558,7 +558,7 @@
 </table>
 
 
-<a id="orgc79f662"></a>
+<a id="org6ad7a3f"></a>
 
 ## 编辑器
 
@@ -589,43 +589,43 @@
 -   emacs
 
 
-<a id="orgc22de01"></a>
+<a id="orga12ab3c"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgff728a6"></a>
+<a id="orgf3487a1"></a>
 
 ### 有道云笔记
 
 
-<a id="org2d38a25"></a>
+<a id="org3a93468"></a>
 
 ### markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="orge5c164f"></a>
+<a id="org3415f1d"></a>
 
 ### markdown编辑器-Typora
 
 
-<a id="org8b59a7d"></a>
+<a id="orgd5047de"></a>
 
 ## `git`
 
 
-<a id="orgb3ff6e4"></a>
+<a id="org542e162"></a>
 
 ### git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="org72e99db"></a>
+<a id="org471295e"></a>
 
 ### `git` 的安装
 
@@ -634,7 +634,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org76fe16e"></a>
+<a id="org20e5d3f"></a>
 
 ### `github` 的使用
 
@@ -785,7 +785,7 @@
              * [new branch]      master -> master
 
 
-<a id="orgf26c653"></a>
+<a id="org9a89223"></a>
 
 ### 注意事项
 
@@ -830,4 +830,21 @@
 4.  你可以随时使用 `git status` 命令查看git的状态
 
 5.  使用 `.gitignore` 来管理哪些文件/文件夹进入 `git`
+    
+    -   列出不关心的文件类型或文件名
+    -   列出需要关心的内容(`!`)
+    -   文件夹(`/`)
+    
+    示例:  
+    
+        # Blacklist everything
+        *
+        # Whitelist all directories
+        !*/
+        # Whitelist the file you're interested in.
+        !*.c
+        !*.h
+        !Makefile
+        !*.dat
+        !.gitignore
 
