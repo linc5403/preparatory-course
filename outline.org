@@ -182,6 +182,12 @@
        查看文本文件内容
     3. ~grep~
        过滤内容
+    4. ~find~
+       查找文件
+    5. ~rg~
+       查找文件内容
+    6. ~xargs~
+       将标准输入转为命令行参数
 
 *** 命令行快捷键
     
@@ -206,13 +212,19 @@
 
    [[https://brew.sh/][官网]]
 
-*** install
+*** 直接安装国内版(2041班提供):
+#+begin_src sh
+  /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+#+end_src
+
+*** 安装官方版本
+**** install
     
     #+begin_example
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     #+end_example
 
-*** 修改源变快一点
+**** 修改源变快一点
 
     [[https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git][参考1]]
 
@@ -545,3 +557,6 @@
          !*.dat
          !.gitignore
        #+end_example
+
+** [[https://www.typingclub.com/][键盘练习]]
+
