@@ -82,6 +82,7 @@
   *2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果*
   #+end_quote
   
+
 ** 命令行操作
 
    #+begin_quote
@@ -557,6 +558,11 @@
          !*.dat
          !.gitignore
        #+end_example
-
+    6. 使用 ~git remote -v~ 查看远端仓库配置
+       #+begin_example
+         linc@pop-os:~/preparatory-course$ git remote -v
+         origin  git@github.com:linc5403/preparatory-course.git (fetch)
+         origin  git@github.com:linc5403/preparatory-course.git (push)
+       #+end_example
 ** [[https://www.typingclub.com/][键盘练习]]
 
