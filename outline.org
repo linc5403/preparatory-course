@@ -554,7 +554,7 @@
          # Whitelist the file you're interested in.
          !*.c
          !*.h
-         !Makefile
+         !**/Makefile
          !*.dat
          !.gitignore
        #+end_example
