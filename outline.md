@@ -1,37 +1,37 @@
 
 # Table of Contents
 
-1.  [学习路线](#org5958ecb)
-2.  [预备课必备知识](#org4426c73)
-    1.  [命令行操作](#orgba60cbc)
-        1.  [linux文件和目录](#org076f5f6)
-        2.  [其他重要命令](#orgf702933)
-        3.  [命令行快捷键](#org97830db)
-    2.  [Mac下的软件管理-`brew`](#org8d62b0f)
-        1.  [install](#org84a0158)
-        2.  [修改源变快一点](#org07ccd07)
-        3.  [brew常用命令](#org7e0f852)
-    3.  [编辑器](#org6ad7a3f)
-    4.  [如何做笔记](#orga12ab3c)
-        1.  [有道云笔记](#orgf3487a1)
-        2.  [markdown语法](#org3a93468)
-        3.  [markdown编辑器-Typora](#org3415f1d)
-    5.  [`git`](#orgd5047de)
-        1.  [git和github的关系说明](#org542e162)
-        2.  [`git` 的安装](#org471295e)
-        3.  [`github` 的使用](#org20e5d3f)
-        4.  [注意事项](#org9a89223)
+1.  [学习路线](#orgbc23ff7)
+2.  [预备课必备知识](#org73146fa)
+    1.  [命令行操作](#org24276af)
+        1.  [linux文件和目录](#org9515140)
+        2.  [其他重要命令](#org110f69f)
+        3.  [命令行快捷键](#org140dfe1)
+    2.  [Mac下的软件管理-`brew`](#org60287b3)
+        1.  [安装](#orgb6c1f76)
+        2.  [brew常用命令](#orgca481b6)
+    3.  [编辑器](#org91baa27)
+    4.  [如何做笔记](#org0477d6d)
+        1.  [有道云笔记](#org3f82e02)
+        2.  [markdown语法](#orgd07b211)
+        3.  [markdown编辑器-Typora](#org6f350a4)
+    5.  [`git`](#org136761e)
+        1.  [git和github的关系说明](#org3b7bba7)
+        2.  [`git` 的安装](#orgae1680e)
+        3.  [`github` 的使用](#org7386eb9)
+        4.  [注意事项](#orgc540478)
+    6.  [键盘练习](#orgaaf17b8)
 
 
 
-<a id="org5958ecb"></a>
+<a id="orgbc23ff7"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org4426c73"></a>
+<a id="org73146fa"></a>
 
 # 预备课必备知识
 
@@ -44,7 +44,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="orgba60cbc"></a>
+<a id="org24276af"></a>
 
 ## 命令行操作
 
@@ -53,7 +53,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org076f5f6"></a>
+<a id="org9515140"></a>
 
 ### linux文件和目录
 
@@ -363,7 +363,7 @@
     </table>
 
 
-<a id="orgf702933"></a>
+<a id="org110f69f"></a>
 
 ### 其他重要命令
 
@@ -373,9 +373,15 @@
     查看文本文件内容
 3.  `grep`
     过滤内容
+4.  `find`
+    查找文件
+5.  `rg`
+    查找文件内容
+6.  `xargs`
+    将标准输入转为命令行参数
 
 
-<a id="org97830db"></a>
+<a id="org140dfe1"></a>
 
 ### 命令行快捷键
 
@@ -481,38 +487,43 @@
 </table>
 
 
-<a id="org8d62b0f"></a>
+<a id="org60287b3"></a>
 
 ## Mac下的软件管理-`brew`
 
 [官网](https://brew.sh/)
 
 
-<a id="org84a0158"></a>
+<a id="orgb6c1f76"></a>
 
-### install
+### 安装
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+1.  直接安装国内版(2041班提供):
 
+        /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 
-<a id="org07ccd07"></a>
+2.  安装官方版本
 
-### 修改源变快一点
-
-[参考1](https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git)
-
-[参考2](https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles)
-
-    # 替换brew.git:
-    cd "$(brew --repo)"
-    git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+    1.  install
     
-    # 替换homebrew-core.git:
-    cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-    git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    
+    2.  修改源变快一点
+    
+        [参考1](https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git)
+        
+        [参考2](https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles)
+        
+            # 替换brew.git:
+            cd "$(brew --repo)"
+            git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+            
+            # 替换homebrew-core.git:
+            cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+            git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org7e0f852"></a>
+<a id="orgca481b6"></a>
 
 ### brew常用命令
 
@@ -558,7 +569,7 @@
 </table>
 
 
-<a id="org6ad7a3f"></a>
+<a id="org91baa27"></a>
 
 ## 编辑器
 
@@ -589,43 +600,43 @@
 -   emacs
 
 
-<a id="orga12ab3c"></a>
+<a id="org0477d6d"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgf3487a1"></a>
+<a id="org3f82e02"></a>
 
 ### 有道云笔记
 
 
-<a id="org3a93468"></a>
+<a id="orgd07b211"></a>
 
 ### markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="org3415f1d"></a>
+<a id="org6f350a4"></a>
 
 ### markdown编辑器-Typora
 
 
-<a id="orgd5047de"></a>
+<a id="org136761e"></a>
 
 ## `git`
 
 
-<a id="org542e162"></a>
+<a id="org3b7bba7"></a>
 
 ### git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="org471295e"></a>
+<a id="orgae1680e"></a>
 
 ### `git` 的安装
 
@@ -634,7 +645,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org20e5d3f"></a>
+<a id="org7386eb9"></a>
 
 ### `github` 的使用
 
@@ -785,7 +796,7 @@
              * [new branch]      master -> master
 
 
-<a id="org9a89223"></a>
+<a id="orgc540478"></a>
 
 ### 注意事项
 
@@ -844,7 +855,17 @@
         # Whitelist the file you're interested in.
         !*.c
         !*.h
-        !Makefile
+        !**/Makefile
         !*.dat
         !.gitignore
+6.  使用 `git remote -v` 查看远端仓库配置
+    
+        linc@pop-os:~/preparatory-course$ git remote -v
+        origin  git@github.com:linc5403/preparatory-course.git (fetch)
+        origin  git@github.com:linc5403/preparatory-course.git (push)
+
+
+<a id="orgaaf17b8"></a>
+
+## [键盘练习](https://www.typingclub.com/)
 

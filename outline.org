@@ -6,7 +6,12 @@
     ,* 预备课必备知识
     ,** linux文件和目录
     ,*** 变更和查看工作目录
-    ,****_ cd(change directory)
+    ,**** pwd(print working directory)
+    ,**** cd(change directory)
+    ,*****_ ./
+    ,*****_ ../
+    ,*****_ -
+    ,*****_ ~
     ,****_ ls(list)
     ,*** 文件和文件夹操作
     ,****_ touch
@@ -14,6 +19,10 @@
     ,****_ cp
     ,****_ mv
     ,****_ rm
+    ,****_ cat
+    ,****_ more
+    ,****_ find
+    ,****_ grep
     ,*** 修改文件的权限
     ,****_ chmod
     ,****_ chgrp
@@ -47,6 +56,7 @@
     ,**** add
     ,**** commit
     ,**** push
+    ,**** pull
     left side
     ,** 核心工具
     ,*** 终端
@@ -63,7 +73,7 @@
     ,******_ VS-Code
     ,******_ Atom
     ,** 问问题的技巧
-    ,***_ 多用google，少用百度
+    ,***_ 少用百度
     ,***_ 搜索什么关键词
     @endmindmap
   #+end_src
@@ -213,19 +223,20 @@
 
    [[https://brew.sh/][官网]]
 
-*** 直接安装国内版(2041班提供):
+*** 安装
+**** 直接安装国内版(2041班提供):
 #+begin_src sh
   /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 #+end_src
 
-*** 安装官方版本
-**** install
+**** 安装官方版本
+***** install
     
     #+begin_example
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     #+end_example
 
-**** 修改源变快一点
+***** 修改源变快一点
 
     [[https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git][参考1]]
 
