@@ -1,60 +1,40 @@
 
 # Table of Contents
 
-1.  [学习路线](#org39de92d)
-2.  [课程安排](#org6d2dc67)
-3.  [预备课必备知识](#org92aee60)
-    1.  [命令行操作](#org08f7544)
-        1.  [linux文件和目录](#org1b90161)
-        2.  [其他重要命令](#org6062501)
-        3.  [命令行快捷键](#orgdbeec68)
-    2.  [Mac下的软件管理-`brew`](#orgb78802c)
-        1.  [安装](#org36eabe9)
-        2.  [brew常用命令](#org5a81e11)
-    3.  [编辑器](#org8cc727f)
-    4.  [如何做笔记](#orgc7767e2)
-        1.  [有道云笔记](#orgbb0eff7)
-        2.  [markdown语法](#orga27fdfc)
-        3.  [markdown编辑器-Typora](#orgaa6548f)
-    5.  [`git`](#org43803bb)
-        1.  [git和github的关系说明](#orgde82d2f)
-        2.  [`git` 的安装](#orgdb1b668)
-        3.  [`github` 的使用](#orgb5ae369)
-        4.  [注意事项](#org20ecb3a)
-    6.  [键盘练习](#org5a124c1)
+1.  [学习路线](#orgb994fc4)
+2.  [课程安排](#org2fe3aeb)
+3.  [预备课必备知识](#org8fb860f)
+    1.  [命令行操作](#orga0a1704)
+        1.  [linux文件和目录](#org8d75912)
+        2.  [其他重要命令](#orgda3a083)
+        3.  [命令行快捷键](#orgf557eb7)
+    2.  [Mac下的软件管理-`brew`](#org44e74f9)
+        1.  [安装](#orgd32ea6b)
+        2.  [brew常用命令](#orgf3b408c)
+    3.  [编辑器](#orgfb33a67)
+    4.  [如何做笔记](#org64b948a)
+        1.  [有道云笔记](#orgd59d6a1)
+        2.  [markdown语法](#org0035174)
+        3.  [markdown编辑器-Typora](#org1f635df)
+    5.  [`git`](#orge413b5d)
+        1.  [git和github的关系说明](#org306e7ae)
+        2.  [`git` 的安装](#org485fe92)
+        3.  [`github` 的使用](#orgdded6e8)
+        4.  [注意事项](#org75e0e36)
+    6.  [键盘练习](#orgb564036)
 
 
 
-<a id="org39de92d"></a>
+<a id="orgb994fc4"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org6d2dc67"></a>
+<a id="org2fe3aeb"></a>
 
 # 课程安排
-
-<del>-------------------</del>-&#x2013;&#x2014;+
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">课程内容</td>
-<td class="org-left">学时</td>
-</tr>
-</tbody>
-</table>
-
-<del>-------------------</del>-&#x2013;&#x2014;+
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -64,115 +44,50 @@
 
 <col  class="org-right" />
 </colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">课程内容</th>
+<th scope="col" class="org-right">学时</th>
+</tr>
+</thead>
+
 <tbody>
 <tr>
 <td class="org-left">Mac基本操作</td>
 <td class="org-right">1</td>
 </tr>
-</tbody>
-</table>
-
-<del>-------------------</del>-&#x2013;&#x2014;+
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
 <tr>
 <td class="org-left">Linux/Mac终端使用</td>
 <td class="org-right">2</td>
 </tr>
-</tbody>
-</table>
-
-<del>-------------------</del>-&#x2013;&#x2014;+
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
 <tr>
 <td class="org-left">文件和目录</td>
 <td class="org-right">2</td>
 </tr>
-</tbody>
-</table>
-
-<del>-------------------</del>-&#x2013;&#x2014;+
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
 <tr>
 <td class="org-left">Git工具</td>
 <td class="org-right">2</td>
 </tr>
-</tbody>
-</table>
-
-<del>-------------------</del>-&#x2013;&#x2014;+
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
 <tr>
 <td class="org-left">Markdown</td>
 <td class="org-right">1</td>
 </tr>
-</tbody>
-</table>
-
-<del>-------------------</del>-&#x2013;&#x2014;+
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
 <tr>
 <td class="org-left">常用编辑器介绍</td>
 <td class="org-right">1</td>
 </tr>
-</tbody>
-</table>
-
-<del>-------------------</del>-&#x2013;&#x2014;+
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
 <tr>
 <td class="org-left">MacOS软件管理</td>
 <td class="org-right">1</td>
@@ -180,10 +95,8 @@
 </tbody>
 </table>
 
-<del>-------------------</del>-&#x2013;&#x2014;+
 
-
-<a id="org92aee60"></a>
+<a id="org8fb860f"></a>
 
 # 预备课必备知识
 
@@ -196,7 +109,7 @@
 > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
 
-<a id="org08f7544"></a>
+<a id="orga0a1704"></a>
 
 ## 命令行操作
 
@@ -205,7 +118,7 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org1b90161"></a>
+<a id="org8d75912"></a>
 
 ### linux文件和目录
 
@@ -515,7 +428,7 @@
     </table>
 
 
-<a id="org6062501"></a>
+<a id="orgda3a083"></a>
 
 ### 其他重要命令
 
@@ -533,7 +446,7 @@
     将标准输入转为命令行参数
 
 
-<a id="orgdbeec68"></a>
+<a id="orgf557eb7"></a>
 
 ### 命令行快捷键
 
@@ -639,14 +552,14 @@
 </table>
 
 
-<a id="orgb78802c"></a>
+<a id="org44e74f9"></a>
 
 ## Mac下的软件管理-`brew`
 
 [官网](https://brew.sh/)
 
 
-<a id="org36eabe9"></a>
+<a id="orgd32ea6b"></a>
 
 ### 安装
 
@@ -675,7 +588,7 @@
             git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org5a81e11"></a>
+<a id="orgf3b408c"></a>
 
 ### brew常用命令
 
@@ -721,7 +634,7 @@
 </table>
 
 
-<a id="org8cc727f"></a>
+<a id="orgfb33a67"></a>
 
 ## 编辑器
 
@@ -752,43 +665,43 @@
 -   emacs
 
 
-<a id="orgc7767e2"></a>
+<a id="org64b948a"></a>
 
 ## 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgbb0eff7"></a>
+<a id="orgd59d6a1"></a>
 
 ### 有道云笔记
 
 
-<a id="orga27fdfc"></a>
+<a id="org0035174"></a>
 
 ### markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="orgaa6548f"></a>
+<a id="org1f635df"></a>
 
 ### markdown编辑器-Typora
 
 
-<a id="org43803bb"></a>
+<a id="orge413b5d"></a>
 
 ## `git`
 
 
-<a id="orgde82d2f"></a>
+<a id="org306e7ae"></a>
 
 ### git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="orgdb1b668"></a>
+<a id="org485fe92"></a>
 
 ### `git` 的安装
 
@@ -797,7 +710,7 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="orgb5ae369"></a>
+<a id="orgdded6e8"></a>
 
 ### `github` 的使用
 
@@ -948,7 +861,7 @@
              * [new branch]      master -> master
 
 
-<a id="org20ecb3a"></a>
+<a id="org75e0e36"></a>
 
 ### 注意事项
 
@@ -1017,7 +930,7 @@
         origin  git@github.com:linc5403/preparatory-course.git (push)
 
 
-<a id="org5a124c1"></a>
+<a id="orgb564036"></a>
 
 ## [键盘练习](https://www.typingclub.com/)
 
