@@ -1,38 +1,50 @@
 
 # Table of Contents
 
-1.  [学习路线](#orgb994fc4)
-2.  [课程安排](#org2fe3aeb)
-3.  [预备课必备知识](#org8fb860f)
-    1.  [命令行操作](#orga0a1704)
-        1.  [linux文件和目录](#org8d75912)
-        2.  [其他重要命令](#orgda3a083)
-        3.  [命令行快捷键](#orgf557eb7)
-    2.  [Mac下的软件管理-`brew`](#org44e74f9)
-        1.  [安装](#orgd32ea6b)
-        2.  [brew常用命令](#orgf3b408c)
-    3.  [编辑器](#orgfb33a67)
-    4.  [如何做笔记](#org64b948a)
-        1.  [有道云笔记](#orgd59d6a1)
-        2.  [markdown语法](#org0035174)
-        3.  [markdown编辑器-Typora](#org1f635df)
-    5.  [`git`](#orge413b5d)
-        1.  [git和github的关系说明](#org306e7ae)
-        2.  [`git` 的安装](#org485fe92)
-        3.  [`github` 的使用](#orgdded6e8)
-        4.  [注意事项](#org75e0e36)
-    6.  [键盘练习](#orgb564036)
+1.  [学习路线](#org0fa5650)
+2.  [课程安排](#orge156289)
+3.  [课前预习内容](#org5bab657)
+4.  [命令行操作](#org99a76e1)
+    1.  [linux文件和目录](#orgcea782b)
+        1.  [`pwd`](#org7531177)
+        2.  [`cd`](#orgedea623)
+        3.  [`ls`](#org3b6dcc3)
+        4.  [文件操作](#org6b14bd2)
+        5.  [目录操作](#org1711173)
+        6.  [文件操作命令汇总](#orge691e57)
+    2.  [其他重要命令](#org875d762)
+    3.  [命令行快捷键](#orgc554875)
+5.  [Mac下的软件管理-`brew`](#org3ee8287)
+    1.  [安装](#org7a556bb)
+        1.  [直接安装国内版(2041班提供):](#orgaf51678)
+        2.  [安装官方版本](#org62f85f8)
+    2.  [brew常用命令](#org9169f7d)
+6.  [编辑器](#org8eca330)
+7.  [如何做笔记](#orgf9b0860)
+    1.  [有道云笔记](#org2cdc4a7)
+    2.  [markdown语法](#org07254f3)
+    3.  [markdown编辑器-Typora](#org4d14410)
+8.  [`git`](#orgc4facd0)
+    1.  [git和github的关系说明](#org4db268d)
+    2.  [`git` 的安装](#orga65d001)
+    3.  [`github` 的使用](#orgf74940d)
+        1.  [创建账号(github网站操作)](#orgcd4c220)
+        2.  [配置 `ssh-key` （github网站操作)](#org2526187)
+        3.  [创建项目（github网站操作）](#org38c977d)
+        4.  [项目管理(本机操作)](#org0e05033)
+    4.  [注意事项](#orgf930ad8)
+9.  [键盘练习](#orge520390)
 
 
 
-<a id="orgb994fc4"></a>
+<a id="org0fa5650"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="org2fe3aeb"></a>
+<a id="orge156289"></a>
 
 # 课程安排
 
@@ -96,341 +108,368 @@
 </table>
 
 
-<a id="org8fb860f"></a>
+<a id="org5bab657"></a>
 
-# 预备课必备知识
+# 课前预习内容
 
-[半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
+1.  [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
+    对同学们的要求：
+    
+    > **1. 不懂就问**
+    > 
+    > **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
-对同学们的要求：
+2.  Linux文件,目录及权限
+    
+    [文件权限与目录配置](http://cn.linux.vbird.org/linux_basic/0210filepermission.php)
+    
+    [文件与目录管理](http://cn.linux.vbird.org/linux_basic/0220filemanager.php)
+    
+    带着问题学习上面两个链接的内容：
+    
+    > 1.  Home目录是什么？
+    > 2.  `.` 和 `..` 以及 `~` 是什么？
+    > 3.  什么是隐藏文件
+    > 4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
 
-> **1. 不懂就问**
-> 
-> **2. 自己在电脑上操作的每条命令，每个动作都要明白有什么样的效果**
 
+<a id="org99a76e1"></a>
 
-<a id="orga0a1704"></a>
+# 命令行操作
 
-## 命令行操作
+1.  命令是什么?
+
+2.  shell如何执行你输入的命令?
+    
+    `PATH`
+
+3.  命令的参数
 
 > **重要**
 > 
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="org8d75912"></a>
+<a id="orgcea782b"></a>
 
-### linux文件和目录
-
-[文件权限与目录配置](http://cn.linux.vbird.org/linux_basic/0210filepermission.php)
-
-[文件与目录管理](http://cn.linux.vbird.org/linux_basic/0220filemanager.php)
-
-带着问题学习：
-
-> 1.  Home目录是什么？
-> 2.  `.` 和 `..` 以及 `~` 是什么？
-> 3.  什么是隐藏文件
-> 4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
-
-1.  `pwd`
-
-    知道你现在的工作目录
-    
-        /Users/banyuan/preparatory-course
-        /->Users->banyuan->preparatory-course
-
-2.  `cd`
-
-    (change directory)切换工作目录
-    
-    不加参数 表示切换到home目录
-    
-    带1个参数 切换到你指定的参数目录
-    
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">符号</th>
-    <th scope="col" class="org-left">含义</th>
-    </tr>
-    </thead>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">.</td>
-    <td class="org-left">当前目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">..</td>
-    <td class="org-left">上一级目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">-</td>
-    <td class="org-left">之前的工作目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">～</td>
-    <td class="org-left">home目录</td>
-    </tr>
-    </tbody>
-    </table>
-
-3.  `ls`
-
-    (list)查看指定目录下的文件和文件夹
-    
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">命令</th>
-    <th scope="col" class="org-left">作用</th>
-    </tr>
-    </thead>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">ls -a</td>
-    <td class="org-left">all, 查看所有文件和文件夹（包含隐藏文件和文件夹）</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">ls -l</td>
-    <td class="org-left">long, 查看详细属性</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">ls -h</td>
-    <td class="org-left">humanity, 友好方式显示</td>
-    </tr>
-    </tbody>
-    </table>
-
-4.  文件操作
-
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <tbody>
-    <tr>
-    <td class="org-left">命令</td>
-    <td class="org-left">作用</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">touch</td>
-    <td class="org-left">新创建一个文件</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">rm</td>
-    <td class="org-left">(remove) 删除一个文件</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cp</td>
-    <td class="org-left">(copy) 复制一个文件</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">mv</td>
-    <td class="org-left">(move) 移动一个文件</td>
-    </tr>
-    </tbody>
-    </table>
-
-5.  目录操作
-
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <tbody>
-    <tr>
-    <td class="org-left">命令</td>
-    <td class="org-left">作用</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">mkdir</td>
-    <td class="org-left">新创建一个文件夹</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">rm -r</td>
-    <td class="org-left">(remove) 删除一个文件夹</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cp -r</td>
-    <td class="org-left">(copy) 复制一个文件夹</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">mv</td>
-    <td class="org-left">(move) 移动一个文件夹</td>
-    </tr>
-    </tbody>
-    </table>
-
-6.  文件操作命令汇总
-
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">文件操作命令</th>
-    <th scope="col" class="org-left">作用</th>
-    </tr>
-    </thead>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">ls</td>
-    <td class="org-left">查看目录下的文件和文件夹</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">ls -l</td>
-    <td class="org-left">long选项，显示更多的信息</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">ls -a</td>
-    <td class="org-left">显示隐藏文件和文件夹</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cd 文件夹</td>
-    <td class="org-left">change dir（切换工作目录）</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cd ..</td>
-    <td class="org-left">切换到父目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cd</td>
-    <td class="org-left">不带参数切换到Home目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cd -</td>
-    <td class="org-left">切换到之前的工作目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">pwd</td>
-    <td class="org-left">print work dir（打印当前的工作目录）</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">mkdir</td>
-    <td class="org-left">创建一个目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">mkdir -p</td>
-    <td class="org-left">创建多层目录</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">rm</td>
-    <td class="org-left">remove(删除普通文件）</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">rm -rf</td>
-    <td class="org-left">删除文件夹及其下面的所有文件</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cp</td>
-    <td class="org-left">copy(拷贝文件)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">cp -r</td>
-    <td class="org-left">拷贝文件夹</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">mv</td>
-    <td class="org-left">move重命名文件/文件夹或是移动文件/文件夹</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">touch</td>
-    <td class="org-left">创建一个空文件</td>
-    </tr>
-    </tbody>
-    </table>
+## linux文件和目录
 
 
-<a id="orgda3a083"></a>
+<a id="org7531177"></a>
 
-### 其他重要命令
+### `pwd`
+
+知道你现在的工作目录
+
+    /Users/banyuan/preparatory-course
+    /->Users->banyuan->preparatory-course
+
+
+<a id="orgedea623"></a>
+
+### `cd`
+
+(change directory)切换工作目录
+
+不加参数 表示切换到home目录
+
+带1个参数 切换到你指定的参数目录
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">符号</th>
+<th scope="col" class="org-left">含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">.</td>
+<td class="org-left">当前目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">..</td>
+<td class="org-left">上一级目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">-</td>
+<td class="org-left">之前的工作目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">～</td>
+<td class="org-left">home目录</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="org3b6dcc3"></a>
+
+### `ls`
+
+(list)查看指定目录下的文件和文件夹
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">命令</th>
+<th scope="col" class="org-left">作用</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">ls -a</td>
+<td class="org-left">all, 查看所有文件和文件夹（包含隐藏文件和文件夹）</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -l</td>
+<td class="org-left">long, 查看详细属性</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -h</td>
+<td class="org-left">humanity, 友好方式显示</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="org6b14bd2"></a>
+
+### 文件操作
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">命令</td>
+<td class="org-left">作用</td>
+</tr>
+
+
+<tr>
+<td class="org-left">touch</td>
+<td class="org-left">新创建一个文件</td>
+</tr>
+
+
+<tr>
+<td class="org-left">rm</td>
+<td class="org-left">(remove) 删除一个文件</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cp</td>
+<td class="org-left">(copy) 复制一个文件</td>
+</tr>
+
+
+<tr>
+<td class="org-left">mv</td>
+<td class="org-left">(move) 移动一个文件</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="org1711173"></a>
+
+### 目录操作
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">命令</td>
+<td class="org-left">作用</td>
+</tr>
+
+
+<tr>
+<td class="org-left">mkdir</td>
+<td class="org-left">新创建一个文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">rm -r</td>
+<td class="org-left">(remove) 删除一个文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cp -r</td>
+<td class="org-left">(copy) 复制一个文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">mv</td>
+<td class="org-left">(move) 移动一个文件夹</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="orge691e57"></a>
+
+### 文件操作命令汇总
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">文件操作命令</th>
+<th scope="col" class="org-left">作用</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">ls</td>
+<td class="org-left">查看目录下的文件和文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -l</td>
+<td class="org-left">long选项，显示更多的信息</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -a</td>
+<td class="org-left">显示隐藏文件和文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cd 文件夹</td>
+<td class="org-left">change dir（切换工作目录）</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cd ..</td>
+<td class="org-left">切换到父目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cd</td>
+<td class="org-left">不带参数切换到Home目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cd -</td>
+<td class="org-left">切换到之前的工作目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">pwd</td>
+<td class="org-left">print work dir（打印当前的工作目录）</td>
+</tr>
+
+
+<tr>
+<td class="org-left">mkdir</td>
+<td class="org-left">创建一个目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">mkdir -p</td>
+<td class="org-left">创建多层目录</td>
+</tr>
+
+
+<tr>
+<td class="org-left">rm</td>
+<td class="org-left">remove(删除普通文件）</td>
+</tr>
+
+
+<tr>
+<td class="org-left">rm -rf</td>
+<td class="org-left">删除文件夹及其下面的所有文件</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cp</td>
+<td class="org-left">copy(拷贝文件)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cp -r</td>
+<td class="org-left">拷贝文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">mv</td>
+<td class="org-left">move重命名文件/文件夹或是移动文件/文件夹</td>
+</tr>
+
+
+<tr>
+<td class="org-left">touch</td>
+<td class="org-left">创建一个空文件</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="org875d762"></a>
+
+## 其他重要命令
 
 1.  `history`
     查看历史命令记录
@@ -446,9 +485,9 @@
     将标准输入转为命令行参数
 
 
-<a id="orgf557eb7"></a>
+<a id="orgc554875"></a>
 
-### 命令行快捷键
+## 命令行快捷键
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -552,45 +591,51 @@
 </table>
 
 
-<a id="org44e74f9"></a>
+<a id="org3ee8287"></a>
 
-## Mac下的软件管理-`brew`
+# Mac下的软件管理-`brew`
 
 [官网](https://brew.sh/)
 
 
-<a id="orgd32ea6b"></a>
+<a id="org7a556bb"></a>
 
-### 安装
+## 安装
 
-1.  直接安装国内版(2041班提供):
 
-        /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+<a id="orgaf51678"></a>
 
-2.  安装官方版本
+### 直接安装国内版(2041班提供):
 
-    1.  install
+    /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+
+<a id="org62f85f8"></a>
+
+### 安装官方版本
+
+1.  install
+
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+2.  修改源变快一点
+
+    [参考1](https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git)
     
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    [参考2](https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles)
     
-    2.  修改源变快一点
-    
-        [参考1](https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git)
+        # 替换brew.git:
+        cd "$(brew --repo)"
+        git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
         
-        [参考2](https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles)
-        
-            # 替换brew.git:
-            cd "$(brew --repo)"
-            git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
-            
-            # 替换homebrew-core.git:
-            cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-            git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+        # 替换homebrew-core.git:
+        cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+        git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="orgf3b408c"></a>
+<a id="org9169f7d"></a>
 
-### brew常用命令
+## brew常用命令
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -634,9 +679,9 @@
 </table>
 
 
-<a id="orgfb33a67"></a>
+<a id="org8eca330"></a>
 
-## 编辑器
+# 编辑器
 
 所有编辑相关的操作都尽量只在编辑器中完成，不需要鼠标和触摸板的操作
 
@@ -665,205 +710,217 @@
 -   emacs
 
 
-<a id="org64b948a"></a>
+<a id="orgf9b0860"></a>
 
-## 如何做笔记
+# 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgd59d6a1"></a>
+<a id="org2cdc4a7"></a>
 
-### 有道云笔记
+## 有道云笔记
 
 
-<a id="org0035174"></a>
+<a id="org07254f3"></a>
 
-### markdown语法
+## markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="org1f635df"></a>
+<a id="org4d14410"></a>
 
-### markdown编辑器-Typora
-
-
-<a id="orge413b5d"></a>
-
-## `git`
+## markdown编辑器-[Typora](https://typora.io/)
 
 
-<a id="org306e7ae"></a>
+<a id="orgc4facd0"></a>
 
-### git和github的关系说明
+# `git`
+
+
+<a id="org4db268d"></a>
+
+## git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="org485fe92"></a>
+<a id="orga65d001"></a>
 
-### `git` 的安装
+## `git` 的安装
 
 参看下面的教程：
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="orgdded6e8"></a>
+<a id="orgf74940d"></a>
 
-### `github` 的使用
-
-1.  创建账号(github网站操作)
-
-    <https://github.com/join>
-
-2.  配置 `ssh-key` （github网站操作)
-
-    配置 `ssh-key` 的目的是为了使用 `ssh` 方式和 `github` 服务器建立连接，这样就不用输入用户名和密码。
-    
-    这个步骤的思路是： a. 配置本机的 `ssh-key` ； b. 将本机的 `ssh-key` 的公钥配置在 `github` 上。下面是具体操作：
-    
-    1.  删除别人的 `ssh-key`
-        
-        > **注意**
-        > 
-        > 如果你明白 `ssh-key` 是什么，而且确认这台电脑现在的 `ssh-key` 是你自己生成的，请不做这一步操作。
-        
-            rm -f ~/.ssh/id_rsa*
-    2.  打开终端，输入这条命令：
-        
-            ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-        
-        > **注意**
-        > 
-        > -   命令里面双引号的内容修改成你自己的邮箱
-        > -   该命令会有提示，一路回车就可以了
-    3.  到这里，你本地的 `ssh-key` 就创建好了，需要将它放到 `github` 上
-        
-        终端里通过 `cat` 命令显示 ssh 公钥的内容：
-        
-            cat ~/.ssh/id_rsa.pub
-        
-        将下图中框内的内容都复制出来：
-        
-        ![img](./img/ssh-4.png)
-    
-    4.  使用注册申请好的账号和密码登陆你的 `github`
-    
-    5.  选择你的头像右边的下拉框（在网页的右上方）
-        
-        ![img](./img/ssh-1.png)
-    6.  选择如下的 `SSH and GPG keys`
-        
-        ![img](./img/ssh-2.png)
-    
-    7.  选中右上角的 `New SSH Key`
-        
-        ![img](./img/ssh-3.png)
-    
-    8.  将第3)步你复制的内容粘贴进去，再补充一个标题：
-        
-        ![img](./img/ssh-5.png)
-    
-    9.  最后一步，验证你是否完成了配置
-        
-            ssh -T git@github.com
-        
-        如果看到类似下面的 `successfully` 什么的，而且把你github的账号打印出来，则表示你成功了
-        
-            linc@pop-os:~/agenda$ ssh -T git@github.com
-            Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
-
-3.  创建项目（github网站操作）
-
-    1.  来到github的首页，并登陆，选择左侧 `Repositories` 右边的那个 `New`:
-        
-        ![img](./img/create-1.png)
-    
-    2.  在创建项目的页面填好 `Repository Name` ，点击 `Create repository` 按钮，项目就创建好了。
-        
-        ![img](./img/create-2.png)
-    
-    3.  在上一步已经在 `github` 服务器上创建好了远程项目，接下来需要将它同步到你的本地。
-        
-        你们需要重点看下面这张图：
-        
-        ![img](./img/create-3.png)
-
-4.  项目管理(本机操作)
-
-    项目管理的流程如下：
-    
-    ![img](./img/git_flow.svg)
-    
-    1.  `git clone`
-        
-        `git clone` 命令会在当前目录下下载远端的项目,例如：
-        
-        -   先找到 `git` 仓库的地址，创建项目的最后一步：
-            
-            ![img](./img/clone-1.png)
-        
-        -   使用 `git clone` 将它下载下来：
-            
-                git clone git@github.com:linc5403/for_git_demo.git
-            
-            会将远端 `for_git_demo.git` 仓库下载下来，在当前目录下新创建目录名为 `for_git_demo` 的目录:
-            
-            ![img](./img/clone-2.png)
-            
-            进入 `for_git_demo` 目录后，可以看到其中有 `.git` 的隐藏文件夹；说明 `git` 仓库已经建立好了。
-    
-    2.  `git add`
-        
-        当你对本地文件作了修改后，应当使用 `git add` 命令将你的变更告知git，此时可以缓存你的变更。
-        
-        让我们在 `for_git_demo` 目录中新建一个README.md文件，并将它添加到git中:
-        
-            linc@pop-os:~/for_git_demo$ echo "#this is my first git repo" >> README.md
-            linc@pop-os:~/for_git_demo$ git status
-            On branch master
-            
-            No commits yet
-            
-            Untracked files:
-              (use "git add <file>..." to include in what will be committed)
-            
-            	README.md
-            
-            nothing added to commit but untracked files present (use "git add" to track)
-            linc@pop-os:~/for_git_demo$ git add README.md
-    
-    3.  `git commit`
-        
-        当你的变更可以固定下来后，应当使用 `git commit` 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
-        
-        > **重要**
-        > 
-        > 当你还不会使用命令行编辑器的时候，最好使用 `git commit -m “你想说的话"` 这种方式来进行提交
-        
-            linc@pop-os:~/for_git_demo$ git commit -m "init repo"
-            [master (root-commit) 2c902a3] init repo
-             1 file changed, 1 insertion(+)
-             create mode 100644 README.md
-    
-    4.  `git push`
-        
-        将你的本地项目同步到服务器，就不怕工作丢失了。
-        
-            linc@pop-os:~/for_git_demo$ git push
-            Enumerating objects: 3, done.
-            Counting objects: 100% (3/3), done.
-            Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
-            Total 3 (delta 0), reused 0 (delta 0)
-            To github.com:linc5403/for_git_demo.git
-             * [new branch]      master -> master
+## `github` 的使用
 
 
-<a id="org75e0e36"></a>
+<a id="orgcd4c220"></a>
 
-### 注意事项
+### 创建账号(github网站操作)
+
+<https://github.com/join>
+
+
+<a id="org2526187"></a>
+
+### 配置 `ssh-key` （github网站操作)
+
+配置 `ssh-key` 的目的是为了使用 `ssh` 方式和 `github` 服务器建立连接，这样就不用输入用户名和密码。
+
+这个步骤的思路是： a. 配置本机的 `ssh-key` ； b. 将本机的 `ssh-key` 的公钥配置在 `github` 上。下面是具体操作：
+
+1.  删除别人的 `ssh-key`
+    
+    > **注意**
+    > 
+    > 如果你明白 `ssh-key` 是什么，而且确认这台电脑现在的 `ssh-key` 是你自己生成的，请不做这一步操作。
+    
+        rm -f ~/.ssh/id_rsa*
+2.  打开终端，输入这条命令：
+    
+        ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    
+    > **注意**
+    > 
+    > -   命令里面双引号的内容修改成你自己的邮箱
+    > -   该命令会有提示，一路回车就可以了
+3.  到这里，你本地的 `ssh-key` 就创建好了，需要将它放到 `github` 上
+    
+    终端里通过 `cat` 命令显示 ssh 公钥的内容：
+    
+        cat ~/.ssh/id_rsa.pub
+    
+    将下图中框内的内容都复制出来：
+    
+    ![img](./img/ssh-4.png)
+
+4.  使用注册申请好的账号和密码登陆你的 `github`
+
+5.  选择你的头像右边的下拉框（在网页的右上方）
+    
+    ![img](./img/ssh-1.png)
+6.  选择如下的 `SSH and GPG keys`
+    
+    ![img](./img/ssh-2.png)
+
+7.  选中右上角的 `New SSH Key`
+    
+    ![img](./img/ssh-3.png)
+
+8.  将第3)步你复制的内容粘贴进去，再补充一个标题：
+    
+    ![img](./img/ssh-5.png)
+
+9.  最后一步，验证你是否完成了配置
+    
+        ssh -T git@github.com
+    
+    如果看到类似下面的 `successfully` 什么的，而且把你github的账号打印出来，则表示你成功了
+    
+        linc@pop-os:~/agenda$ ssh -T git@github.com
+        Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+<a id="org38c977d"></a>
+
+### 创建项目（github网站操作）
+
+1.  来到github的首页，并登陆，选择左侧 `Repositories` 右边的那个 `New`:
+    
+    ![img](./img/create-1.png)
+
+2.  在创建项目的页面填好 `Repository Name` ，点击 `Create repository` 按钮，项目就创建好了。
+    
+    ![img](./img/create-2.png)
+
+3.  在上一步已经在 `github` 服务器上创建好了远程项目，接下来需要将它同步到你的本地。
+    
+    你们需要重点看下面这张图：
+    
+    ![img](./img/create-3.png)
+
+
+<a id="org0e05033"></a>
+
+### 项目管理(本机操作)
+
+项目管理的流程如下：
+
+![img](./img/git_flow.svg)
+
+1.  `git clone`
+    
+    `git clone` 命令会在当前目录下下载远端的项目,例如：
+    
+    -   先找到 `git` 仓库的地址，创建项目的最后一步：
+        
+        ![img](./img/clone-1.png)
+    
+    -   使用 `git clone` 将它下载下来：
+        
+            git clone git@github.com:linc5403/for_git_demo.git
+        
+        会将远端 `for_git_demo.git` 仓库下载下来，在当前目录下新创建目录名为 `for_git_demo` 的目录:
+        
+        ![img](./img/clone-2.png)
+        
+        进入 `for_git_demo` 目录后，可以看到其中有 `.git` 的隐藏文件夹；说明 `git` 仓库已经建立好了。
+
+2.  `git add`
+    
+    当你对本地文件作了修改后，应当使用 `git add` 命令将你的变更告知git，此时可以缓存你的变更。
+    
+    让我们在 `for_git_demo` 目录中新建一个README.md文件，并将它添加到git中:
+    
+        linc@pop-os:~/for_git_demo$ echo "#this is my first git repo" >> README.md
+        linc@pop-os:~/for_git_demo$ git status
+        On branch master
+        
+        No commits yet
+        
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+        
+        	README.md
+        
+        nothing added to commit but untracked files present (use "git add" to track)
+        linc@pop-os:~/for_git_demo$ git add README.md
+
+3.  `git commit`
+    
+    当你的变更可以固定下来后，应当使用 `git commit` 命令将变更固化下来，同时需要描述此次变更的内容，方便今后快速查找。
+    
+    > **重要**
+    > 
+    > 当你还不会使用命令行编辑器的时候，最好使用 `git commit -m “你想说的话"` 这种方式来进行提交
+    
+        linc@pop-os:~/for_git_demo$ git commit -m "init repo"
+        [master (root-commit) 2c902a3] init repo
+         1 file changed, 1 insertion(+)
+         create mode 100644 README.md
+
+4.  `git push`
+    
+    将你的本地项目同步到服务器，就不怕工作丢失了。
+    
+        linc@pop-os:~/for_git_demo$ git push
+        Enumerating objects: 3, done.
+        Counting objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+        To github.com:linc5403/for_git_demo.git
+         * [new branch]      master -> master
+
+
+<a id="orgf930ad8"></a>
+
+## 注意事项
 
 1.  确认你的 `home` 目录下没有 `.git` 文件夹:
     
@@ -930,7 +987,7 @@
         origin  git@github.com:linc5403/preparatory-course.git (push)
 
 
-<a id="orgb564036"></a>
+<a id="orge520390"></a>
 
-## [键盘练习](https://www.typingclub.com/)
+# [键盘练习](https://www.typingclub.com/)
 
