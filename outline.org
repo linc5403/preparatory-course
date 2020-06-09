@@ -1,7 +1,7 @@
 #+LATEX_HEADER: \usepackage {ctex}
 * 学习路线
 
-  #+begin_src plantuml :file ./img/mind-map.png
+  #+begin_src plantuml :file ./img/mind-map.svg
     @startmindmap
     title 预备课学习路线
     ,* 预备课必备知识
@@ -80,7 +80,7 @@
   #+end_src
   #+ATTR_LATEX: :width 15cm
   #+RESULTS:
-  [[file:./img/mind-map.png]]
+  [[file:./img/mind-map.svg]]
   
 * 课程安排
   |-------------------+------|
@@ -332,7 +332,7 @@
 ** markdown编辑器-[[https://typora.io/][Typora]]
 * ~git~
 ** git和github的关系说明
-   #+begin_src plantuml :file ./img/git_overview.png
+   #+begin_src plantuml :file ./img/git_overview.svg
      @startuml
      github->github: 创建账号
      local->local: 创建ssh-key
@@ -442,7 +442,7 @@
 *** 项目管理(本机操作)
 
     项目管理的流程如下：
-      #+begin_src plantuml :file ./img/git_flow.png
+      #+begin_src plantuml :file ./img/git_flow.svg
 	@startuml
 	start
 	:git clone(远端到本地);
@@ -457,7 +457,7 @@
 
       #+ATTR_LATEX: :width 4cm
       #+RESULTS:
-      [[file:./img/git_flow.png]]
+      [[file:./img/git_flow.svg]]
 
       1. ~git clone~
 
