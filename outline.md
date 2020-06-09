@@ -1,50 +1,50 @@
 
 # Table of Contents
 
-1.  [学习路线](#orgd77fac6)
-2.  [课程安排](#org94ba506)
-3.  [参考资料](#org462064e)
-4.  [命令行操作](#org554cb40)
-    1.  [linux文件和目录](#orgebb19ca)
-        1.  [`pwd`](#org17b2e71)
-        2.  [`cd`](#org8513cbe)
-        3.  [`ls`](#orge4c5a33)
-        4.  [文件操作](#org0bdbf8b)
-        5.  [目录操作](#orga908771)
-        6.  [文件操作命令汇总](#org021d85d)
-    2.  [其他重要命令](#org5cb115a)
-    3.  [命令行快捷键](#org0c4d901)
-5.  [Mac下的软件管理-`brew`](#orgc55db09)
-    1.  [安装](#orgbac54d2)
-        1.  [直接安装国内镜像版(2041班提供)](#org036d9c7)
-        2.  [安装官方版本](#org980f5c6)
-    2.  [brew常用命令](#org8f84c80)
-6.  [编辑器](#org5830c25)
-7.  [如何做笔记](#orge35cba3)
-    1.  [有道云笔记](#org0176e4a)
-    2.  [markdown语法](#org57306f6)
-    3.  [markdown编辑器-Typora](#org18fb1ee)
-8.  [`git`](#orga8b634a)
-    1.  [git和github的关系说明](#org3405348)
-    2.  [`git` 的安装](#orgf1cd027)
-    3.  [`github` 的使用](#org4b38487)
-        1.  [创建账号(github网站操作)](#org169d4a0)
-        2.  [配置 `ssh-key` （github网站操作)](#org1ce3576)
-        3.  [创建项目（github网站操作）](#orgd0959b2)
-        4.  [项目管理(本机操作)](#org9fd8133)
-    4.  [注意事项](#orga7f11c0)
-9.  [键盘练习](#org827d161)
+1.  [学习路线](#org7038ea9)
+2.  [课程安排](#org5063555)
+3.  [参考资料](#org24deae3)
+4.  [命令行操作](#orga339256)
+    1.  [linux文件和目录](#orge0924b5)
+        1.  [`pwd`](#org0f83cd5)
+        2.  [`cd`](#org2403e9f)
+        3.  [`ls`](#org3dc73af)
+        4.  [文件操作](#org9797a0b)
+        5.  [目录操作](#org732dd90)
+        6.  [文件操作命令汇总](#org1b9df46)
+    2.  [其他重要命令](#org66edb55)
+    3.  [命令行快捷键](#org5153108)
+5.  [Mac下的软件管理-`brew`](#org3cab6a7)
+    1.  [安装](#orge0b68b3)
+        1.  [直接安装国内镜像版(2041班提供)](#org1f2e6a6)
+        2.  [安装官方版本](#org2b205e8)
+    2.  [brew常用命令](#orgf3db0e3)
+6.  [编辑器](#orgc6b37b1)
+7.  [如何做笔记](#org2bbac0d)
+    1.  [有道云笔记](#org12dff69)
+    2.  [markdown语法](#orgfa66e6c)
+    3.  [markdown编辑器-Typora](#org068abbf)
+8.  [`git`](#orge153f66)
+    1.  [git和github的关系说明](#orgde020d9)
+    2.  [`git` 的安装](#org9b067d9)
+    3.  [`github` 的使用](#org2dbd1b1)
+        1.  [创建账号(github网站操作)](#org24d62af)
+        2.  [配置 `ssh-key` （github网站操作)](#org1ba632f)
+        3.  [创建项目（github网站操作）](#org5ba20ca)
+        4.  [项目管理(本机操作)](#orgcaf6231)
+    4.  [注意事项](#orga502799)
+9.  [键盘练习](#org17eb342)
 
 
 
-<a id="orgd77fac6"></a>
+<a id="org7038ea9"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.png)
 
 
-<a id="org94ba506"></a>
+<a id="org5063555"></a>
 
 # 课程安排
 
@@ -115,13 +115,13 @@
 </table>
 
 
-<a id="org462064e"></a>
+<a id="org24deae3"></a>
 
 # 参考资料
 
 1.  [半圆的wiki参考](https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612)
     
-    请大家在入学前完成上面链接的学习.
+    请大家完成上面链接的学习.
     
     对同学们的要求：
     
@@ -143,7 +143,7 @@
     > 4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
 
 
-<a id="org554cb40"></a>
+<a id="orga339256"></a>
 
 # 命令行操作
 
@@ -160,12 +160,12 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgebb19ca"></a>
+<a id="orge0924b5"></a>
 
 ## linux文件和目录
 
 
-<a id="org17b2e71"></a>
+<a id="org0f83cd5"></a>
 
 ### `pwd`
 
@@ -175,7 +175,7 @@
     /->Users->banyuan->preparatory-course
 
 
-<a id="org8513cbe"></a>
+<a id="org2403e9f"></a>
 
 ### `cd`
 
@@ -227,7 +227,7 @@
 </table>
 
 
-<a id="orge4c5a33"></a>
+<a id="org3dc73af"></a>
 
 ### `ls`
 
@@ -269,7 +269,7 @@
 </table>
 
 
-<a id="org0bdbf8b"></a>
+<a id="org9797a0b"></a>
 
 ### 文件操作
 
@@ -314,7 +314,7 @@
 </table>
 
 
-<a id="orga908771"></a>
+<a id="org732dd90"></a>
 
 ### 目录操作
 
@@ -359,7 +359,7 @@
 </table>
 
 
-<a id="org021d85d"></a>
+<a id="org1b9df46"></a>
 
 ### 文件操作命令汇总
 
@@ -477,7 +477,7 @@
 </table>
 
 
-<a id="org5cb115a"></a>
+<a id="org66edb55"></a>
 
 ## 其他重要命令
 
@@ -495,7 +495,7 @@
     将标准输入转为命令行参数
 
 
-<a id="org0c4d901"></a>
+<a id="org5153108"></a>
 
 ## 命令行快捷键
 
@@ -601,17 +601,17 @@
 </table>
 
 
-<a id="orgc55db09"></a>
+<a id="org3cab6a7"></a>
 
 # Mac下的软件管理-`brew`
 
 
-<a id="orgbac54d2"></a>
+<a id="orge0b68b3"></a>
 
 ## 安装
 
 
-<a id="org036d9c7"></a>
+<a id="org1f2e6a6"></a>
 
 ### 直接安装国内镜像版(2041班提供)
 
@@ -619,7 +619,7 @@
     "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 
 
-<a id="org980f5c6"></a>
+<a id="org2b205e8"></a>
 
 ### 安装官方版本
 
@@ -645,7 +645,7 @@
         git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org8f84c80"></a>
+<a id="orgf3db0e3"></a>
 
 ## brew常用命令
 
@@ -691,7 +691,7 @@
 </table>
 
 
-<a id="org5830c25"></a>
+<a id="orgc6b37b1"></a>
 
 # 编辑器
 
@@ -724,43 +724,43 @@
 -   emacs
 
 
-<a id="orge35cba3"></a>
+<a id="org2bbac0d"></a>
 
 # 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="org0176e4a"></a>
+<a id="org12dff69"></a>
 
 ## 有道云笔记
 
 
-<a id="org57306f6"></a>
+<a id="orgfa66e6c"></a>
 
 ## markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="org18fb1ee"></a>
+<a id="org068abbf"></a>
 
 ## markdown编辑器-[Typora](https://typora.io/)
 
 
-<a id="orga8b634a"></a>
+<a id="orge153f66"></a>
 
 # `git`
 
 
-<a id="org3405348"></a>
+<a id="orgde020d9"></a>
 
 ## git和github的关系说明
 
 ![img](./img/git_overview.png)
 
 
-<a id="orgf1cd027"></a>
+<a id="org9b067d9"></a>
 
 ## `git` 的安装
 
@@ -769,19 +769,19 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org4b38487"></a>
+<a id="org2dbd1b1"></a>
 
 ## `github` 的使用
 
 
-<a id="org169d4a0"></a>
+<a id="org24d62af"></a>
 
 ### 创建账号(github网站操作)
 
 <https://github.com/join>
 
 
-<a id="org1ce3576"></a>
+<a id="org1ba632f"></a>
 
 ### 配置 `ssh-key` （github网站操作)
 
@@ -841,7 +841,7 @@
         Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
 
 
-<a id="orgd0959b2"></a>
+<a id="org5ba20ca"></a>
 
 ### 创建项目（github网站操作）
 
@@ -860,7 +860,7 @@
     ![img](./img/create-3.png)
 
 
-<a id="org9fd8133"></a>
+<a id="orgcaf6231"></a>
 
 ### 项目管理(本机操作)
 
@@ -932,7 +932,7 @@
          * [new branch]      master -> master
 
 
-<a id="orga7f11c0"></a>
+<a id="orga502799"></a>
 
 ## 注意事项
 
@@ -1001,7 +1001,7 @@
         origin  git@github.com:linc5403/preparatory-course.git (push)
 
 
-<a id="org827d161"></a>
+<a id="org17eb342"></a>
 
 # [键盘练习](https://www.typingclub.com/)
 
