@@ -1,7 +1,7 @@
 #+LATEX_HEADER: \usepackage {ctex}
 * 学习路线
 
-  #+begin_src plantuml :file ./img/mind-map.svg
+  #+begin_src plantuml :file ./img/mind-map.png
     @startmindmap
     title 预备课学习路线
     ,* 预备课必备知识
@@ -78,10 +78,10 @@
     ,***_ 搜索什么关键词
     @endmindmap
   #+end_src
-
+  #+ATTR_LATEX: :width 15cm
   #+RESULTS:
-  [[file:./img/mind-map.svg]]
-
+  [[file:./img/mind-map.png]]
+  
 * 课程安排
   |-------------------+------|
   | 课程内容          | 学时 |
@@ -94,10 +94,16 @@
   | 常用编辑器介绍    |    1 |
   | MacOS软件管理     |    1 |
   |-------------------+------|
+  | 合计              |   10 |
+  |-------------------+------|
+  #+TBLFM: @9$2=vsum(@2..@8)
 
-* 课前预习内容
+* 参考资料
 
   1. [[https://wiki.banyuan.club/pages/viewpage.action?pageId=3047612][半圆的wiki参考]]
+     
+     请大家在入学前完成上面链接的学习.
+     
      对同学们的要求：
      #+begin_quote
      *1. 不懂就问*
@@ -241,21 +247,23 @@
    | C-r  | 搜索之前执行的命令                        |
 
 * Mac下的软件管理-~brew~
-
-  [[https://brew.sh/][官网]]
-
 ** 安装
-*** 直接安装国内版(2041班提供):
-#+begin_src sh
-  /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
-#+end_src
+*** 直接安装国内镜像版(2041班提供)
+    #+ATTR_LATEX: :options basicstyle=\ttfamily\tiny
+    #+begin_src sh
+      /bin/zsh -c \
+      "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+    #+end_src
 
 *** 安装官方版本
+    [[https://brew.sh/][官网]]
+
 **** install
-    
-   #+begin_example
-     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-   #+end_example
+     
+     #+begin_example
+       /bin/bash -c \
+       "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+     #+end_example
 
 **** 修改源变快一点
 
@@ -297,6 +305,8 @@
   4. 复制粘贴
 
   选择一个适合你的编辑器:
+  
+  - [[https://pypl.github.io/IDE.html][IDE流行榜]]
 
   - sublime
 
@@ -322,7 +332,7 @@
 ** markdown编辑器-[[https://typora.io/][Typora]]
 * ~git~
 ** git和github的关系说明
-   #+begin_src plantuml :file ./img/git_overview.svg
+   #+begin_src plantuml :file ./img/git_overview.png
      @startuml
      github->github: 创建账号
      local->local: 创建ssh-key
@@ -389,7 +399,7 @@
       4. 使用注册申请好的账号和密码登陆你的 ~github~
 
       5. 选择你的头像右边的下拉框（在网页的右上方）
-
+	 #+ATTR_LATEX: :width 4cm
 	 [[./img/ssh-1.png]]
       6. 选择如下的 ~SSH and GPG keys~
 
@@ -432,7 +442,7 @@
 *** 项目管理(本机操作)
 
     项目管理的流程如下：
-      #+begin_src plantuml :file ./img/git_flow.svg
+      #+begin_src plantuml :file ./img/git_flow.png
 	@startuml
 	start
 	:git clone(远端到本地);
@@ -445,8 +455,9 @@
 
       #+end_src
 
+      #+ATTR_LATEX: :width 4cm
       #+RESULTS:
-      [[file:./img/git_flow.svg]]
+      [[file:./img/git_flow.png]]
 
       1. ~git clone~
 
