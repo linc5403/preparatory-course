@@ -53,7 +53,6 @@
    git clone 远端地址
    #+end_example
 
-
 ** 将自己的项目存放在服务器侧，并进行跟踪
    #+begin_src plantuml :file ./img/changjing2.png :cmdline -charset utf-8
      @startuml
@@ -79,4 +78,35 @@
 
       [[file:./img/gitee-1.png]]
 
-   2. 
+   2. 在新建仓库页面中填写“仓库名称”，注意“是否开源”的选项，如果想要其他人默认可以访问这个仓库应该选择“公开”。具体操作如图所示：
+      
+      [[file:./img/gitee-2.png]]
+      
+      点击下方的“创建”按钮，项目就创建好了。
+
+   3. 新建仓库会在这个页面中展示，需要记录下新仓库的地址，如下图所示：
+
+      [[file:./img/gitee-3.png]]
+   4. 在命令行（终端）中进入你想要放置该仓库的目录，例如home目录，然后在运行 ~git clone~ 命令，将远端仓库克隆到本地：
+
+      [[file:./img/gitee-4.png]]
+
+      克隆完成后会在当前目录新建一个你的项目。
+
+   5. 在新的文件夹中进行修改，并使用 ~git add~ 命令提交到暂存区:
+
+      [[file:./img/gitee-5.png]]
+
+   6. 使用 ~git commit -m~ 命令提交此次的变更：
+      
+      [[file:./img/gitee-6.png]]
+
+   7. 使用 ~git push~ 命令将版本推送到远端：
+
+      注意，这一步需要输入你在 ~gitee~ 上的用户名和密码
+
+      [[file:./img/gitee-7.png]]
+
+   8. 在网页上检查你的更新是否已经生效：
+
+      [[file:./img/gitee-8.png]]
