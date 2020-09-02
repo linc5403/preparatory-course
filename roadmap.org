@@ -14,6 +14,25 @@
   [[file:./img/devops.png]]
 
 * 学习路线
+  #+begin_src plantuml :file ./img/route.svg
+    @startuml
+    start
+    :预备课;
+    :基础课;
+    if (分班) then
+       : 前端班;
+       end
+    else
+       : 后端班;
+       end
+    endif
+
+    @enduml
+  #+end_src
+
+  #+RESULTS:
+  [[file:./img/route.svg]]
+
 ** 预备课
    
    #+begin_src plantuml :file ./img/pre.svg
