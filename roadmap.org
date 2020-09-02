@@ -1,0 +1,14 @@
+* 必备知识
+  [[file:./img/before.png]]
+
+* 前端
+  
+  [[file:./img/frontend.png]]
+
+* 后端
+
+  [[file:./img/backend.png]]
+
+* devops
+  
+  [[file:./img/devops.png]]
