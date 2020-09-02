@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="372px" preserveAspectRatio="none" style="width:322px;height:372px;" version="1.1" viewBox="0 0 322 372" width="322px" zoomAndPan="magnify"><defs><filter height="300%" id="fekhq5an660u5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#fekhq5an660u5)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="62" x="10" y="170.6798"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="20" y="196.9197">基础课</text><rect fill="#FEFECE" filter="url(#fekhq5an660u5)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="90" x="122" y="20"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="132" y="46.2399">计算机基础</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,40.136 112,40.136 L122,40.136 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fekhq5an660u5)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="57" x="122" y="80.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="132" y="106.5118">HTML</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,100.4079 112,100.4079 L122,100.4079 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fekhq5an660u5)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="45" x="122" y="140.5438"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="132" y="166.7838">CSS</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,160.6798 112,160.6798 L122,160.6798 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fekhq5an660u5)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="36" x="122" y="200.8157"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="16" x="132" y="227.0557">JS</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,220.9517 112,220.9517 L122,220.9517 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fekhq5an660u5)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="118" x="122" y="261.0876"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="132" y="287.3276">数据结构和算法</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,281.2236 112,281.2236 L122,281.2236 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fekhq5an660u5)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="189" x="122" y="321.3596"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="169" x="132" y="347.5995">完整的Web项目开发及部署</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,341.4955 112,341.4955 L122,341.4955 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2d75f7dfd4559b508fe620c298b83f06]
+@startmindmap
+* 基础课
+** 计算机基础
+** HTML
+** CSS
+** JS
+** 数据结构和算法
+** 完整的Web项目开发及部署
+@endmindmap
+
+PlantUML version 1.2020.06(Sun Apr 05 20:38:32 CST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu120.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -14,13 +14,63 @@
   [[file:./img/devops.png]]
 
 * 学习路线
+** 预备课
+   
+   #+begin_src plantuml :file ./img/pre.svg
+     @startmindmap
+     ,* 预备课
+     ,** Mac便捷操作
+     ,** 命令行操作
+     ,** 文件系统
+     ,** Markdown & 笔记
+     ,** Git & GibHub
+     ,** 编辑器使用
+     @endmindmap
+   #+end_src
 
-  #+begin_src plantuml :file ./img/roadmap.png
-    @startmindmap
-    ,* 基础课
-    ,* 
-    @endmindmap
-  #+end_src
+   #+RESULTS:
+   [[file:./img/pre.svg]]
+   
+** 基础课
+   #+begin_src plantuml :file ./img/element.svg
+     @startmindmap
+     ,* 基础课
+     ,** 计算机科学导论
+     ,** HTML
+     ,** CSS
+     ,** JS
+     ,** 数据结构和算法
+     ,** 完整的Web项目开发及部署
+     @endmindmap
+   #+end_src
 
-  #+RESULTS:
-  [[file:./img/roadmap.png]]
+   #+RESULTS:
+   [[file:./img/roadmap.svg]]
+
+** Web前端
+   #+begin_src plantuml :file ./img/fe.svg
+     @startmindmap
+     ,* Web前端课程
+     ,** HTML, CSS, JS进阶
+     ,** React框架
+     ,** Vue框架
+     ,** 项目实战
+     @endmindmap
+   #+end_src
+
+   #+RESULTS:
+   [[file:./img/fe.svg]]
+
+** Web后端
+
+   #+begin_src plantuml :file ./img/be.svg
+     @startmindmap
+     ,* Web后端课程
+     ,** Java SE
+     ,** Java EA
+     ,** 项目实战
+     @endmindmap
+   #+end_src
+
+   #+RESULTS:
+   [[file:./img/be.svg]]

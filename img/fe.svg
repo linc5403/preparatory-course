@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="252px" preserveAspectRatio="none" style="width:316px;height:252px;" version="1.1" viewBox="0 0 316 252" width="316px" zoomAndPan="magnify"><defs><filter height="300%" id="fv675j28py2v2" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#fv675j28py2v2)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="10" y="110.4079"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="20" y="136.6478">Web前端课程</text><rect fill="#FEFECE" filter="url(#fv675j28py2v2)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="165" y="20"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="175" y="46.2399">HTML, CSS, JS进阶</text><path d="M115,130.5438 L125,130.5438 C140,130.5438 140,40.136 155,40.136 L165,40.136 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fv675j28py2v2)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="85" x="165" y="80.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65" x="175" y="106.5118">React框架</text><path d="M115,130.5438 L125,130.5438 C140,130.5438 140,100.4079 155,100.4079 L165,100.4079 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fv675j28py2v2)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="73" x="165" y="140.5438"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="53" x="175" y="166.7838">Vue框架</text><path d="M115,130.5438 L125,130.5438 C140,130.5438 140,160.6798 155,160.6798 L165,160.6798 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#fv675j28py2v2)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="76" x="165" y="200.8157"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="175" y="227.0557">项目实战</text><path d="M115,130.5438 L125,130.5438 C140,130.5438 140,220.9517 155,220.9517 L165,220.9517 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6e06247334f94733d7497d1f5bad2118]
+@startmindmap
+* Web前端课程
+** HTML, CSS, JS进阶
+** React框架
+** Vue框架
+** 项目实战
+@endmindmap
+
+PlantUML version 1.2020.06(Sun Apr 05 20:38:32 CST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu120.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

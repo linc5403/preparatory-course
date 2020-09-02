@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="372px" preserveAspectRatio="none" style="width:266px;height:372px;" version="1.1" viewBox="0 0 266 372" width="266px" zoomAndPan="magnify"><defs><filter height="300%" id="ff7cicvag2xoz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#ff7cicvag2xoz)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="62" x="10" y="170.6798"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="20" y="196.9197">预备课</text><rect fill="#FEFECE" filter="url(#ff7cicvag2xoz)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="122" y="20"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="82" x="132" y="46.2399">Mac便捷操作</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,40.136 112,40.136 L122,40.136 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#ff7cicvag2xoz)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="90" x="122" y="80.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="132" y="106.5118">命令行操作</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,100.4079 112,100.4079 L122,100.4079 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#ff7cicvag2xoz)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="76" x="122" y="140.5438"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="132" y="166.7838">文件系统</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,160.6798 112,160.6798 L122,160.6798 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#ff7cicvag2xoz)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="133" x="122" y="200.8157"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="113" x="132" y="227.0557">Markdown &amp; 笔记</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,220.9517 112,220.9517 L122,220.9517 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#ff7cicvag2xoz)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="106" x="122" y="261.0876"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="86" x="132" y="287.3276">Git &amp; GibHub</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,281.2236 112,281.2236 L122,281.2236 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#ff7cicvag2xoz)" height="40.2719" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="90" x="122" y="321.3596"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="132" y="347.5995">编辑器使用</text><path d="M72,190.8157 L82,190.8157 C97,190.8157 97,341.4955 112,341.4955 L122,341.4955 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[73f308ed2625bd5abe4c4b40e7d70016]
+@startmindmap
+* 预备课
+** Mac便捷操作
+** 命令行操作
+** 文件系统
+** Markdown & 笔记
+** Git & GibHub
+** 编辑器使用
+@endmindmap
+
+PlantUML version 1.2020.06(Sun Apr 05 20:38:32 CST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu120.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
