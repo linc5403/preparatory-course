@@ -12,3 +12,15 @@
 * devops
   
   [[file:./img/devops.png]]
+
+* 学习路线
+
+  #+begin_src plantuml :file ./img/roadmap.png
+    @startmindmap
+    ,* 基础课
+    ,* 
+    @endmindmap
+  #+end_src
+
+  #+RESULTS:
+  [[file:./img/roadmap.png]]
