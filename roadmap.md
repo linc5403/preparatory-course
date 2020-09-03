@@ -1,76 +1,36 @@
 
 # Table of Contents
 
-1.  [必备知识](#orgd2b4075)
-2.  [前端](#org06e7d26)
-3.  [后端](#org9835319)
-4.  [devops](#org2ef27fe)
-5.  [学习路线](#org5fde25b)
-    1.  [预备课](#orgb9ae6e6)
-    2.  [基础课](#org89de08f)
-    3.  [Web前端](#orgfe703c1)
-    4.  [Web后端](#orgeb4321b)
+1.  [必备知识](#org72023ba)
+2.  [前端](#org6057156)
+3.  [后端](#org0f893f7)
+4.  [devops](#org0cc2a45)
 
 
-<a id="orgd2b4075"></a>
+<a id="org72023ba"></a>
 
 # 必备知识
 
 ![img](./img/before.png)
 
 
-<a id="org06e7d26"></a>
+<a id="org6057156"></a>
 
 # 前端
 
 ![img](./img/frontend.png)
 
 
-<a id="org9835319"></a>
+<a id="org0f893f7"></a>
 
 # 后端
 
 ![img](./img/backend.png)
 
 
-<a id="org2ef27fe"></a>
+<a id="org0cc2a45"></a>
 
 # devops
 
 ![img](./img/devops.png)
-
-
-<a id="org5fde25b"></a>
-
-# 学习路线
-
-![img](./img/route.svg)
-
-
-<a id="orgb9ae6e6"></a>
-
-## 预备课
-
-![img](./img/pre.svg)
-
-
-<a id="org89de08f"></a>
-
-## 基础课
-
-![img](./img/element.svg)
-
-
-<a id="orgfe703c1"></a>
-
-## Web前端
-
-![img](./img/fe.svg)
-
-
-<a id="orgeb4321b"></a>
-
-## Web后端
-
-![img](./img/be.svg)
 
