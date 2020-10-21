@@ -647,7 +647,8 @@
 
 ** 使用gitee配置https连接
 
-   [[file:git.md][file:./git.md]]
+   [[./git.md][码云的操作指导]]
+
 
 
 
