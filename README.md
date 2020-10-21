@@ -17,8 +17,6 @@
 └── vim-tutorial.org
 ```
 
-## 展示一下变化
-
 ## 学习路线
 
 ![img](./img/mind-map.svg)
