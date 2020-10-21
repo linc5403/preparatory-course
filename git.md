@@ -1,24 +1,125 @@
 
 # Table of Contents
 
-1.  [git实际操作流程](#org17f798c)
-2.  [注册git服务](#org4f0c460)
-3.  [git工具](#org8b1fa63)
-    1.  [工具安装](#orge2c74af)
-    2.  [安装后的配置](#orgf6080dd)
-4.  [git使用场景](#org70be8f4)
-    1.  [下载别人的仓库，不进行修改和提交](#orgdce2fc6)
-    2.  [将自己的项目存放在服务器侧，并进行跟踪](#org4fb789f)
+1.  [git 命令解释](#orgd398182)
+    1.  [git init](#org1ac8c82)
+    2.  [git add](#orgd169a52)
+    3.  [git commit](#org69968fa)
+    4.  [git remote](#org1035410)
+2.  [git实际操作流程](#org45be2d7)
+3.  [注册git服务](#orgddc561f)
+4.  [git工具](#orgecdeb6d)
+    1.  [工具安装](#orgd34c544)
+    2.  [安装后的配置](#org12a966c)
+5.  [git使用场景](#orgbbabea4)
+    1.  [下载别人的仓库，不进行修改和提交](#org984790f)
+    2.  [将自己的项目存放在服务器侧，并进行跟踪](#orgff86887)
 
 
-<a id="org17f798c"></a>
+<a id="orgd398182"></a>
+
+# git 命令解释
+
+
+<a id="org1ac8c82"></a>
+
+## git init
+
+将当前目录放入git进行管理, 会在当前目录创建一个 `.git` 的隐藏文件夹
+
+也就是说, 如果一个目录下面包含有 `.git` 文件夹, 则说明这个目录是被git管理的
+
+如果你想要这个目录不再被git管理, 则只需要删除 `.git` 文件夹
+
+
+<a id="orgd169a52"></a>
+
+## git add
+
+`git add` 命令后面可以跟目录或者文件, 表示将这些文件和目录的变化添加到git的缓存中进行保存.
+
+`git add` 的目的是保存文件的变化, 通常在git的根目录使用 `git add ./` 命令将该文件夹下的所有变化都加入git的缓存中.
+
+
+<a id="org69968fa"></a>
+
+## git commit
+
+-   commit的作用是为当前已经add的内容打上一个标记, 用来标识一个阶段的工作.
+
+-   commit后这些变化才算真正的放进了git仓库
+
+-   commit的内容是从上次commit命令开始, 所有add的变化
+
+-   commit必须要记录此次提交的内容的描述, 用以之后回顾和查找,
+
+-   为了避免调用系统自带的编辑器进行commit消息的编写, 通常使用 `git commit -m "你想记录的工作内容"` 来进行commit操作. 这里面的 `-m` 是指的message.
+
+
+<a id="org1035410"></a>
+
+## git remote
+
+`git remote` 用来配置远端
+
+-   `git remote -v`
+    
+    查看已经配置的远端信息
+    
+        ➜  preparatory-course git:(master) git remote -v
+        gitee   git@gitee.com:linc5403/pre-course.git (fetch)
+        gitee   git@gitee.com:linc5403/pre-course.git (push)
+        origin  git@github.com:linc5403/preparatory-course.git (fetch)
+        origin  git@github.com:linc5403/preparatory-course.git (push)
+
+-   `git remote add`
+    
+    添加一个远端配置
+    
+        git remote add gitee https://gitee.com:linc5403/pre-course.git
+    
+    上述命令表示: 添加了一个远端, 名称为 `gitee`, 远端仓库地址为: `https://gitee.com:linc5403/pre-course.git`
+
+-   `git remote remove`
+    
+    删除远端
+    
+        git remote remove origin
+    
+    上述命令表示删除名为 `origin` 的远端
+    
+    删除该远端后再使用 `git remote -v` 命令应该发现 `origin` 远端没有了
+
+-   `git push`
+    
+    推送本地仓库的commit到远端
+    
+    第一次使用 `git push` 命令需要使用 `-u` 或者是 `--set-upstream` 信息将本地仓库和远端建立链接
+    
+    原因是上边的 `git remote add` 命令仅仅是添加了一个远端, 并没有指定本地和远端的对应关系
+    
+    第一次 `git push -u origin` 命令之后就就自动帮助我们将本地仓库和远端(origin)建立了映射关系, 后续再使用 `git push` 命令时则不需要使用 `-u` 选项了
+
+-   `git branch -u`
+    
+    建立本地分支和远端的映射关系
+    
+    可以单独使用该命令为本地建立一个远端的映射
+    
+        ➜  preparatory-course git:(master) ✗ git branch -u origin/master
+        Branch 'master' set up to track remote branch 'master' from 'origin'.
+    
+    这样就将本地的master分支关联到了origin/master分支, 后面使用 `git push` 时不需要指定 `-u` 也会自动推送到远端 `origin/master` 分支.
+
+
+<a id="org45be2d7"></a>
 
 # git实际操作流程
 
 ![img](./img/abc.png)
 
 
-<a id="org4f0c460"></a>
+<a id="orgddc561f"></a>
 
 # 注册git服务
 
@@ -26,14 +127,14 @@
 本文使用码云作为示例进行讲解。
 
 
-<a id="org8b1fa63"></a>
+<a id="orgecdeb6d"></a>
 
 # git工具
 
 我们通常使用命令行来使用git，在不同操作系统下命令行都是一致的。
 
 
-<a id="orge2c74af"></a>
+<a id="orgd34c544"></a>
 
 ## 工具安装
 
@@ -51,7 +152,7 @@
     不同的发行版本请使用不同的包管理器进行安装，[这个网页](https://git-scm.com/download/linux)有详细的介绍和说明。
 
 
-<a id="orgf6080dd"></a>
+<a id="org12a966c"></a>
 
 ## 安装后的配置
 
@@ -63,12 +164,12 @@
 注意 `git config` 命令的 `--global` 参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
 
-<a id="org70be8f4"></a>
+<a id="orgbbabea4"></a>
 
 # git使用场景
 
 
-<a id="orgdce2fc6"></a>
+<a id="org984790f"></a>
 
 ## 下载别人的仓库，不进行修改和提交
 
@@ -77,7 +178,7 @@
     git clone 远端地址
 
 
-<a id="org4fb789f"></a>
+<a id="orgff86887"></a>
 
 ## 将自己的项目存放在服务器侧，并进行跟踪
 

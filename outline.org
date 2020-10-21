@@ -147,6 +147,31 @@
   使用 ~Tab~ 键可以进行补全，加快你的操作。
   #+end_quote
 
+** zsh
+   
+*** 切换shell为zsh
+
+    1. 查看当前shell
+       #+begin_src sh
+	 ➜  ~ echo $SHELL
+	 /usr/bin/zsh       
+       #+end_src
+
+       如果上面的输出不是 ~/usr/bin/zsh~ 则运行下面的命令,切换为shell
+
+    2. 切换shell
+
+       #+begin_src sh
+	 linc@pop-os:~$ chsh -s /usr/bin/zsh
+       #+end_src
+
+       提示输入密码时输入登录密码就可以了
+
+*** 安装oh-my-zsh (可选)
+
+    https://sourabhbajaj.com/mac-setup/iTerm/zsh.html
+
+
 ** linux文件和目录
 *** ~pwd~
 
@@ -613,4 +638,17 @@
         origin  git@github.com:linc5403/preparatory-course.git (push)
       #+end_example
 * [[https://www.typingclub.com/][键盘练习]]
+
+* 参考材料
+
+** MacOS 配置和常用软件安装指导
+
+   https://sourabhbajaj.com/mac-setup/SystemPreferences/
+
+** 使用gitee配置https连接
+
+   [[./git.md][码云的操作指导]]
+
+
+
 

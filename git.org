@@ -1,3 +1,92 @@
+* git 命令解释
+** git init
+
+   将当前目录放入git进行管理, 会在当前目录创建一个 ~.git~ 的隐藏文件夹
+
+   也就是说, 如果一个目录下面包含有 ~.git~ 文件夹, 则说明这个目录是被git管理的
+
+   如果你想要这个目录不再被git管理, 则只需要删除 ~.git~ 文件夹
+
+** git add
+
+   ~git add~ 命令后面可以跟目录或者文件, 表示将这些文件和目录的变化添加到git的缓存中进行保存.
+
+   ~git add~ 的目的是保存文件的变化, 通常在git的根目录使用 ~git add ./~ 命令将该文件夹下的所有变化都加入git的缓存中.
+
+** git commit
+
+   - commit的作用是为当前已经add的内容打上一个标记, 用来标识一个阶段的工作.
+
+   - commit后这些变化才算真正的放进了git仓库
+
+   - commit的内容是从上次commit命令开始, 所有add的变化
+
+   - commit必须要记录此次提交的内容的描述, 用以之后回顾和查找, 
+
+   - 为了避免调用系统自带的编辑器进行commit消息的编写, 通常使用 ~git commit -m "你想记录的工作内容"~ 来进行commit操作. 这里面的 ~-m~ 是指的message.
+
+** git remote
+
+   ~git remote~ 用来配置远端
+
+   - ~git remote -v~
+     
+     查看已经配置的远端信息
+
+     #+begin_src sh
+       ➜  preparatory-course git:(master) git remote -v
+       gitee   git@gitee.com:linc5403/pre-course.git (fetch)
+       gitee   git@gitee.com:linc5403/pre-course.git (push)
+       origin  git@github.com:linc5403/preparatory-course.git (fetch)
+       origin  git@github.com:linc5403/preparatory-course.git (push)
+     #+end_src
+
+   - ~git remote add~
+
+     添加一个远端配置
+
+     #+begin_src sh
+       git remote add gitee https://gitee.com:linc5403/pre-course.git
+     #+end_src
+
+     上述命令表示: 添加了一个远端, 名称为 ~gitee~, 远端仓库地址为: ~https://gitee.com:linc5403/pre-course.git~
+
+   - ~git remote remove~
+     
+     删除远端
+
+     #+begin_src sh
+       git remote remove origin
+     #+end_src
+   
+     上述命令表示删除名为 ~origin~ 的远端
+
+     删除该远端后再使用 ~git remote -v~ 命令应该发现 ~origin~ 远端没有了
+
+   - ~git push~
+
+     推送本地仓库的commit到远端
+
+     第一次使用 ~git push~ 命令需要使用 ~-u~ 或者是 ~--set-upstream~ 信息将本地仓库和远端建立链接
+
+     原因是上边的 ~git remote add~ 命令仅仅是添加了一个远端, 并没有指定本地和远端的对应关系
+
+     第一次 ~git push -u origin~ 命令之后就就自动帮助我们将本地仓库和远端(origin)建立了映射关系, 后续再使用 ~git push~ 命令时则不需要使用 ~-u~ 选项了
+
+   - ~git branch -u~
+
+     建立本地分支和远端的映射关系
+
+     可以单独使用该命令为本地建立一个远端的映射
+
+     #+begin_src sh
+       ➜  preparatory-course git:(master) ✗ git branch -u origin/master
+       Branch 'master' set up to track remote branch 'master' from 'origin'.
+     #+end_src
+   
+     这样就将本地的master分支关联到了origin/master分支, 后面使用 ~git push~ 时不需要指定 ~-u~ 也会自动推送到远端 ~origin/master~ 分支.
+
+
 * git实际操作流程
   #+begin_src plantuml :file ./img/abc.png :cmdline -charset utf-8
     @startuml
