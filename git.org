@@ -248,6 +248,23 @@
 
 
 ** 分支(branch)的应用
+*** 分支操作流程
+
+    #+begin_src plantuml :file ./img/branch.svg
+      @startuml
+      本地master分支 -> 本地dev分支: 创建本地分支(git checkout -b)
+      本地dev分支 -> 本地dev分支: git工作流(git add, git commit)
+      本地dev分支 -> remote的dev分支: 创建远端分支并推送(git push -u origin)
+      本地dev分支 -> 本地dev分支: git工作流(git add, git commit)
+      本地dev分支 -> remote的dev分支: 推送到远端本地dev分支(git push)
+      本地master分支 <- 本地dev分支: 合并dev分支到本地master分支(git merge dev)
+      @enduml
+    #+end_src
+
+    #+RESULTS:
+    [[file:./img/branch.svg]]
+
+
 *** 创建本地分支( ~git checkout -b <本地分支名>~ )
     使用 ~git checkout -b <本地分支名>~ 这条命令创建一个本地分支, 新的本地分支会是你当前执行命令时分支的一份拷贝.
 
@@ -287,4 +304,67 @@
     #+end_example
 
 *** 删除本地分支( ~git branch --delete <本地分支名>~ )
+
+    注意: 你不能删除当前所处的本地分支, 否则会报如下错误:
+
+    #+begin_example
+      ➜  preparatory-course git:(dev) git branch --delete dev
+      error: Cannot delete branch 'dev' checked out at '/home/linc/courses/preparatory-course'
+      ➜  preparatory-course git:(dev)
+
+    #+end_example
+
+    需要先切换到其他分支才能删除:
+
+    #+begin_example
+      ➜  preparatory-course git:(dev) git checkout master
+      Switched to branch 'master'
+      Your branch is ahead of 'origin/master' by 4 commits.
+	(use "git push" to publish your local commits)
+      ➜  preparatory-course git:(master) git branch --delete dev
+      Deleted branch dev (was 623fa5d).
+    #+end_example
+
+*** 分支的合并( ~git merge~ )
+    通过 ~git merge <branch-from>~ 命令将 ~<branch-from>~ 的内容合并到当前所在的分支, 例如:
+
+    #+begin_example
+      ➜  temp git:(master) git merge dev
+      Updating ba79bbf..d428dc7
+      Fast-forward
+       shell1.sh | 1 +
+       1 file changed, 1 insertion(+)
+      ➜  temp git:(master)
+    #+end_example
+
+    上述操作将本地的 ~dev~ 分支内容合并到当前的 ~mater~ 分支上
+
+*** 创建远端分支/将本地分支推送到远端    
+
+    #+begin_example
+      ➜  preparatory-course git:(dev) ✗ git push -u origin dev
+      Enumerating objects: 12, done.
+      Counting objects: 100% (12/12), done.
+      Delta compression using up to 12 threads
+      Compressing objects: 100% (10/10), done.
+      Writing objects: 100% (10/10), 2.67 KiB | 683.00 KiB/s, done.
+      Total 10 (delta 7), reused 0 (delta 0)
+      remote: Resolving deltas: 100% (7/7), completed with 2 local objects.
+      remote:
+      remote: Create a pull request for 'dev' on GitHub by visiting:
+      remote:      https://github.com/linc5403/preparatory-course/pull/new/dev
+      remote:
+      To github.com:linc5403/preparatory-course.git
+       ,* [new branch]      dev -> dev
+      Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+    #+end_example
+
+*** 删除远端分支( ~git push --delete <远端名称> <远端分支名称>~ )
+
+    
+    #+begin_example
+      ➜  preparatory-course git:(dev) ✗ git push --delete origin dev
+      To github.com:linc5403/preparatory-course.git
+       - [deleted]         dev
+    #+end_example
     

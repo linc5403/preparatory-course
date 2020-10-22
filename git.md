@@ -1,27 +1,39 @@
 
 # Table of Contents
 
-1.  [git 命令解释](#orgd398182)
-    1.  [git init](#org1ac8c82)
-    2.  [git add](#orgd169a52)
-    3.  [git commit](#org69968fa)
-    4.  [git remote](#org1035410)
-2.  [git实际操作流程](#org45be2d7)
-3.  [注册git服务](#orgddc561f)
-4.  [git工具](#orgecdeb6d)
-    1.  [工具安装](#orgd34c544)
-    2.  [安装后的配置](#org12a966c)
-5.  [git使用场景](#orgbbabea4)
-    1.  [下载别人的仓库，不进行修改和提交](#org984790f)
-    2.  [将自己的项目存放在服务器侧，并进行跟踪](#orgff86887)
+1.  [git 命令解释](#org064b58a)
+    1.  [git init](#org54bf7dc)
+    2.  [git add](#org177d9a2)
+    3.  [git commit](#org0182244)
+    4.  [git remote](#org81fd9a5)
+    5.  [git push](#org3d11269)
+    6.  [git pull](#org2b6dc61)
+    7.  [git fetch](#org0e1dcae)
+2.  [git实际操作流程](#org60e07e9)
+3.  [注册git服务](#org62da7dd)
+4.  [git工具](#orgeaa6dbe)
+    1.  [工具安装](#org8a842e3)
+    2.  [安装后的配置](#org48ed361)
+5.  [git使用场景](#orgda20174)
+    1.  [下载别人的仓库，不进行修改和提交](#orgc1c3885)
+    2.  [将自己的项目存放在服务器侧，并进行跟踪](#org4d897d2)
+    3.  [分支(branch)的应用](#org854cdb7)
+        1.  [分支操作流程](#orge18e3ce)
+        2.  [创建本地分支( `git checkout -b <本地分支名>` )](#org00ad5b0)
+        3.  [查看所有分支( `git branch -a` )](#orgaea8485)
+        4.  [在分支之前切换( `git branch <分支名>` )](#org42f4c8c)
+        5.  [删除本地分支( `git branch --delete <本地分支名>` )](#orgd19072d)
+        6.  [分支的合并( `git merge` )](#org4a6a45d)
+        7.  [创建远端分支/将本地分支推送到远端](#orgc58e57c)
+        8.  [删除远端分支( `git push --delete <远端名称> <远端分支名称>` )](#orga87f907)
 
 
-<a id="orgd398182"></a>
+<a id="org064b58a"></a>
 
 # git 命令解释
 
 
-<a id="org1ac8c82"></a>
+<a id="org54bf7dc"></a>
 
 ## git init
 
@@ -32,7 +44,7 @@
 如果你想要这个目录不再被git管理, 则只需要删除 `.git` 文件夹
 
 
-<a id="orgd169a52"></a>
+<a id="org177d9a2"></a>
 
 ## git add
 
@@ -41,7 +53,7 @@
 `git add` 的目的是保存文件的变化, 通常在git的根目录使用 `git add ./` 命令将该文件夹下的所有变化都加入git的缓存中.
 
 
-<a id="org69968fa"></a>
+<a id="org0182244"></a>
 
 ## git commit
 
@@ -56,7 +68,7 @@
 -   为了避免调用系统自带的编辑器进行commit消息的编写, 通常使用 `git commit -m "你想记录的工作内容"` 来进行commit操作. 这里面的 `-m` 是指的message.
 
 
-<a id="org1035410"></a>
+<a id="org81fd9a5"></a>
 
 ## git remote
 
@@ -112,14 +124,68 @@
     这样就将本地的master分支关联到了origin/master分支, 后面使用 `git push` 时不需要指定 `-u` 也会自动推送到远端 `origin/master` 分支.
 
 
-<a id="org45be2d7"></a>
+<a id="org3d11269"></a>
+
+## git push
+
+将本地的commit推送到远端
+
+-   `git push -u origin`
+    
+    该命令在没有将本地和远端建立关联的时候使用, 作用是推送的同时, 将本地仓库和名为 `origin` 的远端建立连接, 这样操作一次之后, 下次推送时就会自动推送到 `origin` 这个远端.
+
+-   推送失败的可能原因
+    -   提示你没有权限
+        
+        检查你的用户名和密码是否是自己的(MAC钥匙串), 如果不是请将其删除, 再次push应该会提示你输入用户名和密码
+    
+    -   提示你需要先使用 `git pull`
+        
+        这种情况多数可能是因为该远端上的commit还未同步到你当前的这个本地仓库, 因此需要先使用 `git pull` 命令将远端上的commit拉取下来; 然后再使用 `git push` 命令. 如下例子所示:
+        
+            ➜  preparatory-course git:(master) git push
+            To github.com:linc5403/preparatory-course.git
+             ! [rejected]        master -> master (fetch first)
+            error: failed to push some refs to 'git@github.com:linc5403/preparatory-course.git'
+            hint: Updates were rejected because the remote contains work that you do
+            hint: not have locally. This is usually caused by another repository pushing
+            hint: to the same ref. You may want to first integrate the remote changes
+            hint: (e.g., 'git pull ...') before pushing again.
+            hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+            ➜  preparatory-course git:(master) git pull
+            remote: Enumerating objects: 10, done.
+            remote: Counting objects: 100% (9/9), done.
+            remote: Compressing objects: 100% (3/3), done.
+            remote: Total 6 (delta 3), reused 6 (delta 3), pack-reused 0
+            Unpacking objects: 100% (6/6), 728 bytes | 145.00 KiB/s, done.
+            From github.com:linc5403/preparatory-course
+               18710ec..3097582  master     -> origin/master
+            Already up to date!
+            Merge made by the 'recursive' strategy.
+
+
+<a id="org2b6dc61"></a>
+
+## git pull
+
+获取远端的引用, 并将远端的commit自动合并(merge)到本地工作区, 因此这个命令可能会出现 `VIM` 的窗口, 需要正确退出该窗口(多按几次Esc, 然后输入 `:q` )才能成功的完成pull操作.
+
+
+<a id="org0e1dcae"></a>
+
+## git fetch
+
+获取远端的引用, 和 `git pull` 的区别在于 `git fetch` 命令并不会自动帮我们合并远端的变更到工作区, 你需要手动执行 `git merge` 命令.
+
+
+<a id="org60e07e9"></a>
 
 # git实际操作流程
 
 ![img](./img/abc.png)
 
 
-<a id="orgddc561f"></a>
+<a id="org62da7dd"></a>
 
 # 注册git服务
 
@@ -127,14 +193,14 @@
 本文使用码云作为示例进行讲解。
 
 
-<a id="orgecdeb6d"></a>
+<a id="orgeaa6dbe"></a>
 
 # git工具
 
 我们通常使用命令行来使用git，在不同操作系统下命令行都是一致的。
 
 
-<a id="orgd34c544"></a>
+<a id="org8a842e3"></a>
 
 ## 工具安装
 
@@ -152,7 +218,7 @@
     不同的发行版本请使用不同的包管理器进行安装，[这个网页](https://git-scm.com/download/linux)有详细的介绍和说明。
 
 
-<a id="org12a966c"></a>
+<a id="org48ed361"></a>
 
 ## 安装后的配置
 
@@ -164,12 +230,12 @@
 注意 `git config` 命令的 `--global` 参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
 
-<a id="orgbbabea4"></a>
+<a id="orgda20174"></a>
 
 # git使用场景
 
 
-<a id="org984790f"></a>
+<a id="orgc1c3885"></a>
 
 ## 下载别人的仓库，不进行修改和提交
 
@@ -178,7 +244,7 @@
     git clone 远端地址
 
 
-<a id="orgff86887"></a>
+<a id="org4d897d2"></a>
 
 ## 将自己的项目存放在服务器侧，并进行跟踪
 
@@ -224,4 +290,126 @@
 8.  在网页上检查你的更新是否已经生效：
     
     ![img](./img/gitee-8.png)
+
+
+<a id="org854cdb7"></a>
+
+## 分支(branch)的应用
+
+
+<a id="orge18e3ce"></a>
+
+### 分支操作流程
+
+![img](./img/branch.svg)
+
+
+<a id="org00ad5b0"></a>
+
+### 创建本地分支( `git checkout -b <本地分支名>` )
+
+使用 `git checkout -b <本地分支名>` 这条命令创建一个本地分支, 新的本地分支会是你当前执行命令时分支的一份拷贝.
+
+该命令执行成功后, 会自动切换到你新创建的这个分支:
+
+    ➜  preparatory-course git:(master) git checkout -b dev
+    Switched to a new branch 'dev'
+    ➜  preparatory-course git:(dev)
+
+
+<a id="orgaea8485"></a>
+
+### 查看所有分支( `git branch -a` )
+
+该命令的回显如下所示:
+
+> -   dev
+>     master
+>     remotes/gitee/master
+>     remotes/origin/master
+
+-   其中带 `*` 的行表示你当前所属的分支
+
+-   以 `remotes` 开始的行表示获取到的远端分支
+
+
+<a id="org42f4c8c"></a>
+
+### 在分支之前切换( `git branch <分支名>` )
+
+注意该命令并没有带上 `-b` 选项, 表示切换到你输入的分支
+
+    ➜  preparatory-course git:(master) git checkout dev
+    Switched to branch 'dev'
+    ➜  preparatory-course git:(dev) git checkout master
+    Switched to branch 'master'
+    Your branch is ahead of 'origin/master' by 3 commits.
+      (use "git push" to publish your local commits)
+    ➜  preparatory-course git:(master)
+
+
+<a id="orgd19072d"></a>
+
+### 删除本地分支( `git branch --delete <本地分支名>` )
+
+注意: 你不能删除当前所处的本地分支, 否则会报如下错误:
+
+    ➜  preparatory-course git:(dev) git branch --delete dev
+    error: Cannot delete branch 'dev' checked out at '/home/linc/courses/preparatory-course'
+    ➜  preparatory-course git:(dev)
+
+需要先切换到其他分支才能删除:
+
+    ➜  preparatory-course git:(dev) git checkout master
+    Switched to branch 'master'
+    Your branch is ahead of 'origin/master' by 4 commits.
+      (use "git push" to publish your local commits)
+    ➜  preparatory-course git:(master) git branch --delete dev
+    Deleted branch dev (was 623fa5d).
+
+
+<a id="org4a6a45d"></a>
+
+### 分支的合并( `git merge` )
+
+通过 `git merge <branch-from>` 命令将 `<branch-from>` 的内容合并到当前所在的分支, 例如:
+
+    ➜  temp git:(master) git merge dev
+    Updating ba79bbf..d428dc7
+    Fast-forward
+     shell1.sh | 1 +
+     1 file changed, 1 insertion(+)
+    ➜  temp git:(master)
+
+上述操作将本地的 `dev` 分支内容合并到当前的 `mater` 分支上
+
+
+<a id="orgc58e57c"></a>
+
+### 创建远端分支/将本地分支推送到远端
+
+    ➜  preparatory-course git:(dev) ✗ git push -u origin dev
+    Enumerating objects: 12, done.
+    Counting objects: 100% (12/12), done.
+    Delta compression using up to 12 threads
+    Compressing objects: 100% (10/10), done.
+    Writing objects: 100% (10/10), 2.67 KiB | 683.00 KiB/s, done.
+    Total 10 (delta 7), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (7/7), completed with 2 local objects.
+    remote:
+    remote: Create a pull request for 'dev' on GitHub by visiting:
+    remote:      https://github.com/linc5403/preparatory-course/pull/new/dev
+    remote:
+    To github.com:linc5403/preparatory-course.git
+     * [new branch]      dev -> dev
+    Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+
+
+<a id="orga87f907"></a>
+
+### 删除远端分支( `git push --delete <远端名称> <远端分支名称>` )
+
+    ➜  preparatory-course git:(dev) ✗ git push --delete origin dev
+    To github.com:linc5403/preparatory-course.git
+     - [deleted]         dev
 
