@@ -260,12 +260,35 @@
 
     #+begin_src plantuml :file ./img/branch.svg
       @startuml
-      本地master分支 -> 本地dev分支: 创建本地分支(git checkout -b)
-      本地dev分支 -> 本地dev分支: git工作流(git add, git commit)
-      本地dev分支 -> remote的dev分支: 创建远端分支并推送(git push -u origin)
-      本地dev分支 -> 本地dev分支: git工作流(git add, git commit)
-      本地dev分支 -> remote的dev分支: 推送到远端本地dev分支(git push)
-      本地master分支 <- 本地dev分支: 合并dev分支到本地master分支(git merge dev)
+      本地master分支 -> 本地dev分支: 创建本地分支
+      note left
+      git checkout -b dev
+      end note
+      本地dev分支 -> 本地dev分支: git工作流
+      note left
+      工作区变更(新增,修改,删除)
+      git add .
+      git commit -m ""
+      end note
+      本地dev分支 -> remote的dev分支: 创建并推送到远端分支
+      note left
+      git push -u origin/dev
+      end note
+      本地dev分支 -> 本地dev分支: git工作流
+      note left
+      工作区变更(新增,修改,删除)
+      git add .
+      git commit -m ""
+      git push
+      end note
+      本地dev分支 -> remote的dev分支: 推送到远端本地dev分支
+      note left
+      git push
+      end note
+      本地master分支 <- 本地dev分支: 合并dev分支到本地master分支
+      note left
+      git merge dev
+      end note
       @enduml
     #+end_src
 
