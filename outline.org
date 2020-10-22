@@ -614,6 +614,8 @@
    4. 你可以随时使用 ~git status~ 命令查看git的状态
        
    5. 使用 ~.gitignore~ 来管理哪些文件/文件夹进入 ~git~
+
+      在你需要进行文件过滤的目录下创建一个名为 ~.gitignore~ 的文件, 这个文件里面可以写入:
       - 列出不关心的文件类型或文件名
       - 列出需要关心的内容(~!~)
       - 文件夹(~/~)
@@ -631,6 +633,8 @@
         !*.dat
         !.gitignore
       #+end_example
+
+      ~.gitignore~ 文件每行为一个匹配项, 上面实例中以 ~#~ 开始的行表示注释, 不是匹配项, 以 ~!~ 开始的行表示需要管理的内容, 其他行表示不关心的文件或是文件夹
    6. 使用 ~git remote -v~ 查看远端仓库配置
       #+begin_example
         linc@pop-os:~/preparatory-course$ git remote -v
@@ -645,9 +649,9 @@
 
    https://sourabhbajaj.com/mac-setup/SystemPreferences/
 
-** 使用gitee配置https连接
+** git的详细指导(注意其中使用的是HTTPS方式进行和服务器的连接)
 
-   [[./git.md][码云的操作指导]]
+   [[./git.md][git的详细指导]]
 
 
 

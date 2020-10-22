@@ -1,56 +1,56 @@
 
 # Table of Contents
 
-1.  [学习路线](#org40b5afa)
-2.  [课程安排](#orga4b5a8b)
-3.  [参考资料](#org0320581)
-4.  [命令行操作](#orgbb555d7)
-    1.  [zsh](#orgca488e2)
-        1.  [切换shell为zsh](#org5d2aacc)
-        2.  [安装oh-my-zsh (可选)](#orga07b828)
-    2.  [linux文件和目录](#org3266ccd)
-        1.  [`pwd`](#orgfe101b6)
-        2.  [`cd`](#org9a6e3f7)
-        3.  [`ls`](#orgcdadf62)
-        4.  [文件操作](#orgd3a3765)
-        5.  [目录操作](#org256412f)
-        6.  [文件操作命令汇总](#org0187d32)
-    3.  [其他重要命令](#orgeb35a57)
-    4.  [命令行快捷键](#org5740665)
-5.  [Mac下的软件管理-`brew`](#org7bc6ae1)
-    1.  [安装](#org11a558d)
-        1.  [直接安装国内镜像版(2041班提供)](#org0665316)
-        2.  [安装官方版本](#orgcaaf999)
-    2.  [brew常用命令](#org046ea89)
-6.  [编辑器](#org47fd3bc)
-7.  [如何做笔记](#orgbc4d7b6)
-    1.  [有道云笔记](#orgfaa179c)
-    2.  [markdown语法](#org4dbfecf)
-    3.  [markdown编辑器-Typora](#org78c3fb5)
-8.  [`git`](#orgd967614)
-    1.  [git和github的关系说明](#org3e39ec5)
-    2.  [`git` 的安装](#orgf085f2c)
-    3.  [`github` 的使用](#org905860c)
-        1.  [创建账号(github网站操作)](#orgfc88b88)
-        2.  [配置 `ssh-key` （github网站操作)](#org2114e29)
-        3.  [创建项目（github网站操作）](#orga73fa8f)
-        4.  [项目管理(本机操作)](#org90fdeab)
-    4.  [注意事项](#orgea54d30)
-9.  [键盘练习](#org724cfea)
-10. [参考材料](#org4df0396)
-    1.  [MacOS 配置和常用软件安装指导](#orga8c0625)
-    2.  [使用gitee配置https连接](#orgdc9f9e0)
+1.  [学习路线](#org7b79e65)
+2.  [课程安排](#org5560354)
+3.  [参考资料](#orga95fcdb)
+4.  [命令行操作](#org5a3d4af)
+    1.  [zsh](#orgf550b3e)
+        1.  [切换shell为zsh](#org9996cfb)
+        2.  [安装oh-my-zsh (可选)](#orga6bc8d2)
+    2.  [linux文件和目录](#org552ed85)
+        1.  [`pwd`](#orga5d4bed)
+        2.  [`cd`](#orgaba4432)
+        3.  [`ls`](#orgca383f7)
+        4.  [文件操作](#org04215ec)
+        5.  [目录操作](#org7e25340)
+        6.  [文件操作命令汇总](#orgbb9a339)
+    3.  [其他重要命令](#orgbca6f8a)
+    4.  [命令行快捷键](#orgba06183)
+5.  [Mac下的软件管理-`brew`](#orgb25a7da)
+    1.  [安装](#org6eafae6)
+        1.  [直接安装国内镜像版(2041班提供)](#org1642555)
+        2.  [安装官方版本](#org522ea6c)
+    2.  [brew常用命令](#org1f0bccf)
+6.  [编辑器](#orgcc25699)
+7.  [如何做笔记](#orgec6f73f)
+    1.  [有道云笔记](#org445ba62)
+    2.  [markdown语法](#orgd14bcdf)
+    3.  [markdown编辑器-Typora](#org6b928eb)
+8.  [`git`](#org5b25c40)
+    1.  [git和github的关系说明](#org77c5e65)
+    2.  [`git` 的安装](#org5c7eb27)
+    3.  [`github` 的使用](#orgdcb0a7b)
+        1.  [创建账号(github网站操作)](#orge6e3fc8)
+        2.  [配置 `ssh-key` （github网站操作)](#org14e91c4)
+        3.  [创建项目（github网站操作）](#org0124620)
+        4.  [项目管理(本机操作)](#orge69c477)
+    4.  [注意事项](#orgb761111)
+9.  [键盘练习](#orga493765)
+10. [参考材料](#orgbf2dccf)
+    1.  [MacOS 配置和常用软件安装指导](#org12bd2f0)
+    2.  [git的详细指导(注意其中使用的是HTTPS方式进行和服务器的连接)](#org82afcba)
 
 
 
-<a id="org40b5afa"></a>
+<a id="org7b79e65"></a>
 
 # 学习路线
 
 ![img](./img/mind-map.svg)
 
 
-<a id="orga4b5a8b"></a>
+<a id="org5560354"></a>
 
 # 课程安排
 
@@ -121,7 +121,7 @@
 </table>
 
 
-<a id="org0320581"></a>
+<a id="orga95fcdb"></a>
 
 # 参考资料
 
@@ -149,7 +149,7 @@
     > 4.  如何创建文件夹，删除文件，删除文件夹，重命名或是移动文件
 
 
-<a id="orgbb555d7"></a>
+<a id="org5a3d4af"></a>
 
 # 命令行操作
 
@@ -166,12 +166,12 @@
 > 使用 `Tab` 键可以进行补全，加快你的操作。
 
 
-<a id="orgca488e2"></a>
+<a id="orgf550b3e"></a>
 
 ## zsh
 
 
-<a id="org5d2aacc"></a>
+<a id="org9996cfb"></a>
 
 ### 切换shell为zsh
 
@@ -189,19 +189,19 @@
     提示输入密码时输入登录密码就可以了
 
 
-<a id="orga07b828"></a>
+<a id="orga6bc8d2"></a>
 
 ### 安装oh-my-zsh (可选)
 
 <https://sourabhbajaj.com/mac-setup/iTerm/zsh.html>
 
 
-<a id="org3266ccd"></a>
+<a id="org552ed85"></a>
 
 ## linux文件和目录
 
 
-<a id="orgfe101b6"></a>
+<a id="orga5d4bed"></a>
 
 ### `pwd`
 
@@ -211,7 +211,7 @@
     /->Users->banyuan->preparatory-course
 
 
-<a id="org9a6e3f7"></a>
+<a id="orgaba4432"></a>
 
 ### `cd`
 
@@ -263,7 +263,7 @@
 </table>
 
 
-<a id="orgcdadf62"></a>
+<a id="orgca383f7"></a>
 
 ### `ls`
 
@@ -305,7 +305,7 @@
 </table>
 
 
-<a id="orgd3a3765"></a>
+<a id="org04215ec"></a>
 
 ### 文件操作
 
@@ -350,7 +350,7 @@
 </table>
 
 
-<a id="org256412f"></a>
+<a id="org7e25340"></a>
 
 ### 目录操作
 
@@ -395,7 +395,7 @@
 </table>
 
 
-<a id="org0187d32"></a>
+<a id="orgbb9a339"></a>
 
 ### 文件操作命令汇总
 
@@ -513,7 +513,7 @@
 </table>
 
 
-<a id="orgeb35a57"></a>
+<a id="orgbca6f8a"></a>
 
 ## 其他重要命令
 
@@ -531,7 +531,7 @@
     将标准输入转为命令行参数
 
 
-<a id="org5740665"></a>
+<a id="orgba06183"></a>
 
 ## 命令行快捷键
 
@@ -637,17 +637,17 @@
 </table>
 
 
-<a id="org7bc6ae1"></a>
+<a id="orgb25a7da"></a>
 
 # Mac下的软件管理-`brew`
 
 
-<a id="org11a558d"></a>
+<a id="org6eafae6"></a>
 
 ## 安装
 
 
-<a id="org0665316"></a>
+<a id="org1642555"></a>
 
 ### 直接安装国内镜像版(2041班提供)
 
@@ -655,7 +655,7 @@
     "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 
 
-<a id="orgcaaf999"></a>
+<a id="org522ea6c"></a>
 
 ### 安装官方版本
 
@@ -681,7 +681,7 @@
         git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
 
-<a id="org046ea89"></a>
+<a id="org1f0bccf"></a>
 
 ## brew常用命令
 
@@ -727,7 +727,7 @@
 </table>
 
 
-<a id="org47fd3bc"></a>
+<a id="orgcc25699"></a>
 
 # 编辑器
 
@@ -760,43 +760,43 @@
 -   emacs
 
 
-<a id="orgbc4d7b6"></a>
+<a id="orgec6f73f"></a>
 
 # 如何做笔记
 
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=3052629>
 
 
-<a id="orgfaa179c"></a>
+<a id="org445ba62"></a>
 
 ## 有道云笔记
 
 
-<a id="org4dbfecf"></a>
+<a id="orgd14bcdf"></a>
 
 ## markdown语法
 
 [参考](https://wizardforcel.gitbooks.io/markdown-simple-world/2.html)
 
 
-<a id="org78c3fb5"></a>
+<a id="org6b928eb"></a>
 
 ## markdown编辑器-[Typora](https://typora.io/)
 
 
-<a id="orgd967614"></a>
+<a id="org5b25c40"></a>
 
 # `git`
 
 
-<a id="org3e39ec5"></a>
+<a id="org77c5e65"></a>
 
 ## git和github的关系说明
 
 ![img](./img/git_overview.svg)
 
 
-<a id="orgf085f2c"></a>
+<a id="org5c7eb27"></a>
 
 ## `git` 的安装
 
@@ -805,19 +805,19 @@
 <https://wiki.banyuan.club/pages/viewpage.action?pageId=13700569>
 
 
-<a id="org905860c"></a>
+<a id="orgdcb0a7b"></a>
 
 ## `github` 的使用
 
 
-<a id="orgfc88b88"></a>
+<a id="orge6e3fc8"></a>
 
 ### 创建账号(github网站操作)
 
 <https://github.com/join>
 
 
-<a id="org2114e29"></a>
+<a id="org14e91c4"></a>
 
 ### 配置 `ssh-key` （github网站操作)
 
@@ -877,7 +877,7 @@
         Hi linc5403! You've successfully authenticated, but GitHub does not provide shell access.
 
 
-<a id="orga73fa8f"></a>
+<a id="org0124620"></a>
 
 ### 创建项目（github网站操作）
 
@@ -896,7 +896,7 @@
     ![img](./img/create-3.png)
 
 
-<a id="org90fdeab"></a>
+<a id="orge69c477"></a>
 
 ### 项目管理(本机操作)
 
@@ -968,7 +968,7 @@
          * [new branch]      master -> master
 
 
-<a id="orgea54d30"></a>
+<a id="orgb761111"></a>
 
 ## 注意事项
 
@@ -1014,6 +1014,8 @@
 
 5.  使用 `.gitignore` 来管理哪些文件/文件夹进入 `git`
     
+    在你需要进行文件过滤的目录下创建一个名为 `.gitignore` 的文件, 这个文件里面可以写入:
+    
     -   列出不关心的文件类型或文件名
     -   列出需要关心的内容(`!`)
     -   文件夹(`/`)
@@ -1030,6 +1032,8 @@
         !**/Makefile
         !*.dat
         !.gitignore
+    
+    `.gitignore` 文件每行为一个匹配项, 上面实例中以 `#` 开始的行表示注释, 不是匹配项, 以 `!` 开始的行表示需要管理的内容, 其他行表示不关心的文件或是文件夹
 6.  使用 `git remote -v` 查看远端仓库配置
     
         linc@pop-os:~/preparatory-course$ git remote -v
@@ -1037,26 +1041,26 @@
         origin  git@github.com:linc5403/preparatory-course.git (push)
 
 
-<a id="org724cfea"></a>
+<a id="orga493765"></a>
 
 # [键盘练习](https://www.typingclub.com/)
 
 
-<a id="org4df0396"></a>
+<a id="orgbf2dccf"></a>
 
 # 参考材料
 
 
-<a id="orga8c0625"></a>
+<a id="org12bd2f0"></a>
 
 ## MacOS 配置和常用软件安装指导
 
 <https://sourabhbajaj.com/mac-setup/SystemPreferences/>
 
 
-<a id="orgdc9f9e0"></a>
+<a id="org82afcba"></a>
 
-## 使用gitee配置https连接
+## git的详细指导(注意其中使用的是HTTPS方式进行和服务器的连接)
 
-[码云的操作指导](./git.md)
+[git的详细指导](./git.md)
 
