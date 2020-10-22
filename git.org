@@ -101,7 +101,29 @@
 
      - 提示你需要先使用 ~git pull~
 
-       这种情况多数可能是因为该远端上的commit还未同步到你当前的这个本地仓库, 因此需要先使用 ~git pull~ 命令将远端上的commit拉取下来; 然后再使用 ~git push~ 命令.
+       这种情况多数可能是因为该远端上的commit还未同步到你当前的这个本地仓库, 因此需要先使用 ~git pull~ 命令将远端上的commit拉取下来; 然后再使用 ~git push~ 命令. 如下例子所示:
+
+       #+begin_src sh
+	 ➜  preparatory-course git:(master) git push
+	 To github.com:linc5403/preparatory-course.git
+	  ! [rejected]        master -> master (fetch first)
+	 error: failed to push some refs to 'git@github.com:linc5403/preparatory-course.git'
+	 hint: Updates were rejected because the remote contains work that you do
+	 hint: not have locally. This is usually caused by another repository pushing
+	 hint: to the same ref. You may want to first integrate the remote changes
+	 hint: (e.g., 'git pull ...') before pushing again.
+	 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+	 ➜  preparatory-course git:(master) git pull
+	 remote: Enumerating objects: 10, done.
+	 remote: Counting objects: 100% (9/9), done.
+	 remote: Compressing objects: 100% (3/3), done.
+	 remote: Total 6 (delta 3), reused 6 (delta 3), pack-reused 0
+	 Unpacking objects: 100% (6/6), 728 bytes | 145.00 KiB/s, done.
+	 From github.com:linc5403/preparatory-course
+	    18710ec..3097582  master     -> origin/master
+	 Already up to date!
+	 Merge made by the 'recursive' strategy.
+       #+end_src
 
 ** git pull
 
@@ -232,6 +254,22 @@
     该命令执行成功后, 会自动切换到你新创建的这个分支:
 
     #+begin_src sh
-
+      ➜  preparatory-course git:(master) git checkout -b dev
+      Switched to a new branch 'dev'
+      ➜  preparatory-course git:(dev)
     #+end_src
+*** 查看所有分支( ~git branch -a~ )
+    该命令的回显如下所示:
+
+    #+begin_quote
+      * dev
+       master
+       remotes/gitee/master
+       remotes/origin/master
+    #+end_quote
+    
+    - 其中带 ~*~ 的行表示你当前所属的分支
+
+    - 以 ~remotes~ 开始的行表示获取到的远端分支
+*** 删除本地分支( ~git branch --delete <本地分支名>~ )
     
