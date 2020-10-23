@@ -1,39 +1,39 @@
 
 # Table of Contents
 
-1.  [git 命令解释](#org685942f)
-    1.  [git init](#orgb9f034c)
-    2.  [git add](#org25793ac)
-    3.  [git commit](#org9cfbf97)
-    4.  [git remote](#org4834161)
-    5.  [git push](#org7168f16)
-    6.  [git pull](#orgd1c63fd)
-    7.  [git fetch](#org784f3a7)
-2.  [git简易实际操作流程](#orgf5cae33)
-3.  [注册git服务](#org0dfd4f2)
-4.  [git工具](#orgac51081)
-    1.  [工具安装](#org9e84cd1)
-    2.  [安装后的配置](#orgf6eed32)
-5.  [git使用场景](#org96a053c)
-    1.  [下载别人的仓库，不进行修改和提交](#orgb6fc03d)
-    2.  [将自己的项目存放在服务器侧，并进行跟踪](#orgdb23203)
-    3.  [分支(branch)的应用](#orgca3c28b)
-        1.  [分支操作流程](#org38416a1)
-        2.  [创建本地分支( `git checkout -b <本地分支名>` )](#org63614e5)
-        3.  [查看所有分支( `git branch -a` )](#orge6f783b)
-        4.  [在分支之前切换( `git branch <分支名>` )](#orgaa29b9a)
-        5.  [删除本地分支( `git branch --delete <本地分支名>` )](#org8bc7ee1)
-        6.  [分支的合并( `git merge` )](#orge58214a)
-        7.  [创建远端分支/将本地分支推送到远端](#org8877193)
-        8.  [删除远端分支( `git push --delete <远端名称> <远端分支名称>` )](#orgb22de62)
+1.  [git 命令解释](#org498e10f)
+    1.  [git init](#orga10ea93)
+    2.  [git add](#org93ac5a9)
+    3.  [git commit](#org4df7024)
+    4.  [git remote](#orgaf56ad7)
+    5.  [git push](#orgcf80940)
+    6.  [git pull](#org81f1eaa)
+    7.  [git fetch](#org54066db)
+2.  [git简易实际操作流程](#orgb0837e5)
+3.  [注册git服务](#org7ee781a)
+4.  [git工具](#org0cdf067)
+    1.  [工具安装](#orgc9c3777)
+    2.  [安装后的配置](#org3ecfe65)
+5.  [git使用场景](#org5eb8dc3)
+    1.  [下载别人的仓库，不进行修改和提交](#org55f6f08)
+    2.  [将自己的项目存放在服务器侧，并进行跟踪](#org37dc934)
+    3.  [分支(branch)的应用](#org124a652)
+        1.  [分支操作流程](#orgc862be3)
+        2.  [创建本地分支( `git checkout -b <本地分支名>` )](#org54855ee)
+        3.  [查看所有分支( `git branch -a` )](#orgbae7475)
+        4.  [在分支之前切换( `git checkout <分支名>` )](#orgd9d8b6c)
+        5.  [删除本地分支( `git branch --delete <本地分支名>` )](#org8501b19)
+        6.  [分支的合并( `git merge` )](#org23cf277)
+        7.  [创建远端分支/将本地分支推送到远端](#org85e87a6)
+        8.  [删除远端分支( `git push --delete <远端名称> <远端分支名称>` )](#org5da05e2)
 
 
-<a id="org685942f"></a>
+<a id="org498e10f"></a>
 
 # git 命令解释
 
 
-<a id="orgb9f034c"></a>
+<a id="orga10ea93"></a>
 
 ## git init
 
@@ -44,7 +44,7 @@
 如果你想要这个目录不再被git管理, 则只需要删除 `.git` 文件夹
 
 
-<a id="org25793ac"></a>
+<a id="org93ac5a9"></a>
 
 ## git add
 
@@ -53,7 +53,7 @@
 `git add` 的目的是保存文件的变化, 通常在git的根目录使用 `git add ./` 命令将该文件夹下的所有变化都加入git的缓存中.
 
 
-<a id="org9cfbf97"></a>
+<a id="org4df7024"></a>
 
 ## git commit
 
@@ -68,7 +68,7 @@
 -   为了避免调用系统自带的编辑器进行commit消息的编写, 通常使用 `git commit -m "你想记录的工作内容"` 来进行commit操作. 这里面的 `-m` 是指的message.
 
 
-<a id="org4834161"></a>
+<a id="orgaf56ad7"></a>
 
 ## git remote
 
@@ -124,7 +124,7 @@
     这样就将本地的master分支关联到了origin/master分支, 后面使用 `git push` 时不需要指定 `-u` 也会自动推送到远端 `origin/master` 分支.
 
 
-<a id="org7168f16"></a>
+<a id="orgcf80940"></a>
 
 ## git push
 
@@ -164,28 +164,28 @@
             Merge made by the 'recursive' strategy.
 
 
-<a id="orgd1c63fd"></a>
+<a id="org81f1eaa"></a>
 
 ## git pull
 
 获取远端的引用, 并将远端的commit自动合并(merge)到本地工作区, 因此这个命令可能会出现 `VIM` 的窗口, 需要正确退出该窗口(多按几次Esc, 然后输入 `:q` )才能成功的完成pull操作.
 
 
-<a id="org784f3a7"></a>
+<a id="org54066db"></a>
 
 ## git fetch
 
 获取远端的引用, 和 `git pull` 的区别在于 `git fetch` 命令并不会自动帮我们合并远端的变更到工作区, 你需要手动执行 `git merge` 命令.
 
 
-<a id="orgf5cae33"></a>
+<a id="orgb0837e5"></a>
 
 # git简易实际操作流程
 
 ![img](./img/abc.png)
 
 
-<a id="org0dfd4f2"></a>
+<a id="org7ee781a"></a>
 
 # 注册git服务
 
@@ -193,14 +193,14 @@
 本文使用码云作为示例进行讲解。
 
 
-<a id="orgac51081"></a>
+<a id="org0cdf067"></a>
 
 # git工具
 
 我们通常使用命令行来使用git，在不同操作系统下命令行都是一致的。
 
 
-<a id="org9e84cd1"></a>
+<a id="orgc9c3777"></a>
 
 ## 工具安装
 
@@ -227,7 +227,7 @@
     不同的发行版本请使用不同的包管理器进行安装，[这个网页](https://git-scm.com/download/linux)有详细的介绍和说明。
 
 
-<a id="orgf6eed32"></a>
+<a id="org3ecfe65"></a>
 
 ## 安装后的配置
 
@@ -239,12 +239,12 @@
 注意 `git config` 命令的 `--global` 参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
 
-<a id="org96a053c"></a>
+<a id="org5eb8dc3"></a>
 
 # git使用场景
 
 
-<a id="orgb6fc03d"></a>
+<a id="org55f6f08"></a>
 
 ## 下载别人的仓库，不进行修改和提交
 
@@ -253,7 +253,7 @@
     git clone 远端地址
 
 
-<a id="orgdb23203"></a>
+<a id="org37dc934"></a>
 
 ## 将自己的项目存放在服务器侧，并进行跟踪
 
@@ -301,19 +301,19 @@
     ![img](./img/gitee-8.png)
 
 
-<a id="orgca3c28b"></a>
+<a id="org124a652"></a>
 
 ## 分支(branch)的应用
 
 
-<a id="org38416a1"></a>
+<a id="orgc862be3"></a>
 
 ### 分支操作流程
 
 ![img](./img/branch.svg)
 
 
-<a id="org63614e5"></a>
+<a id="org54855ee"></a>
 
 ### 创建本地分支( `git checkout -b <本地分支名>` )
 
@@ -326,7 +326,7 @@
     ➜  preparatory-course git:(dev)
 
 
-<a id="orge6f783b"></a>
+<a id="orgbae7475"></a>
 
 ### 查看所有分支( `git branch -a` )
 
@@ -342,9 +342,9 @@
 -   以 `remotes` 开始的行表示获取到的远端分支
 
 
-<a id="orgaa29b9a"></a>
+<a id="orgd9d8b6c"></a>
 
-### 在分支之前切换( `git branch <分支名>` )
+### 在分支之前切换( `git checkout <分支名>` )
 
 注意该命令并没有带上 `-b` 选项, 表示切换到你输入的分支
 
@@ -357,7 +357,7 @@
     ➜  preparatory-course git:(master)
 
 
-<a id="org8bc7ee1"></a>
+<a id="org8501b19"></a>
 
 ### 删除本地分支( `git branch --delete <本地分支名>` )
 
@@ -377,7 +377,7 @@
     Deleted branch dev (was 623fa5d).
 
 
-<a id="orge58214a"></a>
+<a id="org23cf277"></a>
 
 ### 分支的合并( `git merge` )
 
@@ -393,7 +393,7 @@
 上述操作将本地的 `dev` 分支内容合并到当前的 `mater` 分支上
 
 
-<a id="org8877193"></a>
+<a id="org85e87a6"></a>
 
 ### 创建远端分支/将本地分支推送到远端
 
@@ -416,7 +416,7 @@ push时指定远端及分支名
     Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 
 
-<a id="orgb22de62"></a>
+<a id="org5da05e2"></a>
 
 ### 删除远端分支( `git push --delete <远端名称> <远端分支名称>` )
 
